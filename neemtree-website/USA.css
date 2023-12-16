@@ -1,0 +1,386 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+
+}
+.container1{
+    width:100vw;
+    height:492px;
+    background-color:rgba(251, 195, 54, 0.11);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.container1 img{
+    width:944px;
+    height:351px;
+    position: relative;
+    top:75px;
+}
+
+.background{
+    width: 574px;
+    height: 282px;
+    background-color:white;
+    position: relative;
+    left: 450px;
+    bottom: 141px;
+  border-radius: 129px;
+}
+
+.usa{
+    width: 547px;
+    height: 262px;
+    position: relative;
+    right: 115px;
+    bottom: 146px;
+}
+.stusa{
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 50px;
+font-style: normal;
+font-weight: 600;
+line-height: 116%;
+position: relative;
+bottom: 280px;
+}
+.container2{
+    width:1440px;
+    height:1646px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.container3{
+    width:944px;
+    height:963px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    position: relative;
+    bottom: 220px;
+}
+.heading1{
+    color: #1C1C1C;
+font-family: Poppins;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: 116%;
+position: relative;
+left: 40px;
+}
+.content1{
+    color: #595566;
+font-family: Lato;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 147.5%;
+width:743px;
+height:168px;
+position: relative;
+bottom: 20px;
+left: 40px;
+}
+.content{
+    width:944px;
+    height:373px;
+}
+.heading2{
+    color: #1C1C1C;
+font-family: Poppins;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: 116%;
+left: 40px;
+position: relative;
+}
+.content2{
+    color: #595566;
+font-family: Lato;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 147.5%;
+width:763px;
+height:168px;
+position: relative;
+bottom: 20px;
+left: 40px;
+}
+.container4{
+    width:880px;
+    height:423.92px;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    position: relative;
+    bottom: 220px;
+    left: 5px;
+}
+.heading3{
+    color: #1C1C1C;
+font-family: Poppins;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: 116%;
+}
+.tick{
+    width:19px;
+    height:19px;
+}
+ul{
+    width:558.69px;
+    height:214.43px;
+    display:flex;
+    flex-direction:column;
+    list-style: none;
+    position: relative;
+    right: 40px;
+    bottom: 20px;
+}
+.fact1{
+    color: #595566;
+font-family: Lato;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 116%;
+position: relative;
+bottom: 23px;
+left: 30px;
+margin: 0px;
+}
+.fact2{
+    color: #595566;
+font-family: Lato;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 116%;
+position: relative;
+bottom: 23px;
+left: 30px;
+margin:0px;
+}
+.fact3{
+    color: #595566;
+font-family: Lato;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 116%;
+position: relative;
+bottom: 23px;
+left: 30px;
+margin:0px;
+}
+.fact4{
+    color: #595566;
+font-family: Lato;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 116%;
+position: relative;
+bottom: 23px;
+left: 30px;
+margin:0px;
+}
+.fact5{
+    color: #595566;
+font-family: Lato;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 116%;
+position: relative;
+bottom: 23px;
+left: 30px;
+margin: 0px;
+}
+.fact6{
+    color: #595566;
+font-family: Lato;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 116%;
+position: relative;
+bottom: 23px;
+left: 30px;
+margin:0px;
+}
+.lapboy{
+    width: 515px;
+    height: 773px;
+    position: relative; 
+    top: 30px;
+    right: 210px;
+}
+.consultation{
+    width:1440px;
+    height:410px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    bottom: 70px;
+    position: relative;
+}
+.consultation img{
+    width: 1200px;
+    height: 252px;
+}
+.consultation .caption{
+    color: white;
+    font-family: Lato;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 147.5%;
+position: relative;
+bottom: 270px;
+}
+.consultation h2{
+    color: white;
+    font-family: Poppins;
+font-size: 35px;
+font-style: normal;
+font-weight: 600;
+line-height: 116%;
+position: relative;
+bottom: 200px;
+right: 125px;
+}
+.consultation strong{
+    font-family: Lato;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 147.5%;
+color:#FFFFFF;
+}
+.consultation button{
+    width: 252px;
+    height: 62px;
+    background-color: #FBC336;
+    border-radius:  42px;
+    border:none;
+    color:black;
+    font-family: Lato;
+    font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 160%; 
+text-align: center;
+position: relative;
+    left: 45px;
+    bottom: 20px;
+}
+footer{
+    width: 100vw;
+  }
+  .container{
+    background-color:#141414;
+    width:100vw;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    gap:1.563rem;
+    margin:0rem;
+    height:693px;
+  }
+  .footer1{
+    position: relative;
+    top:16px;
+  }
+  .footer2{
+    position: relative;
+    top:16px;
+  }
+  .footer3{
+    position: relative;
+    top:16px;
+  }
+  .footer-nav{
+    position: relative;
+    top: 40px;
+  }
+  .footer1 .logo{ 
+    width: 20.313rem;
+    height: 14rem;
+    position: relative;
+    left: 55px;
+    top: 31px;
+  }
+  .footer1 p{
+    color:white;
+    width: 328px;
+    position: relative;
+    left: 55px;
+    font-style: normal;
+    font-size: large;
+  }
+  .footer1 .copyright{
+    color:white;
+    position: relative;
+    left: 55px;
+    width:436px;
+  }
+  #list{
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+  }
+  .footer2 ul{
+    gap:1.563rem;
+  }
+  .footer2 h3{
+  color:white;
+  }
+  .footer2 a{
+    color:white;
+    }
+    .footer2 ul{
+      gap:1.563rem;
+    }
+    .footer3 ul{
+      gap:1.563rem;
+    }
+    .footer3 h3{
+      color:white;
+      }
+      .footer3 a{
+        color:white;
+        }
+        .footer-nav ul{
+          gap:1.563rem;
+        }
+        .footer-nav h3{
+          color:white;
+          position: relative;
+          top: 31px;
+          right:55px;
+        } 
+        .footer-nav a{
+          color:white;
+          text-decoration: none;
+        }
+
+#list1{
+    position:relative;
+    top: 31px;
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+    right: 93px;
+}
