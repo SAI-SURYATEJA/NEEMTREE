@@ -31,7 +31,7 @@ body{
 .container2 h2{
     color: #181818;
 text-align: center;
-font-family: Poppins;
+font-family: 'Poppins',sans-serif;
 font-size: 40px;
 font-style: normal;
 font-weight: 600;
@@ -44,7 +44,7 @@ bottom: 35px;
     height:243px;
     color: #595566;
 text-align: center;
-font-family: Lato;
+font-family: 'Lato',sans-serif;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
@@ -136,8 +136,8 @@ line-height: 147.5%;
     height:351px;
     position:relative;
     float:left !important;
-    bottom: 177px;
-    left: 153px;
+    bottom: 0px;
+    right: 554px;
 }
 .container5{
     width: 100vw;
@@ -151,7 +151,7 @@ line-height: 147.5%;
 }
 .container5 h2{
     color: #181818;
-font-family: Poppins;
+font-family: 'Poppins',sans-serif;
 font-size: 40px;
 font-style: normal;
 font-weight: 600;
@@ -162,7 +162,7 @@ left:128px;
 
 .content5 {
  color: #595566;
-font-family: Lato;
+font-family: 'Lato',sans-serif;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
@@ -181,7 +181,7 @@ bottom: 5px;
     position:relative;
     float:right;
     top: 20px;
-    left: 226px;
+    left: 76px;
 }
 .container5 strong{
 color:#595566;
@@ -196,7 +196,7 @@ bottom: 4px;
     position: relative;
     bottom: 6px;
 }
-ul{
+.list1{
   list-style-type: none;
     width: 500px;
     display: flex;
@@ -258,7 +258,7 @@ li{
 .container7 {
     background: #FAFFFB;
     width: 100vw;
-    height: 85vh;
+    height: 130vh;
     font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
@@ -310,6 +310,8 @@ li{
     display: flex;
     justify-content: space-between;
     width: 80%; 
+    position: relative;
+    bottom: 48px;
   }
   
   .num-heading {
@@ -367,26 +369,26 @@ li{
     text-align: center;
     color: #000;
 text-align: center;
-font-family: Poppins;
+font-family: 'Poppins',sans-serif;
 font-size: 40px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
 text-transform: capitalize;
-width: 408px;
+width: 422px;
 position: relative;
-top: 70px;
+bottom: 22px;
   }
   .container8{
     width:1440px;
     height: 668px;
     position: relative;
-    bottom: 17px;
+    top: -13px;
   }
   .contact-heading{
     color: #181818;
 text-align: center;
-font-family: Poppins;
+font-family: 'Poppins',sans-serif;
 font-size: 45px;
 font-style: normal;
 font-weight: 600;
@@ -484,7 +486,7 @@ background-color: #181818;
   }
   .card-content2 .add{
     color: #FFFFFF;
-    font-family: Cabin;
+    font-family: 'Cabin',sans-serif;
 font-size: 25px;
 font-style: normal;
 font-weight: 600;
@@ -495,7 +497,7 @@ position: relative;
 }
 .card-content2 p{
     color: #FFFFFF;
-    font-family: Lato;
+    font-family: 'Lato',sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -601,7 +603,7 @@ position: relative;
 }
 .container9 p{
     color:white;
-font-family: Lato;
+font-family: 'Lato',sans-serif;
 font-size: 13px;
 font-style: normal;
 font-weight: 400;
@@ -617,7 +619,7 @@ margin:0px;
     flex-wrap:wrap;
     position:relative;
     left: 149px;
-    top: 120.2px;
+    top: 158.2px;
 }
  
 .banner-yel{
@@ -631,14 +633,14 @@ padding-left: 1rem;
   text-align: center;
   max-width: 80%;
   margin-bottom: 0;
-  font-weight: 100;
+  font-weight: 400;
     position: relative;
     float: left;
     height: 20px;
 }
 .container11 h2{
 color: #181818;
-font-family: Poppins;
+font-family: 'Poppins',sans-serif;
 font-size: 40px;
 font-style: normal;
 font-weight: 600;
@@ -650,7 +652,7 @@ right: 110px;
 }
 .contact-content{
     color: #595566;
-font-family: Lato;
+font-family: 'Lato',sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -660,14 +662,18 @@ position: relative;
     top: 86px;
     width: 407px;
     height: 72px;
-    right: 465px;
+    right: 512px;
 }
 ul{
     display:flex;
     flex-direction:column;
     width:331px;
     height:271px;
-
+    position: relative;
+    top: 245px;
+    gap: 56px;
+    right: 466px;
+    list-style-type: none;
 }
 li{
     width:331px;
@@ -694,25 +700,25 @@ li{
 
 li label{
     color: #181818;
-font-family: Cabin;
+font-family: 'Cabin',sans-serif;
 font-size: 20px;
 font-style: normal;
 font-weight: 600;
 line-height: 116%;
 position: relative;
 left: 72px;
-bottom: 87px;
+bottom: 62px;
 }
 li p{
     color: #595566;
-font-family: Lato;
+font-family: 'Lato',sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 147.5%;
 position: relative;
 left: 72px;
-bottom: 72px;
+bottom:54px;
 }
 form{
   width:688px;
@@ -720,11 +726,11 @@ form{
   float: right;
   position: relative;
     left: 130px;
-    bottom: 100px;
+    bottom: 88px;
 }
 .name{
   color: #181818;
-font-family: Lato;
+font-family:'Lato',sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -746,7 +752,7 @@ width: 228px;
 }
 #fname ::placeholder{
   color: #A9A9A9;
-font-family: Lato;
+font-family: 'Lato',sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -754,14 +760,14 @@ line-height: 147.5%;
 }
 .email{
   color: #181818;
-font-family: Lato;
+font-family: 'Lato',sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 147.5%;
 position: relative;
     left: 388px;
-    bottom: 80px;
+    bottom: 94px;
 }
 #email{
   display: flex;
@@ -774,11 +780,11 @@ border: 1px solid #C1C1C1;
 background: #FFF;
 position: relative;
     left: 388px;
-    bottom: 72px;
+    bottom: 85px;
 }
 #email ::placeholder{
   color: #A9A9A9;
-font-family: Lato;
+font-family: 'Lato',sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -786,7 +792,7 @@ line-height: 147.5%;
 }
 .phone{
   color: #181818;
-font-family: Lato;
+font-family: 'Lato',sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -808,7 +814,7 @@ bottom: 40px;
 }
 #phone ::placeholder{
   color: #A9A9A9;
-font-family: Lato;
+font-family: 'Lato',sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -816,14 +822,14 @@ line-height: 147.5%;
 }
 .city{
   color: #181818;
-font-family: Lato;
+font-family:'Lato',sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 147.5%;
 position: relative;
     left: 388px;
-    bottom: 130px;
+    bottom: 139px;
 }
 #city{
   display: flex;
@@ -836,11 +842,11 @@ border: 1px solid #C1C1C1;
 background: #FFF;
 position: relative;
     left: 388px;
-    bottom: 124px;
+    bottom: 135px;
 }
 #city ::placeholder{
   color: #A9A9A9;
-font-family: Lato;
+font-family: 'Lato',sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -848,7 +854,7 @@ line-height: 147.5%;
 }
 .message{
   color: #181818;
-font-family: Lato;
+font-family:'Lato',sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -870,7 +876,7 @@ bottom: 90px;
 }
 #message ::placeholder{
   color: #A9A9A9;
-font-family: Lato;
+font-family: 'Lato',sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -890,11 +896,11 @@ bottom: 60px;
 }
 .send p{
   color: #FFF;
-font-family: Lato;
+font-family: 'Lato',sans-serif;
 font-size: 18px;
 font-style: normal;
 font-weight: 600;
 line-height: 160%;
 position: relative;
-bottom: 20px;
+bottom: 3px;
 }

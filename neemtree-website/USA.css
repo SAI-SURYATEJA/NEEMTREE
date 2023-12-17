@@ -62,7 +62,7 @@ bottom: 280px;
     flex-direction:column;
     justify-content:center;
     position: relative;
-    bottom: 220px;
+    bottom: 165px;
 }
 .heading1{
     color: #1C1C1C;
@@ -92,6 +92,7 @@ left: 40px;
     height:373px;
     position: relative;
     top: 29px;
+    right: 3rem;
 }
 
 .heading2{
@@ -336,8 +337,8 @@ bottom: 110px;
     width: 547px;
     height: 262px;
     position: relative;
-    right: 115px;
-    bottom: 136px;
+    bottom: 406px;
+    left: 464px;
 }
 .stusa{
     color: #FFF;
@@ -348,7 +349,8 @@ font-style: normal;
 font-weight: 600;
 line-height: 116%;
 position: relative;
-bottom: 280px;
+bottom: 523px;
+    left: 217px;
 }
 .container2{
     width:100vw;
@@ -359,13 +361,13 @@ bottom: 280px;
     align-items:center;
 }
 .container3{
-    width:100vw;
+    width: 84.5vw;
     height:963px;
     display:flex;
     flex-direction:column;
     justify-content:center;
     position: relative;
-    bottom: 220px;
+    bottom: 390px;
 }
 .heading1{
     color: #1C1C1C;
@@ -428,7 +430,7 @@ left: 40px;
     flex-direction:column;
     flex-wrap:wrap;
     position: relative;
-    bottom: 70px;
+    bottom: 270px;
     left: 5px;
 }
 .heading3{
@@ -540,6 +542,8 @@ margin:0px;
   align-items:center;
   background-color: #FFFFFF;
   flex-direction: column;
+  position: relative;
+    bottom: 237px;
 }
 .consultation img{
   width: 1200px;
@@ -663,7 +667,7 @@ bottom: 17.5rem;
     flex-direction:column;
     justify-content:center;
     position: relative;
-    bottom: 13.75rem;
+    bottom: 8.75rem;
 }
 .heading1{
     color: #1C1C1C;
@@ -912,39 +916,41 @@ bottom: 7.875rem;
     align-items:center;
 }
 .container1 img{
-    width:59rem;
+    width: 45rem;
     height:21.938rem;
     position: relative;
     top:4.688rem;
 }
 
 .background{
-    width: 35.875rem;
-    height: 17.625rem;
+    width: 26.875rem;
+    height: 13.625rem;
     background-color:white;
     position: relative;
-    left: 28.125rem;
-    bottom: 8.813rem;
+    left: 12.125rem;
+    bottom: 7.813rem;
   border-radius: 8.063rem;
 }
 
 .usa{
-    width: 34.188rem;
-    height: 16.375rem;
+    width: 24.088rem;
+    height: 11.075rem;
     position: relative;
-    right: 7.188rem;
-    bottom: 8.5rem;
+    left: 13.5rem;
+    bottom: 20.3rem;
+    opacity: 0.8;
 }
 .stusa{
     color: #FFF;
 text-align: center;
 font-family: "Poppins", sans-serif;
-font-size: 3.125rem;
+font-size: 2.38rem;
 font-style: normal;
-font-weight: 600;
+font-weight: 500;
 line-height: 116%;
 position: relative;
-bottom: 17.5rem;
+bottom: 26.5rem;
+left:0rem;
 }
 .container2{
     width:100vw;
@@ -961,7 +967,7 @@ bottom: 17.5rem;
     flex-direction:column;
     justify-content:center;
     position: relative;
-    bottom: 13.75rem;
+    bottom: 21.75rem;
 }
 .heading1{
     color: #1C1C1C;
@@ -971,7 +977,7 @@ font-style: normal;
 font-weight: 600;
 line-height: 116%;
 position: relative;
-left: 2.5rem;
+left: 6.5rem;
 }
 .content1{
     color: #595566;
@@ -984,13 +990,14 @@ width:46.438rem;
 height:10.5rem;
 position: relative;
 top: 1.25rem;
-left: 2.5rem;
+left: 6.5rem;
 }
 .content{
-    width:59rem;
-    height:23.313rem;
+    height: 19.313rem;
     position: relative;
     top: 1.813rem;
+    width: 47rem;
+    left: 5.5rem;
 }
 
 .heading2{
@@ -1000,7 +1007,7 @@ font-size: 1.875rem;
 font-style: normal;
 font-weight: 600;
 line-height: 116%;
-left: 2.5rem;
+left: 6.5rem;
 position: relative;
 top: 2.438rem;
 }
@@ -1015,7 +1022,7 @@ width:47.688rem;
 height:10.5rem;
 position: relative;
 top: 2.875rem;
-left: 2.5rem;
+left: 6.5rem;
 }
 .container4{
     width:55rem;
@@ -1024,7 +1031,7 @@ left: 2.5rem;
     flex-direction:column;
     flex-wrap:wrap;
     position: relative;
-    bottom: 4.375rem;
+    bottom: 12.375rem;
     left: 0.313rem;
 }
 .heading3{
@@ -1034,10 +1041,14 @@ font-size: 1.875rem;
 font-style: normal;
 font-weight: 600;
 line-height: 116%;
+position: relative;
+left: 4.2rem;
 }
 .tick{
     width:1.188rem;
     height:1.188rem;
+    position: relative;
+    bottom: 0.24rem;
 }
 ul{
     width:34.918rem;
@@ -1046,7 +1057,7 @@ ul{
     flex-direction:column;
     list-style: none;
     position: relative;
-    right: 8.9rem;
+    right: 4.9rem;
     top: 5.938rem;
 }
 .fact1{
@@ -1057,7 +1068,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 116%;
 position: relative;
-bottom: 1.438rem;
+bottom: 1.738rem;
 left: 1.875rem;
 margin: 0rem;
 }
@@ -1069,7 +1080,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 116%;
 position: relative;
-bottom: 1.438rem;
+bottom: 1.738rem;
 left: 1.875rem;
 margin:0px;
 }
@@ -1081,7 +1092,7 @@ margin:0px;
   font-weight: 400;
   line-height: 116%;
   position: relative;
-  bottom: 1.438rem;
+  bottom: 1.738rem;
   left: 1.875rem;
   margin: 0rem;
   }
@@ -1093,7 +1104,7 @@ margin:0px;
   font-weight: 400;
   line-height: 116%;
   position: relative;
-  bottom: 1.438rem;
+  bottom: 1.738rem;
   left: 1.875rem;
   margin: 0rem;
   }
@@ -1105,7 +1116,7 @@ margin:0px;
   font-weight: 400;
   line-height: 116%;
   position: relative;
-  bottom: 1.438rem;
+  bottom: 1.738rem;
   left: 1.875rem;
   margin: 0rem;
   }
@@ -1117,16 +1128,16 @@ margin:0px;
   font-weight: 400;
   line-height: 116%;
   position: relative;
-  bottom: 1.438rem;
+  bottom: 1.738rem;
   left: 1.875rem;
   margin: 0rem;
   }
-.lapboy{
-    width: 32.188rem;
-    height: 48.313rem;
-    position: relative; 
-    top: 1.875rem;
-    right: 15.313rem;
+  .lapboy{
+  width: 24.688rem;
+  height: 21.313rem;
+  position: relative;
+  top: 3.875rem;
+  right: 15.313rem;
 }
 .consultation{
     width:100vw;
@@ -1136,36 +1147,39 @@ margin:0px;
     align-items:center;
     background-color: #FFFFFF;
     flex-direction: column;
-    top: 3.125rem;
     position: relative;
-}
-.consultation img{
-    width: 75rem;
-    height: 15.75rem;
+    bottom: 13rem;
+  }
+.consultation img {
+    width: 49rem;
+    height: 12.75rem;
+    position: relative;
+    top: 8.375rem;
 }
 .consultation .caption{
     color: white;
-    font-family: "Lato", sans-serif;
-font-size: 1rem;
+    font-family: "Lato",sans-serif;
+font-size: 0.8rem;
 font-style: normal;
 font-weight: 400;
 line-height: 147.5%;
 position: relative;
-bottom: 13.938rem;
+bottom: 2.5rem;
+ right: 7.1rem;
 }
 .consultation h2{
     color: white;
-    font-family: "Poppins", sans-serif;
-font-size: 2.188rem;
+    font-family: "Poppins",sans-serif;
+font-size: 1.528rem;
 font-style: normal;
 font-weight: 600;
 line-height: 116%;
 position: relative;
-bottom: 12.5rem;
+bottom: 2rem;
 right: 7.813rem;
 }
 .consultation strong{
-    font-family: "Lato", sans-serif;
+    font-family: "Lato",sans-serif;
 font-size: 1rem;
 font-style: normal;
 font-weight: 700;
@@ -1173,20 +1187,639 @@ line-height: 147.5%;
 color:#FFFFFF;
 }
 .consultation button{
-    width: 15.75rem;
+    width: 9.5rem;
     height: 3.875rem;
     background-color: #FBC336;
     border-radius:  2.625rem;
     border:none;
     color:black;
-    font-family: "Lato", sans-serif;
+    font-family: "Lato",sans-serif;
     font-size: 1.25rem;
 font-style: normal;
-font-weight: 400;
+font-weight: 500;
 line-height: 160%; 
 text-align: center;
 position: relative;
-    left: 2.813rem;
-    bottom: 1.25rem;
+left: 10.313rem;
+bottom: 7.575rem;
 }
+.consultation button:hover{
+    background-color: #4EAF4E;
+    color: white;
+    transition: 0.3s;
+    width:10.125rem;
+    height:4.5rem;
+    font-size: 1.563rem;
+    font-weight: 500;
+}
+}
+@media (min-width:514px) and (max-width:614px){
+    .container1{
+        width:100vw;
+        height:30.75rem;
+        background-color:rgba(251, 195, 54, 0.11);
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .container1 img{
+        width: 45rem;
+        height:21.938rem;
+        position: relative;
+        top:4.688rem;
+    }
+    
+    .background{
+        width: 26.875rem;
+        height: 13.625rem;
+        background-color:white;
+        position: relative;
+        left: 12.125rem;
+        bottom: 7.813rem;
+      border-radius: 8.063rem;
+    }
+    
+    .usa{
+        width: 24.088rem;
+        height: 11.075rem;
+        position: relative;
+        left: -13.8rem;
+        bottom: 7.8rem;
+        opacity: 0.8;
+    }
+    .stusa{
+        color: #FFF;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.38rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 116%;
+    position: relative;
+    bottom: 15.5rem;
+    right: 5rem;
+    opacity: 0.8;
+    }
+    .container2{
+        width:100vw;
+        height:102.875rem;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+    .container3{
+        width:59rem;
+        height:60.188rem;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        position: relative;
+        bottom: 10.75rem;
+    }
+    .heading1{
+        color: #1C1C1C;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 116%;
+    position: relative;
+    left: 6.5rem;
+    }
+    .content1{
+        color: #595566;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 147.5%;
+    width:46.438rem;
+    height:10.5rem;
+    position: relative;
+    top: 1.25rem;
+    left: 6.5rem;
+    }
+    .content{
+        height: 19.313rem;
+        position: relative;
+        top: 1.813rem;
+        width: 47rem;
+        left: 5.5rem;
+    }
+    
+    .heading2{
+        color: #1C1C1C;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 116%;
+    left: 6.5rem;
+    position: relative;
+    top: 2.438rem;
+    }
+    .content2{
+        color: #595566;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 147.5%;
+    width:47.688rem;
+    height:10.5rem;
+    position: relative;
+    top: 2.875rem;
+    left: 6.5rem;
+    }
+    .container4{
+        width:55rem;
+        height:26.495rem;
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        position: relative;
+        bottom: 5.375rem;
+        left: 0.313rem;
+    }
+    .heading3{
+        color: #1C1C1C;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 116%;
+    position: relative;
+    left: 4.2rem;
+    }
+    .tick{
+        width:1.188rem;
+        height:1.188rem;
+        position: relative;
+        bottom: 0.24rem;
+    }
+    ul{
+        width:34.918rem;
+        height:213.402rem;
+        display:flex;
+        flex-direction:column;
+        list-style: none;
+        position: relative;
+        right: 4.9rem;
+        top: 5.938rem;
+    }
+    .fact1{
+        color: #595566;
+    font-family: "Lato", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 116%;
+    position: relative;
+    bottom: 1.738rem;
+    left: 1.875rem;
+    margin: 0rem;
+    }
+    .fact2{
+        color: #595566;
+    font-family: "Lato", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 116%;
+    position: relative;
+    bottom: 1.738rem;
+    left: 1.875rem;
+    margin:0px;
+    }
+    .fact3{
+      color: #595566;
+      font-family: "Lato", sans-serif;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 116%;
+      position: relative;
+      bottom: 1.738rem;
+      left: 1.875rem;
+      margin: 0rem;
+      }
+    .fact4{
+      color: #595566;
+      font-family: "Lato", sans-serif;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 116%;
+      position: relative;
+      bottom: 1.738rem;
+      left: 1.875rem;
+      margin: 0rem;
+      }
+    .fact5{
+      color: #595566;
+      font-family: "Lato", sans-serif;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 116%;
+      position: relative;
+      bottom: 1.738rem;
+      left: 1.875rem;
+      margin: 0rem;
+      }
+    .fact6{
+      color: #595566;
+      font-family: "Lato", sans-serif;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 116%;
+      position: relative;
+      bottom: 1.738rem;
+      left: 1.875rem;
+      margin: 0rem;
+      }
+      .lapboy{
+      width: 24.688rem;
+      height: 21.313rem;
+      position: relative;
+      top: 3.875rem;
+      right: 15.313rem;
+    }
+    .consultation{
+        width:100vw;
+        height:25.625rem;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background-color: #FFFFFF;
+        flex-direction: column;
+        position: relative;
+        bottom: 6rem;
+      }
+    .consultation img {
+        width: 49rem;
+        height: 12.75rem;
+        position: relative;
+        top: 8.375rem;
+    }
+    .consultation .caption{
+        color: white;
+        font-family: "Lato",sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 147.5%;
+    position: relative;
+    bottom: 2.5rem;
+     right: 7.1rem;
+    }
+    .consultation h2{
+        color: white;
+        font-family: "Poppins",sans-serif;
+    font-size: 1.528rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 116%;
+    position: relative;
+    bottom: 2rem;
+    right: 7.813rem;
+    }
+    .consultation strong{
+        font-family: "Lato",sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 147.5%;
+    color:#FFFFFF;
+    }
+    .consultation button{
+        width: 9.5rem;
+        height: 3.875rem;
+        background-color: #FBC336;
+        border-radius:  2.625rem;
+        border:none;
+        color:black;
+        font-family: "Lato",sans-serif;
+        font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; 
+    text-align: center;
+    position: relative;
+    left: 10.313rem;
+    bottom: 7.575rem;
+    }
+    .consultation button:hover{
+        background-color: #4EAF4E;
+        color: white;
+        transition: 0.3s;
+        width:10.125rem;
+        height:4.5rem;
+        font-size: 1.563rem;
+        font-weight: 500;
+    }
+}
+@media (min-width:616px) and (max-width:704px){
+    .container1{
+        width:100vw;
+        height:30.75rem;
+        background-color:rgba(251, 195, 54, 0.11);
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .container1 img{
+        width:59rem;
+        height:21.938rem;
+        position: relative;
+        top:4.688rem;
+    }
+    
+    .background{
+        width: 35.875rem;
+        height: 17.625rem;
+        background-color:white;
+        position: relative;
+        left: 28.125rem;
+        bottom: 8.813rem;
+      border-radius: 8.063rem;
+    }
+    
+    .usa{
+        width: 34.188rem;
+        height: 16.375rem;
+        position: relative;
+        left: 28.788rem;
+        bottom: 25rem;
+    }
+    .stusa{
+        color: #FFF;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 116%;
+    position: relative;
+    bottom: 32.5rem;
+    left:11rem;
+    }
+    .container2{
+        width:100vw;
+        height:102.875rem;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+    .container3{
+        width:59rem;
+        height:60.188rem;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        position: relative;
+        bottom: 24.75rem;
+    }
+    .heading1{
+        color: #1C1C1C;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 116%;
+    position: relative;
+    left: 2.5rem;
+    }
+    .content1{
+        color: #595566;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 147.5%;
+    width:46.438rem;
+    height:10.5rem;
+    position: relative;
+    top: 1.25rem;
+    left: 2.5rem;
+    }
+    .content{
+        width:59rem;
+        height:23.313rem;
+        position: relative;
+        top: 1.813rem;
+    }
+    
+    .heading2{
+        color: #1C1C1C;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 116%;
+    left: 2.5rem;
+    position: relative;
+    top: 2.438rem;
+    }
+    .content2{
+        color: #595566;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 147.5%;
+    width:47.688rem;
+    height:10.5rem;
+    position: relative;
+    top: 2.875rem;
+    left: 2.5rem;
+    }
+    .container4{
+        width:55rem;
+        height:26.495rem;
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        position: relative;
+        bottom: 17.375rem;
+        left: 0.313rem;
+    }
+    .heading3{
+        color: #1C1C1C;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 116%;
+    }
+    .tick{
+        width:1.188rem;
+        height:1.188rem;
+    }
+    ul{
+        width:34.918rem;
+        height:213.402rem;
+        display:flex;
+        flex-direction:column;
+        list-style: none;
+        position: relative;
+        right: 8.9rem;
+        top: 5.938rem;
+    }
+    .fact1{
+        color: #595566;
+    font-family: "Lato", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 116%;
+    position: relative;
+    bottom: 1.438rem;
+    left: 1.875rem;
+    margin: 0rem;
+    }
+    .fact2{
+        color: #595566;
+    font-family: "Lato", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 116%;
+    position: relative;
+    bottom: 1.438rem;
+    left: 1.875rem;
+    margin:0px;
+    }
+    .fact3{
+      color: #595566;
+      font-family: "Lato", sans-serif;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 116%;
+      position: relative;
+      bottom: 1.438rem;
+      left: 1.875rem;
+      margin: 0rem;
+      }
+    .fact4{
+      color: #595566;
+      font-family: "Lato", sans-serif;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 116%;
+      position: relative;
+      bottom: 1.438rem;
+      left: 1.875rem;
+      margin: 0rem;
+      }
+    .fact5{
+      color: #595566;
+      font-family: "Lato", sans-serif;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 116%;
+      position: relative;
+      bottom: 1.438rem;
+      left: 1.875rem;
+      margin: 0rem;
+      }
+    .fact6{
+      color: #595566;
+      font-family: "Lato", sans-serif;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 116%;
+      position: relative;
+      bottom: 1.438rem;
+      left: 1.875rem;
+      margin: 0rem;
+      }
+    .lapboy{
+        width: 32.188rem;
+        height: 48.313rem;
+        position: relative; 
+        top: 1.875rem;
+        right: 15.313rem;
+    }
+    .consultation{
+      width:100vw;
+      height:25.625rem;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background-color: #FFFFFF;
+      flex-direction: column;
+      position: relative;
+      bottom: 15rem;
+  
+    }
+    .consultation img{
+      width: 75rem;
+      height: 15.75rem;
+      position: relative;
+      top: 8.375rem;
+    }
+    .consultation .caption{
+      color: white;
+      font-family: "Lato",sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 147.5%;
+    position: relative;
+    bottom: 3.5rem;
+    right: 7.75rem;
+    }
+    .consultation h2{
+      color: white;
+      font-family: "Poppins",sans-serif;
+    font-size: 2.188rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 116%;
+    position: relative;
+    bottom: 3.5rem;
+    right: 7.813rem;
+    }
+    .consultation strong{
+      font-family: "Lato",sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 147.5%;
+    color:#FFFFFF;
+    }
+    .consultation button{
+      width: 9.5rem;
+      height: 3.875rem;
+      background-color: #FBC336;
+      border-radius:  2.625rem;
+      border:none;
+      color:black;
+      font-family: "Lato",sans-serif;
+      font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; 
+    text-align: center;
+    position: relative;
+    left: 11.313rem;
+    bottom: 7.875rem;
+    }
+    .consultation button:hover{
+      background-color: #4EAF4E;
+      color: white;
+      transition: 0.3s;
+      width:10.125rem;
+      height:4.5rem;
+      font-size: 1.563rem;
+      font-weight: 500;
+    }
 }
