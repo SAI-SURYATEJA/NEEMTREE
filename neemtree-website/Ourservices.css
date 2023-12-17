@@ -67,7 +67,7 @@ position: relative;
 }
 .container3 h2{
     color: #181818;
-font-family: Poppins;
+font-family: "Poppins",sans-serif;
 font-size: 40px;
 font-style: normal;
 font-weight: 600;
@@ -78,7 +78,7 @@ left:152px;
 
 .container3 p{
  color: #595566;
-font-family: Lato;
+font-family: "Lato",sans-serif;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
@@ -101,14 +101,14 @@ line-break: auto;
 .container4{
     width: 100vw;
     height:420px;
-    background-color: white;
+    background-color:white;
     display: flex;
     flex-wrap: wrap;
-    position: relative;
+    
 }
 .container4 h2{
     color: #181818;
-font-family: Poppins;
+font-family: "Poppins",sans-serif;
 font-size: 40px;
 font-style: normal;
 font-weight: 600;
@@ -119,7 +119,7 @@ left: 818px;
 
 .container4 p{
  color: #595566;
-font-family: Lato;
+font-family:"Lato",sans-serif;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
@@ -135,9 +135,9 @@ line-height: 147.5%;
     width:566.2px;
     height:351px;
     position:relative;
-    float:left;
-    left: 152px;
+    float:left !important;
     bottom: 177px;
+    left: 153px;
 }
 .container5{
     width: 100vw;
@@ -172,7 +172,7 @@ position: relative;
 left:128px;
 line-height: 147.5%;
 line-break: auto;
-bottom: 30px;
+bottom: 5px;
 
 }
 .core{
@@ -180,8 +180,8 @@ bottom: 30px;
     height:351px;
     position:relative;
     float:right;
-    top:20px;
-    right: 298px;
+    top: 20px;
+    left: 226px;
 }
 .container5 strong{
 color:#595566;
@@ -193,32 +193,35 @@ bottom: 4px;
     width:19.69px;
     height:19.69px;
     margin-right: 18px;
+    position: relative;
+    bottom: 6px;
 }
-ul{list-style-type: none;
+ul{
+  list-style-type: none;
     width: 500px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 19px;
     position: relative;
-    top: 185px;
-    right: 460px;
+    right: 332px;
+    top: 138px;
 }
 
 li{
        color: black;
-    font-family: Lato;
+    font-family: "Lato",sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 100;
     line-height: 116%;
 }
 .subcontent{
-    color: black;
-    font-family: Lato;
+    color:  #595566;
+    font-family: "Lato",sans-serif;
     font-size: 18px;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 390;
     line-height: 116%;
     position: relative;
     bottom: 25px;
@@ -227,11 +230,11 @@ li{
     width: 400px;
 }
 .subcontent2{
-    color: black;
-    font-family: Lato;
+    color: #595566;
+    font-family: "Lato",sans-serif;
     font-size: 18px;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 390;
     line-height: 116%;
     position: relative;
     bottom: 25px;
@@ -240,11 +243,11 @@ li{
     width: 450px;
 }
 .subcontent3{
-    color: black;
-    font-family: Lato;
+    color: #595566;
+    font-family: "Lato",sans-serif;
     font-size: 18px;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 390;
     line-height: 116%;
     position: relative;
     bottom: 25px;
@@ -255,7 +258,7 @@ li{
 .container7 {
     background: #FAFFFB;
     width: 100vw;
-    height: 70vh;
+    height: 85vh;
     font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
@@ -378,7 +381,7 @@ top: 70px;
     width:1440px;
     height: 668px;
     position: relative;
-    top: 50px;
+    bottom: 17px;
   }
   .contact-heading{
     color: #181818;
@@ -390,7 +393,7 @@ font-weight: 600;
 line-height: 116%;
 position: relative;
     left: 10px;
-    top: 70px;
+    top: 50px;
   }
   .container10{
     display:flex;
@@ -421,7 +424,7 @@ background-color: #181818;
   }
   .card-content1 .add{
     color: #FFFFFF;
-    font-family: Cabin;
+    font-family: "Cabin",sans-serif;
 font-size: 25px;
 font-style: normal;
 font-weight: 600;
@@ -432,13 +435,13 @@ left: 48px;
 }
 .card-content1 p{
     color: #FFFFFF;
-    font-family: Lato;
+    font-family: "Lato",sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 147.5%;
 position: relative;
-    bottom: 85px;
+    bottom: 53px;
     width: 293px;
 }
  .icon1{
@@ -449,17 +452,17 @@ position: relative;
     width:38px;
     height: 38px;
     position: relative;
-    bottom: 50.2px;
+    bottom: 21.2px;
  }
  .map1{
     width:327px;
     height: 245px;
     position: relative;
-    bottom: 88px;
+    bottom: 48px;
  }
  .no1{
     position: relative;
-    bottom: 98px;
+    bottom: 75px;
     color: white;
     left: 48px;
  }
@@ -498,7 +501,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 147.5%;
 position: relative;
-    bottom: 85px;
+    bottom: 53px;
     width: 293px;
 }
   .icon3{
@@ -509,17 +512,17 @@ position: relative;
     width:38px;
     height: 38px;
     position: relative;
-    bottom: 70.2px;
+    bottom: 45px;
  }
  .map2{
     width:327px;
     height: 245px;
     position: relative;
-    bottom: 110px;
+    bottom: 73px;
  }
  .no2{
     position: relative;
-    bottom: 118px;
+    bottom: 98px;
     color: white;
     left: 48px;
  }
@@ -541,7 +544,7 @@ background-color: #181818;
   }
   .card-content3 .add{
     color: #FFFFFF;
-    font-family: Cabin;
+    font-family: "Cabin",sans-serif;
 font-size: 25px;
 font-style: normal;
 font-weight: 600;
@@ -552,13 +555,13 @@ position: relative;
 }
 .card-content3 p{
     color: #FFFFFF;
-    font-family: Lato;
+    font-family: "Lato",sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 147.5%;
 position: relative;
-    bottom: 85px;
+    bottom: 53px;
     width: 293px;
 }
   .icon5{
@@ -569,17 +572,17 @@ position: relative;
     width:38px;
     height: 38px;
     position: relative;
-    bottom: 50.2px;
+    bottom: 21.2px;
  }
  .map3{
     width:327px;
     height: 245px;
     position: relative;
-    bottom: 88px;
+    bottom: 48px;
  }
     .no3{
         position: relative;
-        bottom: 98px;
+        bottom: 75px;
         color: white;
         left: 48px;
     }
@@ -594,7 +597,7 @@ position: relative;
     flex-wrap: wrap;
     position:relative;
     left: 652px;
-    top: 100px;
+    top: 56px;
 }
 .container9 p{
     color:white;
