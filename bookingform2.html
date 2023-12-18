@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Booking Form</title>
-    <link rel="stylesheet" href="./bookingform1.css">
+    <link rel="stylesheet" href="./bookingform2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Lato:wght@100;300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap" rel="stylesheet">
@@ -14,15 +14,19 @@
         <img src="./bookingform.assets/consultation-form.png" alt="booking form" class="form-background"/>
         <h2>Book Free Consultation</h2>
         <div class="form-content">
-            <p>(*)Refers to mandatory</p>
-            <label class="name">Name *</label>
-            <input type="text" id="fname" name="fname" required />
-            <label class="email">Email id</label>
-            <input type="text" id="email" name="email"/>
-            <label class="phone">Phone number *</label>
-            <input type="text" id="phone" name="phone"  required />
-            <label class="city">City/Town/Locality</label>
-            <input type="text" id="city" name="city" />
+            <p>Preferred Countries(Multiple Checks)</p>
+            <label class="USA">USA</label>
+            <input type="checkbox" class="usa" />
+            <label class="UK">UK</label>
+            <input type="checkbox" class="uk" />
+            <label class="CANADA">CANADA</label>
+            <input type="checkbox" class="canada" />
+            <label class="AUSTRALIA">AUSTRALIA</label>
+            <input type="checkbox"  class="australia"/>
+            <label class="Others">Others</label>
+            <input type="checkbox"  class="others"/>
+            <label class="No-preference">No preference</label>
+            <input type="checkbox"  class="no-preference"/>
             <button id="next" class="next">NEXT</button>
         </div>
         </div>
