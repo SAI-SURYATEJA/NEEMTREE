@@ -1,155 +1,363 @@
 <!DOCTYPE html>
-<html lang="en" >
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width= device-width, initial-scale=1.0">
-        <title>About</title>
-        <link rel="stylesheet" href="./about.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Lato:wght@100;300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <link rel="stylesheet" href="./about.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Lato:wght@100;300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script defer src="main.js"></script>
+
+</head>
+
+<body>
+  <header class="primary-header">
+    <a href="index.html"><img src="assets/NT_logo.svg" class="logo"></a>
+    <nav class="primary-navigation">
+      <ul role="list" class="nav-list" data-visible="false">
+        <li>
+          <a href="./Ourservices.html" class="navbar-link">About Us</a>
+        </li>
+        <li>
+          <div class="dropdown">
+
+            <div class="drop"><a href="#" class="destinations">Study Destinations <img src="assets/droparrow.svg"
+                  alt=""></a></div>
+
+
+            <div class="dropdown-content">
+              <a href="#">USA</a>
+              <a href="#">UK</a>
+              <a href="#">Canada</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="dropdown">
+            <div class="drop"><a href="#" class="destinations">Test Preparation <img src="assets/droparrow.svg"
+                  alt=""></a></div>
+
+            <div class="dropdown-content">
+              <a href="#">IELTS</a>
+              <a href="#">TOEFL</a>
+              <a href="#">GRE</a>
+              <a href="#">GMAT</a>
+              <a href="#">SAT</a>
+              <a href="#">PTE</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <a href="about.html" class="navbar-link">Services</a>
+        </li>
+
+        <li>
+          <a href="#" class="navbar-link">Contact Us</a>
+        </li>
+        <li> <button class="booking">Book Free Consultancy</button></li>
+      </ul>
+
+    </nav>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
+  </header>
+
+  <main>
+    <div class="container1">
+      <img src="./about.assets/globe.svg" alt="firstphoto" />
+    </div>
+
+    <div class="container2">
+      <div class="align-heading">
+        <div>
+          <p class="banner-green">GET IN TOUCH</p>
+          <h2 class="title">
+            Our Service
+          </h2>
+        </div>
+      </div>
+      <p>NEEMTREE provides specialized tools that offer detailed, step-by-step guidance throughout the entire study
+        abroad journey. Our platform also offers comprehensive, personalized one-on-one counseling to assist students in
+        planning their international education path, ranging from selecting the right educational institution to
+        providing support once they arrive.
+        Furthermore, NEEMTREE offers:</p>
+      <img src="./about.assets/about1.png" alt="2ndphoto" class="discuss" />
+    </div>
+    <div class="container3 Green-cont">
+      <div class="MISSION">
+        <h1 class="title">Test Preparation</h1>
+        <p class="matter3">
+          The initial step towards studying abroad involves obtaining a certification from an accredited testing agency
+          to demonstrate proficiency in the English language. To ensure students achieve the required scores, we provide
+          tailored preparation courses for IELTS, TOEFL, and PTE. These courses utilize practical, authentic materials
+          to enhance language skills. Our approach includes personalized attention to address individual needs.
+          Additionally, students gain access to online exam preparation resources, including engaging challenge games
+          designed to improve vocabulary, grammar, and sentence structures beyond traditional classroom learning.
+        </p>
+      </div>
+      <img src="./about.assets/subtopic1.png" class="AU" alt="sub1" />
+    </div>
+    <div class="container4">
+      <img src="./about.assets/subtopic2.png" class="SUB" alt="sub2" />
+      <div class="VISION">
+        <h1 class="title">Expert Counselling</h1>
+        <p class="matter3">
+          We provide personalized guidance to help you choose the optimal career path for your promising future,
+          considering your individual background and the current professional landscape. Our services include in-depth
+          one-on-one counseling to help you pick the right university course that aligns with your profile, financial
+          constraints, long-term aspirations, and areas of interest. Additionally, we offer students valuable insights
+          into the future potential of their chosen courses to support them in making informed decisions about their
+          career goals.
+        </p>
+      </div>
+
+    </div>
+    <div class="container3 Blue-cont">
+      <div class="MISSION">
+        <h1 class="title">Country Selection</h1>
+        <p class="matter3">
+          Country selection is a pivotal decision when planning to study abroad, as it shapes your academic journey and
+          future prospects. At our consultancy firm, we understand the significance of this choice and are dedicated to
+          helping you make the right decision. Our expert advisors meticulously evaluate your academic goals,
+          preferences, and career aspirations to guide you in selecting the perfect destination. We provide
+          comprehensive insights into various countries, their educational systems, and opportunities to ensure that
+          your study abroad experience aligns perfectly with your individual aspirations.
+        </p>
+      </div>
+      <img src="./about.assets/subtopic3.png" class="AU" alt="sub1" />
+    </div>
+    <div class="container4">
+      <img src="./about.assets/subtopic4.png" class="SUB" alt="sub2" />
+      <div class="VISION">
+        <h1 class="title">University Selection</h1>
+        <p class="matter3">
+          NEEMTREE's University Database boasts an extensive list of over 500 individuals hailing from various corners
+          of
+          the globe. Once the destination country is identified, NEEMTREE offers invaluable guidance to students in
+          their
+          selection of the ideal institution, considering factors such as the availability of preferred courses,
+          financial
+          capabilities, university admission prerequisites, and geographical preferences. NEEMTREE also equips students
+          with advance knowledge about university entry requirements, aiding them in refining their choices when it
+          comes
+          to selecting a university.
+        </p>
+      </div>
+
+    </div>
+    <div class="container3 Pink-cont">
+      <div class="MISSION">
+        <h1 class="title">Admission Formalities</h1>
+        <p class="matter3">
+          Accurate and precise information is imperative when completing the application form. The manner in which the
+          form is filled out is equally crucial. As a result, we meticulously review each student's application,
+          emphasizing the elements that contribute to a strong presentation. We offer valuable assistance with crafting
+          Statements of Purpose and References to enhance the overall application. Our proactive approach includes
+          regular
+          communication with universities, which consistently yields prompt and positive responses.
+        </p>
+      </div>
+      <img src="./about.assets/subtopic5.png" class="AU" alt="sub1" />
+    </div>
+    <div class="container4">
+      <img src="./about.assets/subtopic6.png" class="SUB" alt="sub2" />
+      <div class="VISION">
+        <h1 class="title">Scholarship Guidance</h1>
+        <p class="matter3">
+          Scholarships represent a form of financial assistance designed to alleviate education-related expenses,
+          covering items such as tuition, fees, textbooks, and essential supplies, among other necessities. These
+          scholarships are made possible through generous contributions from private individuals, businesses,
+          foundations,
+          organizations, and government entities. Essentially, a scholarship constitutes a financial grant or support
+          provided to students to aid in funding their educational pursuits.
+        </p>
+      </div>
+
+    </div>
+    <div class="container3 Yellow-cont">
+      <div class="MISSION">
+        <h1 class="title">Financial Assistance</h1>
+        <p class="matter3">
+          Students have the option to secure loans for their undergraduate, graduate, or doctoral studies. Opting for a
+          bank education loan to finance your higher education represents a prudent choice. A compilation of
+          nationalized
+          banks offering loans with reasonable interest rates is accessible. Students gain comprehensive insights into
+          the
+          benefits of student loans. We offer comprehensive assistance throughout the entire process, encompassing
+          application procedures, document preparation, eligibility criteria, and guidance in selecting the most
+          suitable
+          bank.
+        </p>
+      </div>
+      <img src="./about.assets/subtopic7.png" class="AU" alt="sub1" />
+    </div>
+    <div class="container4">
+      <img src="./about.assets/subtopic8.png" class="SUB" alt="sub2" />
+      <div class="VISION">
+        <h1 class="title">Interview Preparation</h1>
+        <p class="matter3">
+          Some countries require interviews when applying for a student visa. We actively engage in conducting numerous
+          interviews and extend considerable support for interview preparation. Our commitment extends to aiding
+          students
+          in their independent research endeavors, assisting them in gathering information about colleges, programs,
+          destinations, and more. Our comprehensive approach ensures students are well-prepared in various aspects,
+          including honing effective communication skills, fostering personality development, and achieving success in
+          securing their student visas.
+        </p>
+      </div>
+
+    </div>
+    <div class="container3 Purple-cont">
+      <div class="MISSION">
+        <h1 class="title">Visa Assistance</h1>
+        <p class="matter3">
+          Visa assistance is a vital step in your study abroad journey, and we recognize its significance. Our
+          consultancy firm is dedicated to streamlining the often intricate visa application process for you. Our
+          experienced advisors will collaborate with you to ensure all required documentation is in order and that you
+          meet destination-specific requirements. Moreover, we offer expert guidance to help you excel in your visa
+          interview, and we facilitate essential slot booking. Our aim is to make the visa process seamless, ensuring
+          you
+          navigate administrative intricacies confidently and secure your study abroad dream.
+        </p>
+      </div>
+      <img src="./about.assets/subtopic9.png" class="AU" alt="sub1" />
+    </div>
+    <div class="container4">
+      <img src="./about.assets/subtopic10.png" class="SUB" alt="sub2" />
+      <div class="VISION">
+        <h1 class="title">Forex Assistance</h1>
+        <p class="matter3">
+          We help students obtain foreign cash from our office in order to provide quick service. We provide hassle-free
+          internal TT services so that both students and their parents can save time. Students can trace their payments
+          with the help of a regular update of payments. We offer a very affordable service for providing foreign
+          travelers with cards, checks, money orders, or cash from practically all major nations.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="container3 Skin-cont">
+      <div class="MISSION">
+        <h1 class="title">Air Ticket</h1>
+        <p class="matter3">
+          We assist students in their quest for cost-effective airfare options. Our proactive approach involves securing
+          flight reservations well in advance to ensure optimal departure dates, routes, and competitive deals. When it
+          comes to booking domestic and international flights, NEEMTREE consistently provides the most competitive
+          pricing, offering rates that are unparalleled. This is made possible through our strategic use of substantial
+          fare credits, guaranteeing you the most favorable rates available.
+        </p>
+      </div>
+      <img src="./about.assets/subtopic11.png" class="AU" alt="sub1" />
+    </div>
+    <div class="container4">
+      <img src="./about.assets/subtopic12.png" class="SUB" alt="sub2" />
+      <div class="VISION">
+        <h1 class="title">Travel Insurance</h1>
+        <p class="matter3">
+          Opting for travel insurance is the most secure way to ensure a worry-free and safe travel experience, even in
+          the face of unforeseen circumstances. This coverage encompasses essential expenses such as medical bills,
+          evacuation, and repatriation if the need arises. Our trusted travel insurance partner offers in-house
+          services,
+          available 24/7, ensuring you have reliable support at all times. What sets our insurance provider apart is
+          their
+          impressive track record of a high claim ratio, further enhancing your peace of mind during your travels.
+        </p>
+      </div>
+
+    </div>
+    <section class="help-section">
+      <div class="containerform">
+        <div class="right-columns">
+          <h2>Book Free Consultation</h2>
+          <p>Build stronger Customer Relationship with <strong>Consultalk</strong></p>
+        </div>
+        <div class="left-columns">  <button type="submit" class="btn btn-primary btn-block">Book now</button></div>
+        
+      </div>
+    </section>
+    <footer class="footer-bg">
+
+    
+      <div class="row footer-row">
+        <div class="col-md-3 col-sm-6 agency-info">
+          <div class="agency-top">
+            <a href="home.html"><img src="assets/NT_logo.svg" class="nt-logo"></a>
+            <p class="agency-text">Some footer text about the Agency. Just a little description to help people understand you better.</p>
+          </div>
+          <div class="agency-down">
+            <ul role="list" class="media-layout">
+              <li><a aria-label="Facebook" href="#" class="media-icons"><i class="fa fa-facebook"></i></a></li>
+              <li><a aria-label="Twitter" href="#" class="media-icons"><i class="fa fa-twitter"></i></a></li>
+              <li><a aria-label="LinkedIn" href="#" class="media-icons"><i class="fa fa-linkedin"></i></a></li>
+              <li><a aria-label="Instagram" href="#" class="media-icons"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <p class="copy-text">Copyright 2023 NEEMTREE, All rights reserved.</p>
+          </div>
+        </div>
   
-    </head>
-    <body>
-      <header class="primary-header">
-        <a href="about.html"><img src="assets/NT_logo.svg" class="logo"></a>
-        <nav class="primary-navigation">
-          <ul role="list" class="nav-list">
-            <li>
-              <a href="#" class="navbar-link">About Us</a>
-            </li>
-            <li>
-              <div class="dropdown">
+        <div class="col-md-3 col-sm-6">
+          <nav class="footer-nav">
+            <h3 class="link-head">Quick Links</h3>
+            <ul aria-label="Footer" role="list" class="link-list">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Study Destinations</a></li>
+              <li><a href="#">Test Preparation</a></li>
+              <li><a href="#">What we provide</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Book free consultation</a></li>
+            </ul>
+          </nav>
+        </div>
+  
+        <div class="col-md-3 col-sm-6">
+          <nav class="footer-nav">
+            <h3 class="link-head">Study Destinations</h3>
+            <ul aria-label="Footer" role="list" class="link-list">
+              <li><a href="#">USA</a></li>
+              <li><a href="#">UK</a></li>
+              <li><a href="#">Canada</a></li>
+              <li><a href="#">Australia</a></li>
+              <li><a href="#">Rest of the world</a></li>
+            </ul>
+          </nav>
+        </div>
+  
+        <div class="col-md-3 col-sm-6">
+          <nav class="footer-nav">
+            <h3 class="link-head">Test Preparation</h3>
+            <ul aria-label="Footer" role="list" class="link-list">
+              <li><a href="#">IELTS</a></li>
+              <li><a href="#">TOEFL</a></li>
+              <li><a href="#">PTE</a></li>
+              <li><a href="#">GRE</a></li>
+              <li><a href="#">GMAT</a></li>
+              <li><a href="#">SAT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+  
     
-                <div class="drop"><a href="#" class="destinations">Study Destinations <img src="assets/droparrow.svg"
-                      alt=""></a></div>
-    
-    
-                <div class="dropdown-content">
-                  <a href="#">USA</a>
-                  <a href="#">UK</a>
-                  <a href="#">Canada</a>
-                  <a href="#">Australia</a>
-                  <a href="#">Rest of the World</a>
-                </div>
-              </div>
-            </li>
-    
-            <li>
-              <div class="dropdown">
-                <div class="drop"><a href="#" class="destinations">Test Preparation <img src="assets/droparrow.svg"
-                      alt=""></a></div>
-    
-                <div class="dropdown-content">
-                  <a href="#">IELTS</a>
-                  <a href="#">TOEFL</a>
-                  <a href="#">PTE</a>
-                  <a href="#">GRE</a>
-                  <a href="#">GMAT</a>
-                  <a href="#">SAT</a>
-                  
-                </div>
-              </div>
-            </li>
-    
-            <li>
-              <a href="#" class="navbar-link">Services</a>
-            </li>
-    
-            <li>
-              <a href="#" class="navbar-link">Contact Us</a>
-            </li>
-            <li> <button class="booking">Book Free Consultancy</button></li>
-          </ul>
-    
-        </nav>
-      </header>
-            <div class="container1">
-            <img src="./about.assets/globe.svg" alt="firstphoto" />
-            </div>
-            <div class="container2">
-                <div class="container3">
-                <p>WHAT WE PROVIDE</p>
-            </div>
-            <div class="container4">
-                <h2>Our Service</h2>
-                <p>NEEMTREE provides specialized tools that offer detailed, step-by-step guidance throughout the entire study abroad journey. Our platform also offers comprehensive, personalized one-on-one counseling to assist students in planning their international education path, ranging from selecting the right educational institution to providing support once they arrive.
-                     Furthermore, NEEMTREE offers:</p>
-                     <img src="./about.assets/about1.png" alt="2ndphoto" />
-               </div>
-            </div>
-            <div class="container5">
-                <h2>Test Preparation</h2>
-                <p>The initial step towards studying abroad involves obtaining a certification from an accredited testing agency to demonstrate proficiency in the English language. To ensure students achieve the required scores, we provide tailored preparation courses for IELTS, TOEFL, and PTE. These courses utilize practical, authentic materials to enhance language skills. Our approach includes personalized attention to address individual needs. Additionally, students gain access to online exam preparation resources, including engaging challenge games designed to improve vocabulary, grammar, and sentence structures beyond traditional classroom learning.</p>
-                <img src="./about.assets/subtopic1.png" alt="sub1" />
-                </div>
-                    <div class="container6">
-                        <h2>Expert Counselling</h2>
-                        <p>We provide personalized guidance to help you choose the optimal career path for your promising future, considering your individual background and the current professional landscape. Our services include in-depth one-on-one counseling to help you pick the right university course that aligns with your profile, financial constraints, long-term aspirations, and areas of interest. Additionally, we offer students valuable insights into the future potential of their chosen courses to support them in making informed decisions about their career goals.</p>
-                        <img src="./about.assets/subtopic2.png" alt="sub2" />
-                        </div>
-                        <div class="container7">
-                            <h2>Country Selection</h2>
-                            <p>Country selection is a pivotal decision when planning to study abroad, as it shapes your academic journey and future prospects. At our consultancy firm, we understand the significance of this choice and are dedicated to helping you make the right decision. Our expert advisors meticulously evaluate your academic goals, preferences, and career aspirations to guide you in selecting the perfect destination. We provide comprehensive insights into various countries, their educational systems, and opportunities to ensure that your study abroad experience aligns perfectly with your individual aspirations.</p>
-                            <img src="./about.assets/subtopic3.png" alt="sub3" />
-                            </div>
-                        <div class="container8">
-                            <h2>University Selection</h2>
-                            <p>NEEMTREE's University Database boasts an extensive list of over 500 individuals hailing from various corners of the globe. Once the destination country is identified, NEEMTREE offers invaluable guidance to students in their selection of the ideal institution, considering factors such as the availability of preferred courses, financial capabilities, university admission prerequisites, and geographical preferences. NEEMTREE also equips students with advance knowledge about university entry requirements, aiding them in refining their choices when it comes to selecting a university.</p>
-                            <img src="./about.assets/subtopic4.png" alt="sub4" />
-                            </div>
-                            <div class="container9">
-                                <h2>Admission Formalities</h2>
-                                <p>Accurate and precise information is imperative when completing the application form. The manner in which the form is filled out is equally crucial. As a result, we meticulously review each student's application, emphasizing the elements that contribute to a strong presentation. We offer valuable assistance with crafting Statements of Purpose and References to enhance the overall application. Our proactive approach includes regular communication with universities, which consistently yields prompt and positive responses.</p>
-                                <img src="./about.assets/subtopic5.png" alt="sub5" />
-                                </div>
-                                <div class="container10">
-                                    <h2>Scholarship Guidance</h2>
-                                    <p>Scholarships represent a form of financial assistance designed to alleviate education-related expenses, covering items such as tuition, fees, textbooks, and essential supplies, among other necessities. These scholarships are made possible through generous contributions from private individuals, businesses, foundations, organizations, and government entities. Essentially, a scholarship constitutes a financial grant or support provided to students to aid in funding their educational pursuits.</p>
-                                    <img src="./about.assets/subtopic6.png" alt="sub6" />
-                                    </div>
-                                    <div class="container11">
-                                        <h2>Financial Assistance</h2>
-                                        <p>Students have the option to secure loans for their undergraduate, graduate, or doctoral studies. Opting for a bank education loan to finance your higher education represents a prudent choice. A compilation of nationalized banks offering loans with reasonable interest rates is accessible. Students gain comprehensive insights into the benefits of student loans. We offer comprehensive assistance throughout the entire process, encompassing application procedures, document preparation, eligibility criteria, and guidance in selecting the most suitable bank.</p>
-                                        <img src="./about.assets/subtopic7.png" alt="sub7" />
-                                        </div>
-                                        <div class="container12">
-                                            <h2>Interview Preparation</h2>
-                                            <p>Some countries require interviews when applying for a student visa. We actively engage in conducting numerous interviews and extend considerable support for interview preparation. Our commitment extends to aiding students in their independent research endeavors, assisting them in gathering information about colleges, programs, destinations, and more. Our comprehensive approach ensures students are well-prepared in various aspects, including honing effective communication skills, fostering personality development, and achieving success in securing their student visas.</p>
-                                            <img src="./about.assets/subtopic8.png" alt="sub8" />
-                                            </div>
-                                            <div class="container13">
-                                                <h2>Visa Assistance</h2>
-                                                <p>Visa assistance is a vital step in your study abroad journey, and we recognize its significance. Our consultancy firm is dedicated to streamlining the often intricate visa application process for you. Our experienced advisors will collaborate with you to ensure all required documentation is in order and that you meet destination-specific requirements. Moreover, we offer expert guidance to help you excel in your visa interview, and we facilitate essential slot booking. Our aim is to make the visa process seamless, ensuring you navigate administrative intricacies confidently and secure your study abroad dream.</p>
-                                                <img src="./about.assets/subtopic9.png" alt="sub9" />
-                                                </div>
-                                                <div class="container14">
-                                                    <h2>Forex Assistance</h2>
-                                                    <p>We help students obtain foreign cash from our office in order to provide quick service. We provide hassle-free internal TT services so that both students and their parents can save time. Students can trace their payments with the help of a regular update of payments. We offer a very affordable service for providing foreign travelers with cards, checks, money orders, or cash from practically all major nations.</p>
-                                                    <img src="./about.assets/subtopic10.png" alt="sub10" />
-                                                    </div>
-                                                    <div class="container15">
-                                                        <h2>Air Ticket</h2>
-                                                        <p>We assist students in their quest for cost-effective airfare options. Our proactive approach involves securing flight reservations well in advance to ensure optimal departure dates, routes, and competitive deals. When it comes to booking domestic and international flights, NEEMTREE consistently provides the most competitive pricing, offering rates that are unparalleled. This is made possible through our strategic use of substantial fare credits, guaranteeing you the most favorable rates available.</p>
-                                                        <img src="./about.assets/subtopic11.png" alt="sub11" />
-                                                        </div>
-                                                        <div class="container16">
-                                                            <h2>Travel Insurance</h2>
-                                                            <p>Opting for travel insurance is the most secure way to ensure a worry-free and safe travel experience, even in the face of unforeseen circumstances. This coverage encompasses essential expenses such as medical bills, evacuation, and repatriation if the need arises. Our trusted travel insurance partner offers in-house services, available 24/7, ensuring you have reliable support at all times. What sets our insurance provider apart is their impressive track record of a high claim ratio, further enhancing your peace of mind during your travels.</p>
-                                                            <img src="./about.assets/subtopic12.png" alt="sub12" />
-                                                            </div>
-                     <div class="consultation">
-                        <img src="./about.assets/background1.png" alt="book" />
-                        <h2>Book Free Consultation</h2>
-                        <p class="caption">Build stronger Customer Relationship with <strong>Consultalk</strong>
-                            <button class="book">Book now</button>
-                        </div>
-                    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons." ></script>
-                    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/js"></script>
-    </body>
+  </footer>
+  </main>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons."></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/js"></script>
+</body>
+
 </html>

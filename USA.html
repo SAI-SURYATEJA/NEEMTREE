@@ -1,53 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>USA</title>
     <link rel="stylesheet" href="./USA.css" />
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Lato:wght@100;300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css"/>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Lato:wght@100;300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script defer src="main.js"></script>
 
 </head>
+
 <body>
-    <div class="container1">
-        <img src="./about.assets/globe.svg" alt="firstphoto" />
-        </div>
-            <img src="./USA.assets/Background.png" class= "background"alt="secondphoto" />
-            <img src="./USA.assets/usa.png" class="usa" alt="thirdphoto" />
+    <header class="primary-header">
+        <a href="index.html"><img src="assets/NT_logo.svg" class="logo"></a>
+        <nav class="primary-navigation">
+            <ul role="list" class="nav-list" data-visible="false">
+                <li>
+                    <a href="./Ourservices.html" class="navbar-link">About Us</a>
+                </li>
+                <li>
+                    <div class="dropdown">
+
+                        <div class="drop"><a href="#" class="destinations">Study Destinations <img
+                                    src="assets/droparrow.svg" alt=""></a></div>
+
+
+                        <div class="dropdown-content">
+                            <a href="./USA.html">USA</a>
+                            <a href="#">UK</a>
+                            <a href="#">Canada</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="dropdown">
+                        <div class="drop"><a href="#" class="destinations">Test Preparation <img
+                                    src="assets/droparrow.svg" alt=""></a></div>
+
+                        <div class="dropdown-content">
+                            <a href="#">IELTS</a>
+                            <a href="#">TOEFL</a>
+                            <a href="#">GRE</a>
+                            <a href="#">GMAT</a>
+                            <a href="#">SAT</a>
+                            <a href="#">PTE</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="about.html" class="navbar-link">Services</a>
+                </li>
+
+                <li>
+                    <a href="#" class="navbar-link">Contact Us</a>
+                </li>
+                <li> <button class="booking">Book Free Consultancy</button></li>
+            </ul>
+
+        </nav>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+    </header>
+    <main>
+        <div class="container1">
+            <img src="./USA.assets/usahomelogo.svg" class="background" alt="secondphoto" />
             <h2 class="stusa">Study in USA</h2>
-            <div class="container2">
-                <div class="container3">
-                    <h3 class="heading1">Why Study in USA ?</h3>
-                    <p class="content1">Studying in the USA offers an unparalleled opportunity to engage with one of the world's most esteemed higher education systems. It provides access to state-of-the-art technology and cutting-edge research, creating an immersive and collaborative learning experience. With a vast array of schools, diverse study disciplines, and niche qualifications not readily available elsewhere, the USA offers academic choices tailored to your career aspirations. What sets it apart is the flexibility of the education system, allowing you to apply to various programs aligned with your academic and professional goals. Graduating from the USA equips you with a global perspective and practical skills essential for the future.</p>
-                    <img src="./USA.assets/Content.png" class="content" />
-                    <h3 class="heading2">Career and Industry Insights</h3>
-                    <p class="content2">In the USA, a global economic powerhouse, diverse and promising career opportunities abound across multiple industries. Technology and IT fields continue to flourish, with Silicon Valley leading the charge in innovation. Healthcare and biotechnology sectors offer substantial growth, ensuring a demand for skilled professionals. Additionally, finance and banking hubs like New York City provide lucrative prospects for finance graduates. Manufacturing and engineering sectors remain robust, with a focus on sustainability and innovation. The entertainment industry in Hollywood fuels creative careers, while the green energy sector grows, emphasizing environmental sustainability. With a dynamic job market and a penchant for innovation, the USA stands as a beacon for ambitious professionals seeking diverse and rewarding career paths.</p>
-                    </div>
-                    <div class="container4">
-                    <h3 class="heading3">Facts</h3>
-                    <ul>
-                        <li><img src="./assets/Tick.svg" class="tick"/><p class="fact1">Excellence in Research & Innovation</p></li>
-                        <li><img src="./assets/Tick.svg" class="tick"/><p class="fact2">Flexible Academic Environment</p></li>
-                        <li><img src="./assets/Tick.svg" class="tick"/><p class="fact3">Excellent career opportunities</p></li>
-                        <li><img src="./assets/Tick.svg" class="tick"/><p class="fact4">World class Education institutions</p></li>
-                        <li><img src="./assets/Tick.svg" class="tick"/><p class="fact5">20hrs/week work along-side study</p></li>
-                        <li><img src="./assets/Tick.svg" class="tick"/><p class="fact6">18 month post Study work visa</p></li>
-                    </ul>
-                    <img src="./USA.assets/someonewithlaptop.png" class="lapboy"/>
-                    </div>
-                    <div class="consultation">
-                        <img src="./about.assets/background1.png" alt="book" />
-                        <h2>Book Free Consultation</h2>
-                        <p class="caption">Build stronger Customer Relationship with <strong>Consultalk</strong></p>
-                            <button class="book">Book now</button>
-                     </div>
+        </div>
+        <div class="container2">
+            <h2>Why Study in USA ?</h2>
+            <p>Studying in the USA offers an unparalleled opportunity to engage with one of the
+                world's most esteemed higher education systems. It provides access to state-of-the-art technology
+                and cutting-edge research, creating an immersive and collaborative learning experience. With a vast
+                array of schools, diverse study disciplines, and niche qualifications not readily available
+                elsewhere, the USA offers academic choices tailored to your career aspirations. What sets it apart
+                is the flexibility of the education system, allowing you to apply to various programs aligned with
+                your academic and professional goals. Graduating from the USA equips you with a global perspective
+                and practical skills essential for the future.</p>
+            <img src="./USA.assets/Content.png" alt="2ndphoto" class="discuss" />
+            <h2>Career and Industry Insights</h2>
+            <p>In the USA, a global economic powerhouse, diverse and promising career opportunities
+                abound across multiple industries. Technology and IT fields continue to flourish, with Silicon
+                Valley leading the charge in innovation. Healthcare and biotechnology sectors offer substantial
+                growth, ensuring a demand for skilled professionals. Additionally, finance and banking hubs like New
+                York City provide lucrative prospects for finance graduates. Manufacturing and engineering sectors
+                remain robust, with a focus on sustainability and innovation. The entertainment industry in
+                Hollywood fuels creative careers, while the green energy sector grows, emphasizing environmental
+                sustainability. With a dynamic job market and a penchant for innovation, the USA stands as a beacon
+                for ambitious professionals seeking diverse and rewarding career paths.</p>
+        </div>
+        <div class="container3">
+            <div class="MISSION">
+                <h2 class="title">Facts</h2>
+                <ul class="list1">
+                    <li><img class="tick" src="./assets/Tick.svg" alt="">
+                        <p class="subcontent">Excellence in Research & Innovation</p>
+                    </li>
+                    <li><img class="tick" src="./assets/Tick.svg" alt="">
+                        <p class="subcontent">Flexible Academic Environment</p>
+                    </li>
+                    <li><img class="tick" src="./assets/Tick.svg" alt="">
+                        <p class="subcontent">Excellent career opportunities</p>
+                    </li>
+                    <li><img class="tick" src="./assets/Tick.svg" alt="">
+                        <p class="subcontent">World class Education institutions</p>
+                    </li>
+                    <li><img class="tick" src="./assets/Tick.svg" alt="">
+                        <p class="subcontent">20hrs/week work along-side study</p>
+                    </li>
+                    <li><img class="tick" src="./assets/Tick.svg" alt="">
+                        <p class="subcontent">18 month post Study work visa</p>
+                    </li>
+                </ul>
+
             </div>
-            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons." ></script>
-            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/js"></script>
+            <img src="./USA.assets/someonewithlaptop.png" class="AU" alt="sub1" />
+        </div>
+        <section class="help-section">
+            <div class="containerform">
+              <div class="right-columns">
+                <h2>Book Free Consultation</h2>
+                <p>Build stronger Customer Relationship with <strong>Consultalk</strong></p>
+              </div>
+              <div class="left-columns">  <button type="submit" class="btn btn-primary btn-block">Book now</button></div>
+              
+            </div>
+          </section>
+          <footer class="footer-bg">
+      
+          
+            <div class="row footer-row">
+              <div class="col-md-3 col-sm-6 agency-info">
+                <div class="agency-top">
+                  <a href="home.html"><img src="assets/NT_logo.svg" class="nt-logo"></a>
+                  <p class="agency-text">Some footer text about the Agency. Just a little description to help people understand you better.</p>
+                </div>
+                <div class="agency-down">
+                  <ul role="list" class="media-layout">
+                    <li><a aria-label="Facebook" href="#" class="media-icons"><i class="fa fa-facebook"></i></a></li>
+                    <li><a aria-label="Twitter" href="#" class="media-icons"><i class="fa fa-twitter"></i></a></li>
+                    <li><a aria-label="LinkedIn" href="#" class="media-icons"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a aria-label="Instagram" href="#" class="media-icons"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+                  <p class="copy-text">Copyright 2023 NEEMTREE, All rights reserved.</p>
+                </div>
+              </div>
+        
+              <div class="col-md-3 col-sm-6">
+                <nav class="footer-nav">
+                  <h3 class="link-head">Quick Links</h3>
+                  <ul aria-label="Footer" role="list" class="link-list">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Study Destinations</a></li>
+                    <li><a href="#">Test Preparation</a></li>
+                    <li><a href="#">What we provide</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Book free consultation</a></li>
+                  </ul>
+                </nav>
+              </div>
+        
+              <div class="col-md-3 col-sm-6">
+                <nav class="footer-nav">
+                  <h3 class="link-head">Study Destinations</h3>
+                  <ul aria-label="Footer" role="list" class="link-list">
+                    <li><a href="#">USA</a></li>
+                    <li><a href="#">UK</a></li>
+                    <li><a href="#">Canada</a></li>
+                    <li><a href="#">Australia</a></li>
+                    <li><a href="#">Rest of the world</a></li>
+                  </ul>
+                </nav>
+              </div>
+        
+              <div class="col-md-3 col-sm-6">
+                <nav class="footer-nav">
+                  <h3 class="link-head">Test Preparation</h3>
+                  <ul aria-label="Footer" role="list" class="link-list">
+                    <li><a href="#">IELTS</a></li>
+                    <li><a href="#">TOEFL</a></li>
+                    <li><a href="#">PTE</a></li>
+                    <li><a href="#">GRE</a></li>
+                    <li><a href="#">GMAT</a></li>
+                    <li><a href="#">SAT</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+        
+          
+        </footer>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons."></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/js"></script>
 </body>
+
 </html>

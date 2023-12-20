@@ -16,16 +16,16 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+  <script defer src="main.js"></script>
 </head>
 
 <body>
   <header class="primary-header">
-    <a href="home.html"><img src="assets/NT_logo.svg" class="logo"></a>
+    <a href="index.html"><img src="assets/NT_logo.svg" class="logo"></a>
     <nav class="primary-navigation">
-      <ul role="list" class="nav-list">
+      <ul role="list" class="nav-list" data-visible="false">
         <li>
-          <a href="#" class="navbar-link">About Us</a>
+          <a href="./Ourservices.html" class="navbar-link">About Us</a>
         </li>
         <li>
           <div class="dropdown">
@@ -48,7 +48,7 @@
                   alt=""></a></div>
 
             <div class="dropdown-content">
-              <a href="#">IELTS</a>
+              <a href="./IELTS.html">IELTS</a>
               <a href="#">TOEFL</a>
               <a href="#">GRE</a>
               <a href="#">GMAT</a>
@@ -59,7 +59,7 @@
         </li>
 
         <li>
-          <a href="#" class="navbar-link">Services</a>
+          <a href="about.html" class="navbar-link">Services</a>
         </li>
 
         <li>
@@ -69,6 +69,10 @@
       </ul>
 
     </nav>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
   </header>
 
   <main>
@@ -86,11 +90,16 @@
         </div>
       </div>
       <div class="universities">
-        <img src="assets/uni1.svg" class="arizona">
-        <img src="assets/uni2.svg" class="princeton">
-        <img src="assets/uni3.svg" class="michigan">
-        <img src="assets/uni4.svg" class="yale">
-        <img src="assets/uni5.svg" class="stanford">
+        <img src="assets/uni1.svg" alt="arizona">
+        <img src="assets/uni2.svg" alt="princeton">
+        <img src="assets/uni3.svg" alt="michigan">
+        <img src="assets/uni4.svg" alt="yale">
+        <img src="assets/uni5.svg" alt="stanford">
+        <img src="assets/uni6.svg" alt="berkley">
+        <img src="assets/uni7.svg" alt="cornell">
+        <img src="assets/uni8.svg" alt="harvard">
+        <img src="assets/uni9.svg" alt="cambridge">
+        <img src="assets/uni10.svg"alt="oxford">
       </div>
     </div>
 
@@ -116,45 +125,30 @@
           Study Destinations
         </h2>
         <div class="card-row">
-        
-          <div class="col-md-4" style="height: 2; position: relative;">
+          <div class="col-md-4">
             <div class="card">
-              <img src="assets/usa.svg" alt="">
-              <p class="places"><strong>USA</strong></p>
+              <img src="assets/usa.svg" alt="USA">
+              <p class="places">USA</p>
             </div>
           </div>
-      
           <div class="col-md-4">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="card">
-                  <img src="assets/uk.svg" alt="">
-                  <p class="places"><strong>UK</strong></p>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="card">
-                  <img src="assets/canada.svg" alt="">
-                  <p class="places"><strong>CANADA</strong></p>
-                </div>
-              </div>
+            <div class="card">
+              <img src="assets/uk.svg" alt="UK">
+              <p class="places">UK</p>
+            </div>
+            <div class="card">
+              <img src="assets/canada.svg" alt="Canada">
+              <p class="places">CANADA</p>
             </div>
           </div>
-          
           <div class="col-md-4">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="card">
-                  <img src="assets/aus.svg" alt="">
-                  <p class="places"><strong>AUSTRALIA</strong></p>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="card">
-                  <img src="assets/world.svg" alt="">
-                  <p class="places"><strong>REST OF THE WORLD</strong></p>
-                </div>
-              </div>
+            <div class="card">
+              <img src="assets/aus.svg" alt="Australia">
+              <p class="places">AUSTRALIA</p>
+            </div>
+            <div class="card">
+              <img src="assets/world.svg" alt="Rest of the World">
+              <p class="places">REST of the WORLD</p>
             </div>
           </div>
         </div>
@@ -261,15 +255,13 @@
             <li>
               <div class="time-card">
                 <p><span>#1</span> Test Preparation</p> Cracking exams like GMAT, GRE, IELTS... is where you should
-                begin
-                your journey with.
+                begin your journey with.
               </div>
             </li>
             <li>
               <div class="time-card">
                 <p><span>#2</span> Expert Counselling</p> Speak with experts who have years of experience in the domain
-                and
-                stay updated with the latest advancements.
+                and stay updated with the latest advancements.
               </div>
             </li>
             <li>
@@ -308,23 +300,27 @@
             </li>
             <li>
               <div class="time-card">
-                <p><span>#8</span> Test Preparation</p> Cracking exams like GMAT, GRE, IELTS... is where you should
-                begin
-                your journey with.
+                <p><span>#8</span> Interview Preparation</p> Every step is a challenge, and the most important of them all is cracking all interviews.
               </div>
             </li>
             <li>
               <div class="time-card">
-                <p><span>#9</span> Test Preparation</p> Cracking exams like GMAT, GRE, IELTS... is where you should
-                begin
-                your journey with.
+                <p><span>#9</span> Visa Assistance</p> Get to know about all the procedures and options to fund your world class education.
               </div>
             </li>
             <li>
               <div class="time-card">
-                <p><span>#10</span> Test Preparation</p> Cracking exams like GMAT, GRE, IELTS... is where you should
-                begin
-                your journey with.
+                <p><span>#10</span> Forex Assistance</p> Every step is a challenge, and the most important of them all is cracking all interviews.
+              </div>
+            </li>
+            <li>
+              <div class="time-card">
+                <p><span>#11</span> Air Ticket</p> Get the best deals on your travel charges and have a seamless booking process.
+              </div>
+            </li>
+            <li>
+              <div class="time-card">
+                <p><span>#12</span> Travel Insurance</p> Now, apply for your travel insurance and then you are all set to travel across the globe to pursue your World-class education.
               </div>
             </li>
           </ol>
@@ -541,145 +537,222 @@
         </div>
     </section>
 
-    <section>
-      <section class="container8">
-        <div class="faq-content">
-          <div class="odd align-heading">
-            <div>
-              <p class="banner-green">FAQ's</p>
-              <h2 class="title">
-                Student Questions
-              </h2>
+    <section class="container8">
+      <div class="faq-content">
+        <div class="odd align-heading">
+          <div>
+            <p class="banner-green">FAQ's</p>
+            <h2 class="title">
+              Student Questions
+            </h2>
+          </div>
+        </div>
+  
+       
+            <section class="container my-5" id="maincontent">
+              <section id="accordion">
+                <div class="faq-item">
+                  <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                    aria-controls="faq-17" aria-expanded="false" data-toggle="collapse" href="#faq-17" role="button">
+                    <div class="faq-item-content">
+                      <h2 class="h4 m-0 pr-3">
+                        What are the benefits of studying abroad?
+                      </h2>
+                      <i class="fa fa-plus"></i>
+                    </div>
+                  </a>
+                  <div class="collapse" id="faq-17">
+                    <div class="card card-body border-0 p-0">
+                      <p>Yes, we assist in finding scholarships and financial aid options to make studying abroad more affordable, which can include merit-based awards, grants, and international student loans.</p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="faq-item">
+                  <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                    aria-controls="faq-18" aria-expanded="false" data-toggle="collapse" href="#faq-18" role="button">
+                    <div class="faq-item-content">
+                      <h2 class="h4 m-0 pr-3">
+                        Can you help me find scholarships and financial aid options?
+                      </h2>
+                      <i class="fa fa-plus"></i>
+                    </div>
+                  </a>
+                  <div class="collapse" id="faq-18">
+                    <div class="card card-body border-0 p-0">
+                      <p>Yes, we assist in finding scholarships and financial aid options to make studying abroad more affordable, which can include merit-based awards, grants, and international student loans.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                    aria-controls="faq-19" aria-expanded="false" data-toggle="collapse" href="#faq-19" role="button">
+                    <div class="faq-item-content">
+                      <h2 class="h4 m-0 pr-3">
+                        How long does the application process for studying abroad usually take?
+                      </h2>
+                      <i class="fa fa-plus"></i>
+                    </div>
+                  </a>
+                  <div class="collapse" id="faq-19">
+                    <div class="card card-body border-0 p-0">
+                      <p>Yes, we assist in finding scholarships and financial aid options to make studying abroad more affordable, which can include merit-based awards, grants, and international student loans.</p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="faq-item">
+                  <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                    aria-controls="faq-20" aria-expanded="false" data-toggle="collapse" href="#faq-20" role="button">
+                    <div class="faq-item-content">
+                      <h2 class="h4 m-0 pr-3">
+                        What are the job prospects like for international students after graduation?
+                      </h2>
+                      <i class="fa fa-plus"></i>
+                    </div>
+                  </a>
+                  <div class="collapse" id="faq-20">
+                    <div class="card card-body border-0 p-0">
+                      <p>Yes, we assist in finding scholarships and financial aid options to make studying abroad more affordable, which can include merit-based awards, grants, and international student loans.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                    aria-controls="faq-21" aria-expanded="false" data-toggle="collapse" href="#faq-21" role="button">
+                    <div class="faq-item-content">
+                      <h2 class="h4 m-0 pr-3">
+                        What sets your consultancy apart from other study abroad agencies?
+                      </h2>
+                      <i class="fa fa-plus"></i>
+                    </div>
+                  </a>
+                  <div class="collapse" id="faq-21">
+                    <div class="card card-body border-0 p-0">
+                      <p>Yes, we assist in finding scholarships and financial aid options to make studying abroad more affordable, which can include merit-based awards, grants, and international student loans.</p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="faq-item">
+                  <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                    aria-controls="faq-22" aria-expanded="false" data-toggle="collapse" href="#faq-22" role="button">
+                    <div class="faq-item-content">
+                      <h2 class="h4 m-0 pr-3">
+                        How do I prepare for English proficiency tests like TOEFL, IELTS?
+                      </h2>
+                      <i class="fa fa-plus"></i>
+                    </div>
+                  </a>
+                  <div class="collapse" id="faq-22">
+                    <div class="card card-body border-0 p-0">
+                      <p>Yes, we assist in finding scholarships and financial aid options to make studying abroad more affordable, which can include merit-based awards, grants, and international student loans.</p>
+                    </div>
+                  </div>
+                </div>
+  
+           
+  
+          </section>
+        </section>
+      </div>
+    </section>
+    <section class="help-section">
+      <div class="containerform">
+        <div class="right-columns">
+          <h2>Let us reach out to you</h2>
+          <p>Build stronger Customer Relationships with Ne</p>
+        </div>
+        <form class="help-form"> <!-- Fixed typo here "clas" to "class" -->
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group col-md-6">
+              <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-9">
+              <input type="email" class="form-control" id="email" placeholder="Your Email Address" required>
+            </div>
+            <div class="form-group col-md-3">
+              <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer-bg">
+
+    
+        <div class="row footer-row">
+          <div class="col-md-3 col-sm-6 agency-info">
+            <div class="agency-top">
+              <a href="home.html"><img src="assets/NT_logo.svg" class="nt-logo"></a>
+              <p class="agency-text">Some footer text about the Agency. Just a little description to help people understand you better.</p>
+            </div>
+            <div class="agency-down">
+              <ul role="list" class="media-layout">
+                <li><a aria-label="Facebook" href="#" class="media-icons"><i class="fa fa-facebook"></i></a></li>
+                <li><a aria-label="Twitter" href="#" class="media-icons"><i class="fa fa-twitter"></i></a></li>
+                <li><a aria-label="LinkedIn" href="#" class="media-icons"><i class="fa fa-linkedin"></i></a></li>
+                <li><a aria-label="Instagram" href="#" class="media-icons"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+              <p class="copy-text">Copyright 2023 NEEMTREE, All rights reserved.</p>
             </div>
           </div>
     
-         
-              <section class="container my-5" id="maincontent">
-                <section id="accordion">
-                  <div class="faq-item">
-                    <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top"
-                      aria-controls="faq-17" aria-expanded="false" data-toggle="collapse" href="#faq-17" role="button">
-                      <div class="faq-item-content">
-                        <h2 class="h4 m-0 pr-3">
-                          What are the benefits of studying abroad?
-                        </h2>
-                        <i class="fa fa-plus"></i>
-                      </div>
-                    </a>
-                    <div class="collapse" id="faq-17">
-                      <div class="card card-body border-0 p-0">
-                        <p>Yes, we assist in finding scholarships and financial aid options to make studying abroad more affordable, which can include merit-based awards, grants, and international student loans.</p>
-                      </div>
-                    </div>
-                  </div>
+          <div class="col-md-3 col-sm-6">
+            <nav class="footer-nav">
+              <h3 class="link-head">Quick Links</h3>
+              <ul aria-label="Footer" role="list" class="link-list">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Study Destinations</a></li>
+                <li><a href="#">Test Preparation</a></li>
+                <li><a href="#">What we provide</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Book free consultation</a></li>
+              </ul>
+            </nav>
+          </div>
     
-                  <div class="faq-item">
-                    <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top"
-                      aria-controls="faq-18" aria-expanded="false" data-toggle="collapse" href="#faq-18" role="button">
-                      <div class="faq-item-content">
-                        <h2 class="h4 m-0 pr-3">
-                          Can you help me find scholarships and financial aid options?
-                        </h2>
-                        <i class="fa fa-plus"></i>
-                      </div>
-                    </a>
-                    <div class="collapse" id="faq-18">
-                      <div class="card card-body border-0 p-0">
-                        <p>Yes, we assist in finding scholarships and financial aid options to make studying abroad more affordable, which can include merit-based awards, grants, and international student loans.</p>
-                      </div>
-                    </div>
-                  </div>
-  
-                  <div class="faq-item">
-                    <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top"
-                      aria-controls="faq-19" aria-expanded="false" data-toggle="collapse" href="#faq-19" role="button">
-                      <div class="faq-item-content">
-                        <h2 class="h4 m-0 pr-3">
-                          How long does the application process for studying abroad usually take?
-                        </h2>
-                        <i class="fa fa-plus"></i>
-                      </div>
-                    </a>
-                    <div class="collapse" id="faq-19">
-                      <div class="card card-body border-0 p-0">
-                        <p>Yes, we assist in finding scholarships and financial aid options to make studying abroad more affordable, which can include merit-based awards, grants, and international student loans.</p>
-                      </div>
-                    </div>
-                  </div>
+          <div class="col-md-3 col-sm-6">
+            <nav class="footer-nav">
+              <h3 class="link-head">Study Destinations</h3>
+              <ul aria-label="Footer" role="list" class="link-list">
+                <li><a href="#">USA</a></li>
+                <li><a href="#">UK</a></li>
+                <li><a href="#">Canada</a></li>
+                <li><a href="#">Australia</a></li>
+                <li><a href="#">Rest of the world</a></li>
+              </ul>
+            </nav>
+          </div>
     
-                  <div class="faq-item">
-                    <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top"
-                      aria-controls="faq-20" aria-expanded="false" data-toggle="collapse" href="#faq-20" role="button">
-                      <div class="faq-item-content">
-                        <h2 class="h4 m-0 pr-3">
-                          What are the job prospects like for international students after graduation?
-                        </h2>
-                        <i class="fa fa-plus"></i>
-                      </div>
-                    </a>
-                    <div class="collapse" id="faq-20">
-                      <div class="card card-body border-0 p-0">
-                        <p>Yes, we assist in finding scholarships and financial aid options to make studying abroad more affordable, which can include merit-based awards, grants, and international student loans.</p>
-                      </div>
-                    </div>
-                  </div>
-  
-                  <div class="faq-item">
-                    <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top"
-                      aria-controls="faq-21" aria-expanded="false" data-toggle="collapse" href="#faq-21" role="button">
-                      <div class="faq-item-content">
-                        <h2 class="h4 m-0 pr-3">
-                          What sets your consultancy apart from other study abroad agencies?
-                        </h2>
-                        <i class="fa fa-plus"></i>
-                      </div>
-                    </a>
-                    <div class="collapse" id="faq-21">
-                      <div class="card card-body border-0 p-0">
-                        <p>Yes, we assist in finding scholarships and financial aid options to make studying abroad more affordable, which can include merit-based awards, grants, and international student loans.</p>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <div class="faq-item">
-                    <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top"
-                      aria-controls="faq-22" aria-expanded="false" data-toggle="collapse" href="#faq-22" role="button">
-                      <div class="faq-item-content">
-                        <h2 class="h4 m-0 pr-3">
-                          How do I prepare for English proficiency tests like TOEFL, IELTS?
-                        </h2>
-                        <i class="fa fa-plus"></i>
-                      </div>
-                    </a>
-                    <div class="collapse" id="faq-22">
-                      <div class="card card-body border-0 p-0">
-                        <p>Yes, we assist in finding scholarships and financial aid options to make studying abroad more affordable, which can include merit-based awards, grants, and international student loans.</p>
-                      </div>
-                    </div>
-                  </div>
-          </section>
-        </section>
-    </section>
-    </div>
-    </section>
-    <section>
-      <div class="containerL">
-        <img src="./assets/reachout.svg" alt="background2" class="reachout" />
-        <div class="reachout-content">
-          <h2>Let us reach out to you </h2>
-          <p>Build stronger Customer Relationships with <strong>Neemtree</strong></p>
-        <form>
-          <input class="fname" type="text" id="fname" name="fname" placeholder="Name" required/>
-          <input class="phno" type="number" id="phno" name="phno" placeholder="Phone Number" required/>
-          <input class="email" type="email" id="email" name="email" placeholder="Your email address" required/>
-          <button class="submit">Submit</button>
-        </form>
+          <div class="col-md-3 col-sm-6">
+            <nav class="footer-nav">
+              <h3 class="link-head">Test Preparation</h3>
+              <ul aria-label="Footer" role="list" class="link-list">
+                <li><a href="#">IELTS</a></li>
+                <li><a href="#">TOEFL</a></li>
+                <li><a href="#">PTE</a></li>
+                <li><a href="#">GRE</a></li>
+                <li><a href="#">GMAT</a></li>
+                <li><a href="#">SAT</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-    </section>
-   
-  <script type="module" src="/main.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons." ></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/js"></script>
+    
+      
+    </footer>
+    
+  </main>
+
 </body>
 
 </html>
