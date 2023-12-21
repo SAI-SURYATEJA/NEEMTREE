@@ -148,6 +148,7 @@
 //   });
 // });
 document.addEventListener('DOMContentLoaded', function () {
+  // Mobile nav toggle
   const navToggle = document.querySelector('.mobile-nav-toggle');
   const navList = document.querySelector('.nav-list');
 
@@ -163,33 +164,37 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  // Carousel and scrolling functionality
   const universitiesSection = document.querySelector('.universities');
   const scrollSpeed = 4;
 
   function scrollUniversities() {
-    universitiesSection.scrollLeft += scrollSpeed;
+    if (universitiesSection) {
+      universitiesSection.scrollLeft += scrollSpeed;
 
-    if (universitiesSection.scrollLeft >= universitiesSection.scrollWidth - universitiesSection.offsetWidth) {
-      const imgElements = universitiesSection.querySelectorAll('img');
-      imgElements.forEach(img => {
-        const cloneImg = img.cloneNode(true);
-        universitiesSection.appendChild(cloneImg);
-      });
+      if (universitiesSection.scrollLeft >= universitiesSection.scrollWidth - universitiesSection.offsetWidth) {
+        const imgElements = universitiesSection.querySelectorAll('img');
+        imgElements.forEach(img => {
+          const cloneImg = img.cloneNode(true);
+          universitiesSection.appendChild(cloneImg);
+        });
+      }
     }
   }
 
   let scrollInterval = setInterval(scrollUniversities, 50);
 
-  universitiesSection.addEventListener('mouseenter', function () {
-    clearInterval(scrollInterval);
-  });
+  if (universitiesSection) {
+    universitiesSection.addEventListener('mouseenter', function () {
+      clearInterval(scrollInterval);
+    });
 
-  universitiesSection.addEventListener('mouseleave', function () {
-    scrollInterval = setInterval(scrollUniversities, 50);
-  });
-});
+    universitiesSection.addEventListener('mouseleave', function () {
+      scrollInterval = setInterval(scrollUniversities, 50);
+    });
+  }
 
-$(document).ready(function () {
+  // jQuery dependent functionality
   $(".front_arrow").click(function () {
     $("#testimonial-carousel").carousel("next");
   });
@@ -212,22 +217,20 @@ $(document).ready(function () {
     $(".carousel-cards").removeClass("active");
     $(".carousel-cards").slice(index, index + visibleCards).addClass("active");
   });
-});
 
-document.addEventListener('DOMContentLoaded', function () {
+  // Popup form functionality
   var sets = document.querySelectorAll('.content-set');
   var nextButton = document.getElementById('next');
   var bookButton = document.getElementById('book');
   var closeButton = document.querySelector('.close-btn');
-  var tickContainer = document.getElementById('tickContainer'); // Ensure this ID matches your tick container in HTML
+  var tickContainer = document.getElementById('tickContainer');
   var currentSet = 0;
 
+  // Functions
   function openPopup() {
     document.getElementById('popupForm').style.display = 'block';
     resetForm();
   }
-
-  window.openPopup = openPopup; // Make it globally accessible if referenced by 'onclick' attributes
 
   function closePopup() {
     document.getElementById('popupForm').style.display = 'none';
@@ -244,23 +247,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  window.toggleContent = toggleContent;
-
   function submitForm() {
-    // Hide form container
     document.getElementById('formContainer').style.display = 'none';
-
-    // Show tick and hide popup after 2 seconds
     tickContainer.style.display = 'flex';
 
     setTimeout(function () {
-      tickContainer.style.display = 'none'; // Hide the tick container
+      tickContainer.style.display = 'none';
+      closePopup();
       resetForm();
-      closePopup(); // This should come last after the tick disappears
     }, 2000);
   }
-
-  window.submitForm = submitForm;
 
   function resetForm() {
     document.getElementById('consultationForm').reset();
@@ -268,18 +264,19 @@ document.addEventListener('DOMContentLoaded', function () {
       set.style.display = index === 0 ? 'block' : 'none';
     });
     currentSet = 0;
-
-    // Reset buttons display
     nextButton.style.display = 'block';
     bookButton.style.display = 'none';
-
-    // Ensure the form container is displayed when resetting
     document.getElementById('formContainer').style.display = 'block';
   }
 
-  window.resetForm = resetForm;
-
+  // Event listeners
   closeButton.addEventListener('click', function () {
     closePopup();
   });
+
+  // Make global functions accessible
+  window.openPopup = openPopup;
+  window.toggleContent = toggleContent;
+  window.submitForm = submitForm;
+  window.resetForm = resetForm;
 });
