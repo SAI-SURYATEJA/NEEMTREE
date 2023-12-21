@@ -37,7 +37,7 @@
 
 
             <div class="dropdown-content">
-              <a href="#">USA</a>
+              <a href="USA.html">USA</a>
               <a href="#">UK</a>
               <a href="#">Canada</a>
             </div>
@@ -50,7 +50,7 @@
                   alt=""></a></div>
 
             <div class="dropdown-content">
-              <a href="#">IELTS</a>
+              <a href="IELTS.html">IELTS</a>
               <a href="#">TOEFL</a>
               <a href="#">GRE</a>
               <a href="#">GMAT</a>
@@ -67,7 +67,7 @@
         <li>
           <a href="#" class="navbar-link">Contact Us</a>
         </li>
-        <li> <button class="booking">Book Free Consultancy</button></li>
+        <li> <button class="booking" onclick="openPopup()">Book Free Consultancy</button></li>
       </ul>
 
     </nav>
@@ -76,7 +76,78 @@
       <i class="fa fa-bars" aria-hidden="true"></i>
     </button>
   </header>
+  <div class="popup-form" id="popupForm">
+    <form id="consultationForm">
+        <!-- Your form fields go here -->
+       
+        
+        <div class="form-container" id="formContainer">
+            <!-- First set of content -->
+            <div class="content-set first-set">
+              <h2 class="popup-heading">Book Free Consultation</h2>
+              <p class="popup-subheading">(*)Refers to mandatory</p>
+                <label class="form-label name-label">Name *</label>
+                <input type="text" id="fname" name="fname" class="form-input" required />
+                <label class="form-label email-label">Email id</label>
+                <input type="text" id="email" name="email" class="form-input" />
+                <label class="form-label phone-label">Phone number *</label>
+                <input type="text" id="phone" name="phone" class="form-input" required />
+                <label class="form-label city-label">City/Town/Locality</label>
+                <input type="text" id="city" name="city" class="form-input" />
+            </div>
 
+            <!-- Second set of content (initially hidden) -->
+            <div class="content-set second-set">
+              <h2 class="popup-heading">Book Free Consultation</h2>
+              <p class="popup-subheading">Preferred Countries (Multiple Checks)</p>
+                <label class="form-label usa-label">USA</label>
+                <input type="checkbox" class="usa" />
+                <label class="form-label usa-label">UK</label>
+                <input type="checkbox" class="usa" />
+                <label class="form-label usa-label">CANADA</label>
+                <input type="checkbox" class="usa" />
+                <label class="form-label usa-label">AUSTRALIA</label>
+                <input type="checkbox" class="usa" />
+                <label class="form-label usa-label">Others</label>
+                <input type="checkbox" class="usa" />
+                <label class="form-label usa-label">No preference</label>
+                <input type="checkbox" class="usa" />
+                <!-- Add similar labels and checkboxes for other countries -->
+            </div>
+
+            <!-- Third set of content (initially hidden) -->
+            <div class="content-set third-set">
+              <h2 class="popup-heading">Book Free Consultation</h2>
+              <p class="popup-subheading">Exam(s) you are planning to take (Multiple checks)</p>
+                <label class="form-label">IELTS</label>
+                <input type="checkbox" class="ielts" />
+                <label class="form-label">TOEFL</label>
+                <input type="checkbox" class="ielts" />
+                <label class="form-label">PTE</label>
+                <input type="checkbox" class="ielts" />
+                <label class="form-label">GRE</label>
+                <input type="checkbox" class="ielts" />
+                <label class="form-label">GMAT</label>
+                <input type="checkbox" class="ielts" />
+                <label class="form-label">SAT</label>
+                <input type="checkbox" class="ielts" />
+                <label class="form-label">No preference</label>
+                <input type="checkbox" class="ielts" />
+                <!-- Add similar labels and checkboxes for other exams -->
+                <button type="button" id="book" class="form-button book-button" onclick="submitForm()">BOOK</button>
+            </div>
+        </div>
+        <button type="button" id="next" class="form-button next-button" onclick="toggleContent()">NEXT</button>
+    </form>
+    <button class="close-btn" onclick="resetForm()">Close</button>
+    <div class="tick-container" id="tickContainer">
+      <svg width="158" height="162" viewBox="0 0 158 162" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M112.102 62.0997L67.9409 105.598L45.8981 83.8486" stroke="#4EAF4E" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M78.9996 155.31C118.887 155.31 151.222 121.925 151.222 80.7425C151.222 39.5599 118.887 6.1748 78.9996 6.1748C39.1123 6.1748 6.77734 39.5599 6.77734 80.7425C6.77734 121.925 39.1123 155.31 78.9996 155.31Z" stroke="#4EAF4E" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        
+  </div>
+</div>
   <main>
     <div class="container1">
       <img src="./about.assets/globe.svg" alt="firstphoto" />
@@ -355,7 +426,8 @@
   
     
   </footer>
-  </main>
+</main>
+<script src="main.js" defer></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons."></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/js"></script>
 </body>
