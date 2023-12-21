@@ -1,0 +1,19 @@
+# Redirects for the primary navigation links
+/Ourservices.html       /about-us       301
+/USA.html                /study-usa      301
+/IELTS.html              /ielts          301
+/about.html              /services       301
+# Add similar redirects for other links in your navbar
+
+# Redirect for the "Contact Us" link
+/contact.html           /contact-us     301
+
+# Redirect for the "Book Free Consultancy" button
+/book-consultancy        /consultancy    301
+
+# Default redirect (if none of the above rules match)
+/*                      /               301
+
+
+
+
