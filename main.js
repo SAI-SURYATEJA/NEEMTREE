@@ -71,3 +71,79 @@ $("#testimonial-carousel").on("slide.bs.carousel", function (event) {
   $(".carousel-cards").slice(index, index + visibleCards).addClass("active");
 });
 });
+
+// function openPopup() {
+//   document.getElementById('form').style.display = 'flex';
+// }
+// function closePopup() {
+//   document.getElementById('form').style.display = 'none';
+// }
+
+document.addEventListener('DOMContentLoaded', function() {
+  var sets = document.querySelectorAll('.content-set');
+  var nextButton = document.getElementById('next');
+  var bookButton = document.getElementById('book');
+  var closeButton = document.querySelector('.close-btn');
+  var tickContainer = document.getElementById('tickContainer'); // Ensure this ID matches your tick container in HTML
+  var currentSet = 0;
+
+  function openPopup() {
+      document.getElementById('popupForm').style.display = 'block';
+      resetForm();
+  }
+
+  window.openPopup = openPopup; // Make it globally accessible if referenced by 'onclick' attributes
+
+  function closePopup() {
+      document.getElementById('popupForm').style.display = 'none';
+  }
+
+  function toggleContent() {
+      sets[currentSet].style.display = 'none';
+      currentSet++;
+      sets[currentSet].style.display = 'block';
+      
+      if (currentSet === sets.length - 1) {
+          nextButton.style.display = 'none';
+          bookButton.style.display = 'block';
+      }
+  }
+
+  window.toggleContent = toggleContent;
+  function submitForm() {
+    // Hide form container
+    document.getElementById('formContainer').style.display = 'none';
+
+    // Show tick and hide popup after 2 seconds
+    tickContainer.style.display = 'flex';
+
+    setTimeout(function() {
+        tickContainer.style.display = 'none'; // Hide the tick container
+        resetForm();
+        closePopup(); // This should come last after the tick disappears
+    }, 2000);
+}
+
+  window.submitForm = submitForm;
+
+  function resetForm() {
+      document.getElementById('consultationForm').reset();
+      sets.forEach(function(set, index) {
+          set.style.display = index === 0 ? 'block' : 'none';
+      });
+      currentSet = 0;
+      
+      // Reset buttons display
+      nextButton.style.display = 'block';
+      bookButton.style.display = 'none';
+      
+      // Ensure the form container is displayed when resetting
+      document.getElementById('formContainer').style.display = 'block';
+  }
+
+  window.resetForm = resetForm;
+
+  closeButton.addEventListener('click', function() {
+      closePopup();
+  });
+});
