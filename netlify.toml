@@ -1,0 +1,86 @@
+[build]
+  command = "npm run build"  # Adjust the build command as needed
+  publish = "dist"  # Adjust the publish directory based on your build configuration
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[headers]
+  "/*.html" = [
+    "Cache-Control: public, max-age=0, must-revalidate",
+  ]
+
+  "/*.js" = [
+    "Cache-Control: public, max-age=31536000, immutable",
+  ]
+
+  "/*.css" = [
+    "Cache-Control: public, max-age=31536000, immutable",
+  ]
+
+[[headers]]
+  for = "/*.svg"
+    [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.jpg"
+    [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.jpeg"
+    [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.png"
+    [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.gif"
+    [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/*"
+    [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Add more headers or redirects as needed
+
+# Example redirects for specific pages
+[[redirects]]
+  from = "/Ourservices.html"
+  to = "/about-us"
+  status = 301
+
+[[redirects]]
+  from = "/USA.html"
+  to = "/study-usa"
+  status = 301
+
+[[redirects]]
+  from = "/IELTS.html"
+  to = "/ielts"
+  status = 301
+
+[[redirects]]
+  from = "/about.html"
+  to = "/services"
+  status = 301
+
+[[redirects]]
+  from = "/contact.html"
+  to = "/contact-us"
+  status = 301
+
+[[redirects]]
+  from = "/book-consultancy"
+  to = "/consultancy"
+  status = 301
+
+# More redirects can be added as needed
