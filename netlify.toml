@@ -54,3 +54,8 @@
   to = "/"
   status = 301
   force = true
+
+  [[redirects]]
+  from = "/main.js"
+  to = "/main.js"
+  status = 200

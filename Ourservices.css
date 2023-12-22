@@ -1180,6 +1180,7 @@ position: relative;
 
 
 
+
 .footer-bg{
   background-color: #000;
   padding:6rem;
@@ -1262,9 +1263,16 @@ position: relative;
     
 }
 
+@media (min-width: 770px) and (max-width: 1200px){
+  .footer-row {
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+}
+
 @media (max-width:768px) {
   .footer-row {
-    flex-direction: column; /* Stack columns vertically */
+    flex-direction: column; 
   }
 
   .agency-top {
@@ -1312,4 +1320,3 @@ position: relative;
   }
   
 }
-
