@@ -1,11 +1,15 @@
 
-
-/index.html             /about.html              301
-
-/index.html             /IELTS.html              301
-
-/index.html             /USA.html              301
-
-/index.html             /Ourservices.html              301
+/Ourservices.html     /about-us       301
+/USA.html             /study-usa      301
+/IELTS.html           /ielts          301
+/about.html           /services       301
 
 
+
+/contact.html         /contact-us     301
+
+
+/book-consultancy     /consultancy    301
+
+
+/*                    /               301

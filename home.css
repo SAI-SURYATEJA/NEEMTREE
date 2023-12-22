@@ -325,7 +325,7 @@ color: white;}
   justify-content: center;
 }
 
-/* Base styles for the hamburger icon */
+
 .primary-header .mobile-nav-toggle {
   padding: 0;
   background: none;
@@ -505,7 +505,7 @@ border:none;
   margin: 2.5em;
 }
 .universities img:last-child {
-  margin-right: 0; /* Remove right margin for the last image */
+  margin-right: 0; 
 }
 
 @media (max-width: 1024px) {
