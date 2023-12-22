@@ -19,6 +19,7 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
+
 html, body {
   height: 100%;
   font-family: 'Poppins', sans-serif;
@@ -32,6 +33,190 @@ body {
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
+.popup-form {
+  background-image: url('./bookingform.assets/consultation-form.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 100000;
+  border-radius: 4rem;
+  background-color: #F5F5F5;
+  width: 27%;
+  min-height: 50%;
+}
+.popup-heading{
+  color: #FBC336;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  line-height: 140%;
+  font-size: 2.7rem;
+}
+.popup-subheading{
+  color: white;
+  font-family: 'Lato',sans-serif;
+  font-size: 1.6rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.form-label,
+.form-input,
+.next-button,
+.book-button {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.first-set .form-label {
+  color: #FFF;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+}
+
+.first-set .form-input {
+  border-radius: 42px;
+  border: 2px solid #FFF;
+  padding: 8px;
+  width: 70%;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: #FFF;
+}
+#email{
+width:96%;
+}
+
+.second-set,
+.third-set {
+  display: none;
+  gap:1rem !important;
+}
+
+.second-set .form-label {
+  color: white;
+    position: relative;
+    left: 3rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: 'Lato',sans-serif;
+   
+}
+input[type="checkbox"] {
+  appearance: auto;
+  border: 1px solid #000; 
+  width: 1.8rem;
+  height: 1.8rem; 
+  position: relative;
+    bottom: 3.2rem;
+}
+.third-set .form-label {
+  color: white;
+    position: relative;
+    left: 3rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: 'Lato',sans-serif;
+    
+}
+#book{
+  background: #FBC336;
+  color: #181818;
+  font-family: 'Lato', sans-serif;
+  border-radius: 2rem;
+    width: 13rem;
+    height: 4.5rem;
+    font-size:1.6rem;
+    font-weight: 450;
+   
+}
+
+input[type="checkbox"] {
+  appearance: auto;
+  border: 1px solid #000; 
+  width: 1.8rem; 
+  height: 1.8rem; 
+  position: relative;
+    bottom: 3.2rem;
+}
+
+#next {
+  background: #FBC336;
+  color: #181818;
+  font-family: 'Lato', sans-serif;
+  border-radius: 2rem;
+    width: 13rem;
+    height: 4.5rem;
+    font-size:1.6rem;
+    font-weight: 450;
+    
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.4rem; 
+  right: 2rem; 
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff; 
+  outline: none;
+}
+
+@keyframes tick-animation {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+
+.tick-container{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  color: white;
+  font-size: 72px;
+  line-height: 100px;
+  text-align: center;
+ margin: 4vh auto;
+ animation: tick-animation 0.5s ease-in-out forwards;
+}
+
+
+
 
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -73,6 +258,8 @@ a:not([class]) {
   font-size: 1.75rem;
   font-weight: 500;
   background-color: white;
+  width:100vw;
+
 }
 
 .primary-navigation ul {
@@ -110,6 +297,9 @@ a:not([class]) {
   margin-left: 5.5rem;
   background-color: #fff;
 }
+.booking:hover
+{background-color: #4EAF4E;
+color: white;}
 
 .dropdown-content {
   display: none;
@@ -135,6 +325,7 @@ a:not([class]) {
   display: block;
   justify-content: center;
 }
+
 
 .primary-header .mobile-nav-toggle {
   padding: 0;
@@ -223,7 +414,12 @@ a:not([class]) {
     margin: 0 1rem;
     padding: 0.5rem 1rem;
   }
+  .booking:hover{
+  background-color: #4EAF4E;
+  color: white;
+  }
 }
+
 
 
 .container1 {
