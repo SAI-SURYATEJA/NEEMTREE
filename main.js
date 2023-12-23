@@ -280,3 +280,4 @@ document.addEventListener('DOMContentLoaded', function () {
   window.submitForm = submitForm;
   window.resetForm = resetForm;
 });
+const USAimage =  document.getElementById('USA');

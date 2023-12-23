@@ -272,6 +272,7 @@ input[type="checkbox"] {
   color: #000;
   background-color: white;
   padding: 0.625rem 2.5rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .primary-header .primary-navigation a:hover {
@@ -1319,4 +1320,22 @@ position: relative;
     padding: 8px;
   }
   
+}
+@media (min-width:1076px) and (max-width:1338px){
+  .primary-header .primary-navigation li a {
+    color: #000;
+    background-color: white;
+    padding: 0.625rem 1.5rem;
+    font-size:1.3rem;
+    font-family:'Poppins',sans-serif;
+  }
+}
+@media (min-width:1025px) and (max-width:1075px){
+  .primary-header .primary-navigation li a {
+    color: #000;
+    background-color: white;
+    padding: 0.625rem 0.825rem;
+    font-size:1.3rem;
+    font-family:'Poppins',sans-serif;
+  }
 }
