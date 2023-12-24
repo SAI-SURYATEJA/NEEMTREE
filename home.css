@@ -1118,6 +1118,8 @@ font-weight:600;
   padding: 2rem;
   border-radius: 100px;
 border: 1px solid #000;
+width: 7rem;
+height: 7rem;
 }
 .back_arrow:hover{
   background: #4EAF4E;
@@ -1129,6 +1131,8 @@ border: 1px solid #000;
   padding: 2rem;
   border-radius: 100px;
   border: 1px solid #000;
+  width: 7rem;
+  height: 7rem;
 }
 .front_arrow:hover{
   background: #4EAF4E;
@@ -1193,7 +1197,7 @@ border: 1px solid #000;
     justify-content: center;
     padding-left: 5vw;
     padding-right: 5vw;
-    padding-top: 2vh;
+    padding-top: 15vh;
     padding-bottom: 4vh;
 }
 
@@ -1201,12 +1205,13 @@ border: 1px solid #000;
   border-radius: 30px;
 background: #F5F5F5;
 margin-bottom: 0;
-padding: 1vh 5vw;
+padding: 10vh 5vw;
 display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center; 
   height: auto;
+
 }
 
 .align-heading{
@@ -1221,8 +1226,8 @@ align-self: center !important;
   border-radius: 3rem;
   padding: 0;
   font-size: 2rem;
- padding-right: 1rem;
-padding-left: 1rem;
+ padding-right: 2.5rem;
+padding-left: 2.5rem;
   text-align: center;
   display: inline-block; 
   max-width: 80%;
@@ -1240,6 +1245,7 @@ padding-left: 1rem;
   transition: -webkit-transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  color:#4EAF4E;
 }
 
 #accordion a[aria-expanded=true] .fa-plus {
@@ -1263,7 +1269,7 @@ padding-left: 1rem;
   font-family: "Poppins", sans-serif;
   font-size: 1.75rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 116%; 
 }
 
@@ -1275,6 +1281,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 147.5%; 
 padding: 1rem;
+padding-left: 0rem;
 }
 
 .help-section {
@@ -1292,8 +1299,10 @@ padding: 1rem;
   border-radius: 20px;
   display: flex;
   align-items: center; 
-  width: 1200px;
+  width: 1300px;
   height: 300px;
+  margin-left:1rem;
+  margin-right:1rem;
 }
 
 .right-columns {
@@ -1305,10 +1314,19 @@ padding: 1rem;
 
 .right-columns h2 {
   font-size: 4rem;
+  font-family:'Poppins',sans-serif ;
+  font-weight: 600;
 }
 
 .right-columns p {
   font-size: 1.75rem;
+  font-family: 'Lato',sans-serif;
+  font-weight: 400;
+}
+.right-columns strong{
+  font-size: 1.75rem;
+  font-family: 'Lato',sans-serif;
+  font-weight: 700;
 }
 
 .help-form {
@@ -1320,8 +1338,6 @@ padding: 1rem;
 .form-row {
   margin-top: 25px;
 }
-
-
 .form-control {
   border-radius: 60px !important; 
   padding: 25px 35px !important;
@@ -1338,10 +1354,23 @@ padding: 1rem;
   font-size: 1.5rem;
   cursor: pointer;
 }
-
-
-
-
+#email{
+  margin-bottom: 21px;
+}
+#SUBMIT{
+  font-size: 1.5rem;
+  font-family: 'Lato',sans-serif;
+  font-weight: 700;
+}
+#SUBMI:hover{
+  background-color: #4EAF4E;
+  color: white;
+}
+.btn-block:hover{
+  background-color: #4EAF4E !important;
+  color: white !important;
+  border:none !important;
+}
 
 @media (max-width: 768px) {
   .header-content {
@@ -1637,7 +1666,22 @@ padding: 1rem;
     padding-bottom: 2vh;
   }
 
- 
+  .banner-green {
+    background: #4EAF4E;
+    color: #fff !important;
+    border-radius: 3rem;
+    padding: 0;
+    font-size: 2rem;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    text-align: center;
+    display: inline-block;
+    max-width: 80%;
+    margin-bottom: 0;
+    font-weight: 300;
+    position: relative;
+    left: 8rem;
+}
   #maincontent,
   #accordion {
     width: 100%; 
@@ -1651,7 +1695,9 @@ padding: 1rem;
   .faq-item {
     margin-bottom: 1em; 
   }
-
+  .faq-item p{
+    padding-left:0.5rem;
+  }
   .faq-item a {
     padding: 0.5em; 
     display: block; /* Ensures it takes the full width */
@@ -1688,6 +1734,10 @@ padding: 1rem;
     flex: 0 0 100%; /* Use full width for small screens */
     max-width: 100%; /* Use full width for small screens */
   }
+  #email{
+    width:100%;
+  }
+
 }
 
 
@@ -1873,6 +1923,7 @@ padding: 1rem;
     background-color: white;
     padding: 0.625rem 1.5rem;
     font-size:1.3rem;
+    margin-top:0.5rem;
   }
   .destinations:hover{
      background-color: #4EAF4E;
@@ -2251,6 +2302,9 @@ color: white;}
     margin-top: 2rem;
     width: 10%;
     height: auto;
+  }
+  #email{
+    width:100%;
   }
   
 }
