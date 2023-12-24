@@ -210,32 +210,57 @@ document.addEventListener('DOMContentLoaded', function () {
     timelineOl.style.width = `${timelineItemWidth * 2}px`;
   });
   //numbers animation
-  document.addEventListener('DOMContentLoaded', function () {
-    function animateCount(element, startCount, targetCount, duration) {
-      let currentCount = startCount;
-      const increment = Math.ceil((targetCount - startCount) / (duration / 16));
+  function animateValue(obj, start, end, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      obj.innerHTML = Math.floor(progress * (end - start) + start);
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      } else {
+        // Ensure the final value is exactly as targeted
+        obj.innerHTML = end;
+      }
+    };
+    window.requestAnimationFrame(step);
+  }
 
-      const countInterval = setInterval(function () {
-        currentCount += increment;
-        element.textContent = currentCount > targetCount ? targetCount : currentCount;
-        if (currentCount >= targetCount) {
-          clearInterval(countInterval);
-        }
-      }, 16);
-    }
+  // Intersection Observer callback
+  function onSectionEnter(entries, observer) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Trigger animations if the section is intersecting
+        const enrolledStudentsElement = entry.target.querySelector('.enrolled-students');
+        animateValue(enrolledStudentsElement, 100, 2500, 2000);
 
-    const enrolledStudentsElement = document.querySelector('.enrolled-students');
-    animateCount(enrolledStudentsElement, 1, 100, 2000);
+        const affiliatedUniversitiesElement = entry.target.querySelector('.affiliated-universities');
+        animateValue(affiliatedUniversitiesElement, 20, 200, 2500);
 
-    const affiliatedUniversitiesElement = document.querySelector('.affiliated-universities');
-    animateCount(affiliatedUniversitiesElement, 1, 200, 2500);
+        const coursesElement = entry.target.querySelector('.courses');
+        animateValue(coursesElement, 100, 700, 3000);
 
-    const coursesElement = document.querySelector('.courses');
-    animateCount(coursesElement, 1, 100, 2000);
+        const experienceElement = entry.target.querySelector('.experience');
+        animateValue(experienceElement, 2, 15, 2000);
 
-    const experienceElement = document.querySelector('.experience');
-    animateCount(experienceElement, 1, 2, 1500);
+        // Stop observing the section after animation starts
+        observer.unobserve(entry.target);
+      }
+    });
+  }
+
+  // Create and configure an intersection observer instance
+  const observer = new IntersectionObserver(onSectionEnter, {
+    root: null, // relative to the viewport
+    threshold: 0.4 // trigger when 10% of the target is visible
   });
+
+  // Start observing the section that contains the numbers
+  const countingSection = document.querySelector('.container7');
+  if (countingSection) {
+    observer.observe(countingSection);
+  }
+  
   
   
   
@@ -327,3 +352,9 @@ document.addEventListener('DOMContentLoaded', function () {
   window.resetForm = resetForm;
 });
 const USAimage =  document.getElementById('USA');
+
+
+
+//for sent button
+
+

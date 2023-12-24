@@ -6,11 +6,11 @@
     <title>USA</title>
     <link rel="stylesheet" href="./USA.css" />
     <meta name="viewport" content="width= device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Lato:wght@100;300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="USA.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Lato:wght@100;300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="Metropolis/Metropolis-Medium.otf.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -91,36 +91,36 @@
         <div class="content-set second-set">
           <h2 class="popup-heading">Book Free Consultation</h2>
           <p class="popup-subheading">Preferred Countries (Multiple Checks)</p>
-          <label class="form-label usa-label">USA</label>
-          <input type="checkbox" class="usa" />
-          <label class="form-label usa-label">UK</label>
-          <input type="checkbox" class="usa" />
-          <label class="form-label usa-label">CANADA</label>
-          <input type="checkbox" class="usa" />
-          <label class="form-label usa-label">AUSTRALIA</label>
-          <input type="checkbox" class="usa" />
-          <label class="form-label usa-label">Others</label>
-          <input type="checkbox" class="usa" />
-          <label class="form-label usa-label">No preference</label>
-          <input type="checkbox" class="usa" />
+          <div class="checkdiv"><input type="checkbox" class="usa"  /><label class="form-label usa-label">USA</label>
+          </div>
+          <div class="checkdiv"><input type="checkbox" class="usa" /><label class="form-label usa-label">UK</label>
+          </div>
+          <div class="checkdiv"><input type="checkbox" class="usa" /><label class="form-label usa-label">CANADA</label></div>
+          
+          <div class="checkdiv"><input type="checkbox" class="usa" /><label class="form-label usa-label">AUSTRALIA</label></div>
+         
+          <div class="checkdiv"><input type="checkbox" class="usa" /><label class="form-label usa-label">Others</label></div>
+          <div class="checkdiv"><input type="checkbox" class="usa" />  <label class="form-label usa-label">No preference</label></div>
+        
+          
         </div>
         <div class="content-set third-set">
           <h2 class="popup-heading">Book Free Consultation</h2>
           <p class="popup-subheading">Exam(s) you are planning to take (Multiple checks)</p>
-          <label class="form-label">IELTS</label>
-          <input type="checkbox" class="ielts" />
-          <label class="form-label">TOEFL</label>
-          <input type="checkbox" class="ielts" />
-          <label class="form-label">PTE</label>
-          <input type="checkbox" class="ielts" />
-          <label class="form-label">GRE</label>
-          <input type="checkbox" class="ielts" />
-          <label class="form-label">GMAT</label>
-          <input type="checkbox" class="ielts" />
-          <label class="form-label">SAT</label>
-          <input type="checkbox" class="ielts" />
-          <label class="form-label">No preference</label>
-          <input type="checkbox" class="ielts" />
+          
+          <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">IELTS</label></div>
+          
+          <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">TOEFL</label></div>
+          
+          <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">PTE</label></div>
+          
+          <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">GRE</label></div>
+          
+          <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">GMAT</label></div>
+          
+          <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">SAT</label></div>
+          
+          <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">No preference</label></div>
           <button type="button" id="book" class="form-button book-button" onclick="submitForm()">BOOK</button>
         </div>
       </div>
@@ -140,11 +140,11 @@
   </div>
     <main>
         <div class="container1">
-            <img src="./USA.assets/usahomelogo.svg" class="background" alt="secondphoto" />
+            <img src="./USA.assets/USA.svg" class="background" alt="secondphoto" />
             <h2 class="stusa">Study in USA</h2>
         </div>
         <div class="container2">
-            <h2>Why Study in USA ?</h2>
+            <h2 class="titles1">Why Study in USA ?</h2>
             <p>Studying in the USA offers an unparalleled opportunity to engage with one of the
                 world's most esteemed higher education systems. It provides access to state-of-the-art technology
                 and cutting-edge research, creating an immersive and collaborative learning experience. With a vast
@@ -154,7 +154,7 @@
                 your academic and professional goals. Graduating from the USA equips you with a global perspective
                 and practical skills essential for the future.</p>
             <img src="./USA.assets/Content.png" alt="2ndphoto" class="discuss" />
-            <h2>Career and Industry Insights</h2>
+            <h2 class="titles2">Career and Industry Insights</h2>
             <p>In the USA, a global economic powerhouse, diverse and promising career opportunities
                 abound across multiple industries. Technology and IT fields continue to flourish, with Silicon
                 Valley leading the charge in innovation. Healthcare and biotechnology sectors offer substantial

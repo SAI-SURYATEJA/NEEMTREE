@@ -91,36 +91,36 @@
         <div class="content-set second-set">
           <h2 class="popup-heading">Book Free Consultation</h2>
           <p class="popup-subheading">Preferred Countries (Multiple Checks)</p>
-          <label class="form-label usa-label">USA</label>
-          <input type="checkbox" class="usa" />
-          <label class="form-label usa-label">UK</label>
-          <input type="checkbox" class="usa" />
-          <label class="form-label usa-label">CANADA</label>
-          <input type="checkbox" class="usa" />
-          <label class="form-label usa-label">AUSTRALIA</label>
-          <input type="checkbox" class="usa" />
-          <label class="form-label usa-label">Others</label>
-          <input type="checkbox" class="usa" />
-          <label class="form-label usa-label">No preference</label>
-          <input type="checkbox" class="usa" />
+          <div class="checkdiv"><input type="checkbox" class="usa"  /><label class="form-label usa-label">USA</label>
+          </div>
+          <div class="checkdiv"><input type="checkbox" class="usa" /><label class="form-label usa-label">UK</label>
+          </div>
+          <div class="checkdiv"><input type="checkbox" class="usa" /><label class="form-label usa-label">CANADA</label></div>
+          
+          <div class="checkdiv"><input type="checkbox" class="usa" /><label class="form-label usa-label">AUSTRALIA</label></div>
+         
+          <div class="checkdiv"><input type="checkbox" class="usa" /><label class="form-label usa-label">Others</label></div>
+          <div class="checkdiv"><input type="checkbox" class="usa" />  <label class="form-label usa-label">No preference</label></div>
+        
+          
         </div>
         <div class="content-set third-set">
           <h2 class="popup-heading">Book Free Consultation</h2>
           <p class="popup-subheading">Exam(s) you are planning to take (Multiple checks)</p>
-          <label class="form-label">IELTS</label>
-          <input type="checkbox" class="ielts" />
-          <label class="form-label">TOEFL</label>
-          <input type="checkbox" class="ielts" />
-          <label class="form-label">PTE</label>
-          <input type="checkbox" class="ielts" />
-          <label class="form-label">GRE</label>
-          <input type="checkbox" class="ielts" />
-          <label class="form-label">GMAT</label>
-          <input type="checkbox" class="ielts" />
-          <label class="form-label">SAT</label>
-          <input type="checkbox" class="ielts" />
-          <label class="form-label">No preference</label>
-          <input type="checkbox" class="ielts" />
+          
+          <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">IELTS</label></div>
+          
+          <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">TOEFL</label></div>
+          
+          <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">PTE</label></div>
+          
+          <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">GRE</label></div>
+          
+          <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">GMAT</label></div>
+          
+          <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">SAT</label></div>
+          
+          <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">No preference</label></div>
           <button type="button" id="book" class="form-button book-button" onclick="submitForm()">BOOK</button>
         </div>
       </div>
@@ -430,7 +430,8 @@
             <div class="card text-center">
               <img src="assets/students1.svg" alt="Icon 1">
               <h3 class="num-heading">Enrolled Students</h3>
-              <p class="numbers count enrolled-students"></p>
+              <div class="plus-num"><p class="numbers count enrolled-students">100 </p><p class="numbers"> +</p></div>
+              
             </div>
           </div>
   
@@ -438,7 +439,7 @@
             <div class="card text-center">
               <img src="assets/universities2.svg" alt="Icon 2">
               <h3 class="num-heading">Affiliated universities</h3>
-              <p class="numbers count affiliated-universities"></p>
+              <div class="plus-num"><p class="numbers count affiliated-universities">150</p><p class="numbers"> +</p></div>
             </div>
           </div>
   
@@ -446,7 +447,7 @@
             <div class="card text-center">
               <img src="assets/3courses.svg" alt="Icon 3">
               <h3 class="num-heading">Courses</h3>
-              <p class="numbers count courses"></p>
+              <div class="plus-num"><p class="numbers count courses">300</p><p class="numbers"> +</p></div>
             </div>
           </div>
   
@@ -454,13 +455,14 @@
             <div class="card text-center">
               <img src="assets/experience4.svg" alt="Icon 4">
               <h3 class="num-heading">Years of experience</h3>
-              <p class="numbers count experience"></p>
+              <div class="plus-num"><p class="numbers count experience">15</p><p class="numbers"> yrs</p></div>
             </div>
           </div>
   
         </div>
       </div>
     </section>
+
 
 
     <section>
