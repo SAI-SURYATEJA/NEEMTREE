@@ -194,6 +194,51 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  document.addEventListener('DOMContentLoaded', function () {
+    const timelineOl = document.querySelector('.timeline ol');
+    
+    const clonedTimelineContent = timelineOl.cloneNode(true);
+    timelineOl.appendChild(clonedTimelineContent);
+
+    const timelineItemWidth = timelineOl.querySelector('li').offsetWidth;
+
+    
+    const animationDuration = timelineItemWidth / 100 * 5; // 
+
+    timelineOl.style.animation = `scrollTimeline ${animationDuration}s linear infinite`;
+
+    timelineOl.style.width = `${timelineItemWidth * 2}px`;
+  });
+  //numbers animation
+  document.addEventListener('DOMContentLoaded', function () {
+    function animateCount(element, startCount, targetCount, duration) {
+      let currentCount = startCount;
+      const increment = Math.ceil((targetCount - startCount) / (duration / 16));
+
+      const countInterval = setInterval(function () {
+        currentCount += increment;
+        element.textContent = currentCount > targetCount ? targetCount : currentCount;
+        if (currentCount >= targetCount) {
+          clearInterval(countInterval);
+        }
+      }, 16);
+    }
+
+    const enrolledStudentsElement = document.querySelector('.enrolled-students');
+    animateCount(enrolledStudentsElement, 1, 100, 2000);
+
+    const affiliatedUniversitiesElement = document.querySelector('.affiliated-universities');
+    animateCount(affiliatedUniversitiesElement, 1, 200, 2500);
+
+    const coursesElement = document.querySelector('.courses');
+    animateCount(coursesElement, 1, 100, 2000);
+
+    const experienceElement = document.querySelector('.experience');
+    animateCount(experienceElement, 1, 2, 1500);
+  });
+  
+  
+  
   // jQuery dependent functionality
   $(".front_arrow").click(function () {
     $("#testimonial-carousel").carousel("next");
@@ -217,6 +262,7 @@ document.addEventListener('DOMContentLoaded', function () {
     $(".carousel-cards").removeClass("active");
     $(".carousel-cards").slice(index, index + visibleCards).addClass("active");
   });
+
 
   // Popup form functionality
   var sets = document.querySelectorAll('.content-set');

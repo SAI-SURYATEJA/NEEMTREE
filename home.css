@@ -836,6 +836,11 @@ font-family:'Poppins',sans-serif ;
   justify-content: center;
   align-items: left;
   overflow-x: auto; 
+  gap: 1.875rem;
+}
+.container6 .title{
+  font-family:'Poppins',sans-serif ;
+  font-weight:600; 
 }
 
 .timeline {
@@ -845,7 +850,7 @@ font-family:'Poppins',sans-serif ;
 
 .timeline ol {
   width: 100%; 
-  padding: 300px 0;
+  padding: 230px 0;
   transition: all 1s;
   display: flex;
   gap: 0;
@@ -921,28 +926,32 @@ font-family:'Poppins',sans-serif ;
   position: absolute;
   left: calc(50% + 7px); 
   transform: translateX(-50%); 
-  width: 24.75rem;
-  height:16.75rem;
+  width: 25.75rem;
+  height:15.75rem;
   padding: 13px;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   white-space: normal;
-  color: black;
+  color: #718096;
   background: white;
   border-radius: 9px;
   border: 1px solid #959595;
+  font-family:'Lato',sans-serif;
+  font-weight: 400;
 }
 .timeline ol li:nth-child(odd) div {
   position: absolute;
   transform: translateX(-50%); 
-  width: 24.75rem;
-  height:16.75rem;
+  width: 25.75rem;
+  height:15.75rem;
   padding: 13px;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   white-space: normal;
-  color: black;
+  color: #718096;
   background: white;
   border-radius: 9px;
   border: 1px solid #959595;
+  font-family:'Lato',sans-serif;
+  font-weight: 400;
 }
 .timeline ol li:nth-child(odd) div {
   top: -35px;
@@ -985,7 +994,9 @@ font-family:'Poppins',sans-serif ;
 .timeline .time-card .time-cardcontent1{
 font-size: 1.75rem;
 font-weight: 500;
-color: #1A202C
+color: #1A202C;
+font-family: 'Poppins', sans-serif;
+font-weight:600;
 
 }
 .timeline .time-card span{
@@ -996,9 +1007,23 @@ color: #1A202C
   }
   .timeline .time-card .test-cardcontent2{
     color: var(--Gray-gray-600, #718096);
-font-family: 'Lato', sans-serif;
-font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
   }
+
+
+.timeline ol {
+  animation: scrollTimeline 15s linear infinite; 
+}
+
+@keyframes scrollTimeline {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
 
   .container7 {
@@ -1026,22 +1051,7 @@ font-weight: 400;
     width:100%;
 
   }
-  
-  /*.custom-col {
-    border-right: 1px solid rgba(196, 196, 196, 0.50);
-    padding: 0 6rem; 
-    flex: 1;
-  box-sizing: border-box;
-  }
-  
-  .numbers {
-    font-size: 3.5rem;
-    color: #4EAF4E;
-    font-weight: 600;
-    margin-top: 2rem;
-    background-color: #FAFFFB;
-  }
-  */
+
   .num-center{
     text-align: center;
   }
@@ -1070,6 +1080,8 @@ font-weight: 400;
     font-weight: 600;
     margin-top: 2rem;
     background-color: #FAFFFB;
+    font-family: 'Avenir', sans-serif;
+    font-weight: 900;
   }
 
 
@@ -1088,8 +1100,11 @@ font-weight: 400;
     padding: 1vh 5vw;
     padding-bottom: 4vh;
     padding-top: 5vh;
+    gap:3rem;
 }
-
+.slide{
+  display: contents;
+}
 .align-head{
   display: flex;
   flex-direction: row;
@@ -1104,77 +1119,25 @@ font-weight: 400;
   border-radius: 100px;
 border: 1px solid #000;
 }
-.front_arrow{
+.back_arrow:hover{
   background: #4EAF4E;
+}
+.front_arrow{
+  background: transparent;
   border: none;
   padding: 2rem;
   border-radius: 100px;
+  border: 1px solid #000;
 }
-/*.carousel-cards {
-  margin-bottom: 30px;
-
+.front_arrow:hover{
+  background: #4EAF4E;
 }
-
-.testimonial-card {
-  border-radius: 21px;
-background: #FEFFFF;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-padding: 3rem;
-}
-
-.testimonial-card p {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.testimonial-author {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.testimonial-author img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 15px;
-}
-
-.testimonial-author p {
-  font-size: 14px;
-  color: #777;
-}
-
-.carousel-control {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  color: #333;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.back_arrow {
-  left: 0;
-}
-
-.front_arrow {
-  right: 0;
-}
-
-.carousel-inner {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}*/
 .carousel-cards {
   height: 100%;
 }
 
 .testimonial-card {
-  padding: 3rem;
+  padding: 4rem;
   border-radius: 20px;
   background: white;
   display: flex;
@@ -1183,12 +1146,13 @@ padding: 3rem;
   justify-content: space-between;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   height: 100%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2.5rem;
 }
 .testimonial-card p {
   color: black;
   font-size: 1.22rem;
   font-weight: 400;
+  font-family:'Lato',sans-serif;
 }
 
 .testimonial-card .testimonial-author {
@@ -1205,8 +1169,15 @@ padding: 3rem;
 
 .testimonial-card .testimonial-author p {
   color: black;
-  font-size: 0.9rem;
+  font-size: 1.125rem;
   font-weight: 400;
+  font-family: 'Lato',sans-serif;
+}
+.author-info strong{
+  font-weight: 600;
+  font-size: 1.25rem;
+  font-family: 'Poppins', sans-serif;
+  color:black;
 }
 
 
@@ -1560,7 +1531,7 @@ padding: 1rem;
 
 @media (max-width: 1024px) {
   .timeline ol {
-    padding: 233px 0; /* Adjusted padding for smaller screens */
+    padding: 230px 0; /* Adjusted padding for smaller screens */
   }
 
   .timeline ol li {
@@ -1573,7 +1544,7 @@ padding: 1rem;
 
 @media (max-width: 768px) {
   .timeline ol {
-    padding: 230px 0; /* Adjusted padding for smaller screens */
+    padding: 200px 0; /* Adjusted padding for smaller screens */
   }
 
   .timeline ol li {
@@ -1622,10 +1593,12 @@ padding: 1rem;
     font-size: 2.5rem; /* Reduce font size for smaller screens */
     color: #4EAF4E;
     font-weight: 600;
-    margin-top: 1rem; /* Adjust margin for smaller screens */
+    margin-top: 1rem;
+    font-family: 'Avenir',sans-serif;
+    font-weight: 900; /* Adjust margin for smaller screens */
   }
   .card img{
-    
+    border-radius: 4px;
     left: 0rem;
   }
 }
@@ -1635,6 +1608,7 @@ padding: 1rem;
 @media (max-width: 768px) {
   .carousel {
     padding: 5vh 2vw; 
+    gap:3rem;
   }
 
   .title{
@@ -2583,6 +2557,10 @@ font-family:'Poppins',sans-serif ;
   background-color: #FFCC4A;
   color: white;
 }
+.container6 .title{
+  font-family:'Poppins',sans-serif ;
+  font-weight:600; 
+}
 }
 @media (min-width:1201px) and (max-width:1270px){
   .btn3{
@@ -2644,10 +2622,10 @@ font-family:'Poppins',sans-serif ;
     }
     
     .card img {
-      width: 60%;
+      width: 30%;
       object-fit: fill;
       height: 100%;
-      border-radius: 40px;
+      border-radius: 4px;
       position: unset;
     }
     
@@ -2664,6 +2642,8 @@ font-family:'Poppins',sans-serif ;
       font-weight: 600;
       margin-top: 2rem;
       background-color: #fafffb;
+      font-family: 'Avenir',sans-serif;
+    font-weight: 900;
     }
    .num-row {
         width: 100%; /* Adjust as needed */
@@ -2704,10 +2684,10 @@ font-family:'Poppins',sans-serif ;
     justify-content: space-around; /* Adjust as needed */
   }
   .card img{
-    width: 60%;
+    width: 30%;
     object-fit: fill;
     height: 100%;
-    border-radius: 40px;
+    border-radius: 4px;
     position: unset;
   }
   .custom-col {
@@ -2723,6 +2703,8 @@ font-family:'Poppins',sans-serif ;
     font-weight: 600;
     margin-top: 2rem;
     background-color: #FAFFFB;
+    font-family: 'Avenir',sans-serif;
+    font-weight: 900;
   }
 }
 @media (min-width:1201px){
@@ -2790,6 +2772,19 @@ font-family:'Poppins',sans-serif ;
     margin-bottom: 0;
   }
 }
-@media (min-width:1025px) and (max-width:1210px){
-
+@media (min-width:1300px) and (max-width:1450px){
+  .testimonial-card {
+    padding: 4rem;
+    border-radius: 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 100%;
+    margin-bottom: 0.5rem;
+    height: 25.575rem;
+    width: 39.1875rem;
+  }
 }
