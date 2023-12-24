@@ -1121,6 +1121,7 @@ border: 1px solid #000;
 }
 .back_arrow:hover{
   background: #4EAF4E;
+  border:none;
 }
 .front_arrow{
   background: transparent;
@@ -1131,6 +1132,7 @@ border: 1px solid #000;
 }
 .front_arrow:hover{
   background: #4EAF4E;
+  border:none;
 }
 .carousel-cards {
   height: 100%;
