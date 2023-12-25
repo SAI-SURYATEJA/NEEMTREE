@@ -48,8 +48,30 @@ a:not([class]) {
   z-index: 100000;
   border-radius: 3rem;
   background-color: #F5F5F5;
-  width: 27%;
+  width: 39.4rem;
   min-height: 50%;
+}
+@media(max-width:400px){
+  .popup-form {
+    background-image: url('./bookingform.assets/consultation-form.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 4rem;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 100000;
+    border-radius: 3rem;
+    background-color: #F5F5F5;
+    width: 24rem;
+    min-height: 50%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 .popup-heading{
   color: #FBC336;

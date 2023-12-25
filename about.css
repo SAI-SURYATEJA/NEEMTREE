@@ -47,8 +47,30 @@ a:not([class]) {
   z-index: 100000;
   border-radius: 3rem;
   background-color: #F5F5F5;
-  width: 27%;
+  width: 39.4rem;
   min-height: 50%;
+}
+@media(max-width:400px){
+  .popup-form {
+    background-image: url('./bookingform.assets/consultation-form.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 4rem;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 100000;
+    border-radius: 3rem;
+    background-color: #F5F5F5;
+    width: 24rem;
+    min-height: 50%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 .popup-heading{
   color: #FBC336;
@@ -158,7 +180,7 @@ input[type="checkbox"] {
     height: 4.5rem;
     font-size:1.6rem;
     font-weight: 600;
-    
+    margin-top:1rem
 }
 
 .close-btn {
@@ -443,14 +465,14 @@ color: white;}
   align-self: center;
   flex-direction: column;
   position: relative;
-  padding-top: 6vh;
+  padding-top: 8vh;
 }
 
 .container2 h2 {
   color: #181818;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  font-size: 3.5rem;
+  font-size: 4.75rem;
   font-style: normal;
   font-weight: 600;
   line-height: 116%;
@@ -458,10 +480,10 @@ color: white;}
   bottom: 35px;
 }
 
-.container2 p {
-  width: 80%; /* Adjust the width as needed for responsiveness */
-  max-width: 800px; /* Set a maximum width for larger screens */
-  height: auto; /* Allow the height to adjust based on content */
+.first-content{
+  width: 80%; 
+  max-width: 800px; 
+  height: auto;
   color: #595566;
   text-align: center;
   font-family: 'Lato', sans-serif;
@@ -472,7 +494,6 @@ color: white;}
   position: relative;
   bottom: 30px;
 }
-
 .discuss {
   width: 80%; /* Adjust the width as needed for responsiveness */
   max-width: 1062px; /* Set a maximum width for larger screens */
@@ -497,9 +518,12 @@ color: white;}
   padding-left: 1rem;
     text-align: center;
     display: inline-block; 
-    max-width: 80%;
+    min-width: 70%;
     margin-bottom: 0;
-    font-weight: 300;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    bottom: 35px;
   }
 
 
@@ -671,7 +695,6 @@ color: white;}
 }
 
 
-
 .help-section {
   display: flex;
   align-items: center;
@@ -681,7 +704,7 @@ color: white;}
 
 .containerform {
   background-image: url('./about.assets/background1.png');
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   border-radius: 20px;
   display: flex;
@@ -690,7 +713,9 @@ color: white;}
   width: 1200px;
   height: 300px;
   padding: 0 8vw ;
+  padding-left:13vw;
 }
+
 
 .right-columns {
   text-align: left;
@@ -701,10 +726,13 @@ color: white;}
 
 .right-columns h2 {
   font-size: 4rem;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 600;
 }
 
 .right-columns p {
   font-size: 1.75rem;
+  font-family: 'Lato',sans-serif;
 }
 
 .left-columns{
@@ -719,17 +747,39 @@ color: white;}
   border-radius: 60px !important;
   padding:15px 25px !important;
   color: #181818 !important;
+  font-family: 'Lato',sans-serif !important;
   font-size: 2rem !important;
   cursor: pointer;
   width: 60% !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
+}
+.btn-primary:hover{
+  background-color: #4EAF4E !important;
+  color:white !important;
+  border: none !important;
 }
 
 
 
 
 
-
+@media (min-width:769px) and (max-width:1200px){
+  .containerform {
+    background-image: url('./about.assets/background1.png');
+    background-size: 100% 100%;
+    background-position: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 1200px;
+    height: 250px;
+    padding: 0 8vw ;
+    padding-left:13vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
 @media (max-width: 768px) {
   .help-section{
     padding-bottom: 2vh ;
@@ -753,10 +803,13 @@ color: white;}
   }
   .right-columns h2 {
     font-size: 2rem;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
   }
   
   .right-columns p {
     font-size: 1.2rem;
+    font-family: 'Lato',sans-serif;
   }
 
 
@@ -768,11 +821,10 @@ color: white;}
     padding:10px 20px !important;
     width: 100% !important;
     font-size: 1.5rem !important;
-
+    font-family: 'Lato',sans-serif !important;
+    font-weight: 600 !important;
   }
 }
-
-
 
 .footer-bg{
   background-color: #000;
