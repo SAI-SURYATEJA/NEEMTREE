@@ -7,8 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Lato:wght@100;300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="Metropolis/Metropolis-Medium.otf.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Lato:wght@100;300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="Metropolis/Metropolis-Medium.otf.css">
 
   <title>Vite App</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
@@ -35,8 +37,10 @@
 
             <div class="dropdown-content">
               <a href="./USA.html">USA</a>
-              <a href="#">UK</a>
-              <a href="#">Canada</a>
+              <a href="./UK.html">UK</a>
+              <a href="./CANADA.html">CANADA</a>
+              <a href="./AUSTRALIA.html">AUSTRALIA</a>
+              <a href="./Restoftheworld.html">REST of the World</a>
             </div>
           </div>
         </li>
@@ -48,11 +52,12 @@
 
             <div class="dropdown-content">
               <a href="./IELTS.html">IELTS</a>
-              <a href="#">TOEFL</a>
-              <a href="#">GRE</a>
-              <a href="#">GMAT</a>
-              <a href="#">SAT</a>
-              <a href="#">PTE</a>
+              <a href="./TOEFL.html">TOEFL</a>
+              <a href="./GRE.html">GRE</a>
+              <a href="./GMAT.html">GMAT</a>
+              <a href="./SAT.html">SAT</a>
+              <a href="./PTE.html">PTE</a>
+              <a href="./ACT.html">ACT</a>
             </div>
           </div>
         </li>
@@ -91,36 +96,41 @@
         <div class="content-set second-set">
           <h2 class="popup-heading">Book Free Consultation</h2>
           <p class="popup-subheading">Preferred Countries (Multiple Checks)</p>
-          <div class="checkdiv"><input type="checkbox" class="usa"  /><label class="form-label usa-label">USA</label>
+          <div class="checkdiv"><input type="checkbox" class="usa" /><label class="form-label usa-label">USA</label>
           </div>
           <div class="checkdiv"><input type="checkbox" class="usa" /><label class="form-label usa-label">UK</label>
           </div>
-          <div class="checkdiv"><input type="checkbox" class="usa" /><label class="form-label usa-label">CANADA</label></div>
-          
-          <div class="checkdiv"><input type="checkbox" class="usa" /><label class="form-label usa-label">AUSTRALIA</label></div>
-         
-          <div class="checkdiv"><input type="checkbox" class="usa" /><label class="form-label usa-label">Others</label></div>
-          <div class="checkdiv"><input type="checkbox" class="usa" />  <label class="form-label usa-label">No preference</label></div>
-        
-          
+          <div class="checkdiv"><input type="checkbox" class="usa" /><label class="form-label usa-label">CANADA</label>
+          </div>
+
+          <div class="checkdiv"><input type="checkbox" class="usa" /><label
+              class="form-label usa-label">AUSTRALIA</label></div>
+
+          <div class="checkdiv"><input type="checkbox" class="usa" /><label class="form-label usa-label">Others</label>
+          </div>
+          <div class="checkdiv"><input type="checkbox" class="usa" /> <label class="form-label usa-label">No
+              preference</label></div>
+
+
         </div>
         <div class="content-set third-set">
           <h2 class="popup-heading">Book Free Consultation</h2>
           <p class="popup-subheading">Exam(s) you are planning to take (Multiple checks)</p>
-          
+
           <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">IELTS</label></div>
-          
+
           <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">TOEFL</label></div>
-          
+
           <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">PTE</label></div>
-          
+
           <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">GRE</label></div>
-          
+
           <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">GMAT</label></div>
-          
+
           <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">SAT</label></div>
-          
-          <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">No preference</label></div>
+
+          <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">No preference</label>
+          </div>
           <button type="button" id="book" class="form-button book-button" onclick="submitForm()">BOOK</button>
         </div>
       </div>
@@ -200,7 +210,7 @@
         <div class="card-row">
           <div class="col-md-4">
             <div class="card1">
-              <a href= "./USA.html">
+              <a href="./USA.html">
                 <img src="assets/usa.svg" alt="USA"></a>
               <p class="places">USA</p>
             </div>
@@ -237,60 +247,66 @@
         <div class="row">
 
           <div class="col-md-4">
-            <a href="./IELTS.html" alt="IELTS"> <div class="test-card">
-              <h3>IELTS</h3>
-              <p>International English Language Testing System</p>
-              <img src="assets/test-arrow.svg" alt="Arrow Image">
-            </div>
+            <a href="./IELTS.html" alt="IELTS">
+              <div class="test-card">
+                <h3>IELTS</h3>
+                <p>International English Language Testing System</p>
+                <img src="assets/test-arrow.svg" alt="Arrow Image">
+              </div>
           </div>
-        </a> 
+          </a>
 
           <div class="col-md-4">
-           <a href="./IELTS.html" alt="TOEFL"><div class="test-card">
-              <h3>TOEFL</h3>
-              <p>Test of English as a Foreign Language</p>
-              <img src="assets/test-arrow.svg" alt="Arrow Image">
-            </div>
+            <a href="./IELTS.html" alt="TOEFL">
+              <div class="test-card">
+                <h3>TOEFL</h3>
+                <p>Test of English as a Foreign Language</p>
+                <img src="assets/test-arrow.svg" alt="Arrow Image">
+              </div>
           </div>
-        </a> 
+          </a>
 
           <div class="col-md-4">
-            <a href="./IELTS.html" alt="PTE"><div class="test-card">
-              <h3>PTE</h3>
-              <p>Pearson Test of English</p>
-              <img src="assets/test-arrow.svg" alt="Arrow Image">
-            </div>
+            <a href="./IELTS.html" alt="PTE">
+              <div class="test-card">
+                <h3>PTE</h3>
+                <p>Pearson Test of English</p>
+                <img src="assets/test-arrow.svg" alt="Arrow Image">
+              </div>
           </div>
         </div>
-      </a> 
+        </a>
         <div class="row">
 
           <div class="col-md-4">
-            <a href="./IELTS.html" alt="GRE"> <div class="test-card">
-              <h3>GRE</h3>
-              <p>Graduate Record Exam</p>
-              <img src="assets/test-arrow.svg" alt="Arrow Image">
-            </div>
+            <a href="./IELTS.html" alt="GRE">
+              <div class="test-card">
+                <h3>GRE</h3>
+                <p>Graduate Record Exam</p>
+                <img src="assets/test-arrow.svg" alt="Arrow Image">
+              </div>
           </div>
-        </a> 
+          </a>
 
           <div class="col-md-4">
-            <a href="./IELTS.html" alt="GMAT"> <div class="test-card">
-              <h3>GMAT</h3>
-              <p>Graduate Management Admission Test</p>
-              <img src="assets/test-arrow.svg" alt="Arrow Image">
-            </div>
+            <a href="./IELTS.html" alt="GMAT">
+              <div class="test-card">
+                <h3>GMAT</h3>
+                <p>Graduate Management Admission Test</p>
+                <img src="assets/test-arrow.svg" alt="Arrow Image">
+              </div>
           </div>
-        </a> 
+          </a>
 
           <div class="col-md-4">
-            <a href="./IELTS.html" alt="SAT"><div class="test-card">
-              <h3>SAT</h3>
-              <p>Scholastic Assessment Test</p>
-              <img src="assets/test-arrow.svg" alt="Arrow Image">
-            </div>
+            <a href="./IELTS.html" alt="SAT">
+              <div class="test-card">
+                <h3>SAT</h3>
+                <p>Scholastic Assessment Test</p>
+                <img src="assets/test-arrow.svg" alt="Arrow Image">
+              </div>
           </div>
-        </a> 
+          </a>
         </div>
       </div>
 
@@ -313,6 +329,7 @@
             <li><img src="assets/Tick.svg" alt="">Academic and Career Counselling</li>
             <li><img src="assets/Tick.svg" alt="">Visa application handling</li>
             <li><img src="assets/Tick.svg" alt="">Profile evaluation</li>
+            <li><img src="assets/Tick.svg" alt="">Scholarship Guidance</li>
             <li><img src="assets/Tick.svg" alt="">Language Proficiency Assistance</li>
             <li><img src="assets/Tick.svg" alt="">Travel assistance</li>
           </ul>
@@ -330,86 +347,86 @@
           <ol>
             <li>
               <div class="time-card">
-                <p class="time-cardcontent1"><span>#1</span> Test Preparation</p> 
-               <p class="time-cardcontent">Cracking exams like GMAT, GRE, IELTS... is where you should
-                begin your journey with.</p>
+                <p class="time-cardcontent1"><span>#1</span> Test Preparation</p>
+                <p class="time-cardcontent">Cracking exams like GMAT, GRE, IELTS... is where you should
+                  begin your journey with.</p>
               </div>
             </li>
             <li>
               <div class="time-card">
-                <p class="time-cardcontent1"><span>#2</span> Expert Counselling</p> 
+                <p class="time-cardcontent1"><span>#2</span> Expert Counselling</p>
                 <p class="time-cardcontent2">Speak with experts who have years of experience in the domain
-                and stay updated with the latest advancements.</p>
+                  and stay updated with the latest advancements.</p>
               </div>
             </li>
             <li>
               <div class="time-card">
-                <p class="time-cardcontent1"><span>#3</span> Country Selection</p> 
+                <p class="time-cardcontent1"><span>#3</span> Country Selection</p>
                 <p class="time-cardcontent2">Choice of country has significant effect on your career path and
-                other important aspects.</p>
+                  other important aspects.</p>
               </div>
             </li>
             <li>
               <div class="time-card">
-                <p class="time-cardcontent1"><span>#4</span> University Selection</p> 
+                <p class="time-cardcontent1"><span>#4</span> University Selection</p>
                 <p class="time-cardcontent2">A good university is the primary key to unlocking your true
-                potential and carving out your best version.</p>
+                  potential and carving out your best version.</p>
               </div>
             </li>
             <li>
               <div class="time-card">
-                <p class="time-cardcontent1"><span>#5</span> Admission Formalities</p> 
+                <p class="time-cardcontent1"><span>#5</span> Admission Formalities</p>
                 <p class="time-cardcontent2">From sending out your application to filling out every minute
-                detail until your joining, there are a ton of admission formalities to complete.</p>
+                  detail until your joining, there are a ton of admission formalities to complete.</p>
               </div>
             </li>
             <li>
               <div class="time-card">
-                <p class="time-cardcontent1"><span>#6</span> Scholarship Guidance</p> 
+                <p class="time-cardcontent1"><span>#6</span> Scholarship Guidance</p>
                 <p class="time-cardcontent2">Every educational voyage is incomplete without a scholarship, but
-                are you aware of all the options.</p>
+                  are you aware of all the options.</p>
               </div>
             </li>
             <li>
               <div class="time-card">
                 <p class="time-cardcontent1"><span>#7</span> Financial Assistance</p>
                 <p class="time-cardcontent2"> Get to know about all the procedures and options to fund your
-                world class education.</p>
+                  world class education.</p>
               </div>
             </li>
             <li>
               <div class="time-card">
-                <p class="time-cardcontent1"><span>#8</span> Interview Preparation</p> 
+                <p class="time-cardcontent1"><span>#8</span> Interview Preparation</p>
                 <p class="time-cardcontent2">Every step is a challenge, and the most important of them
-                all is cracking all interviews.</p>
+                  all is cracking all interviews.</p>
               </div>
             </li>
             <li>
               <div class="time-card">
-                <p class="time-cardcontent1"><span>#9</span> Visa Assistance</p> 
+                <p class="time-cardcontent1"><span>#9</span> Visa Assistance</p>
                 <p class="time-cardcontent2">Get to know about all the procedures and options to fund your
-                world class education.</p>
+                  world class education.</p>
               </div>
             </li>
             <li>
               <div class="time-card">
-                <p class="time-cardcontent1"><span>#10</span> Forex Assistance</p> 
+                <p class="time-cardcontent1"><span>#10</span> Forex Assistance</p>
                 <p class="time-cardcontent2">Every step is a challenge, and the most important of them all
-                is cracking all interviews.</p>
+                  is cracking all interviews.</p>
               </div>
             </li>
             <li>
               <div class="time-card">
-                <p class="time-cardcontent1"><span>#11</span> Air Ticket</p> 
+                <p class="time-cardcontent1"><span>#11</span> Air Ticket</p>
                 <p class="time-cardcontent2">Get the best deals on your travel charges and have a seamless booking
-                process.</p>
+                  process.</p>
               </div>
             </li>
             <li>
               <div class="time-card">
-                <p class="time-cardcontent1"><span>#12</span> Travel Insurance</p> 
+                <p class="time-cardcontent1"><span>#12</span> Travel Insurance</p>
                 <p class="time-cardcontent2">Now, apply for your travel insurance and then you are all set
-                to travel across the globe to pursue your World-class education.</p>
+                  to travel across the globe to pursue your World-class education.</p>
               </div>
             </li>
           </ol>
@@ -425,40 +442,52 @@
           Trust The Numbers
         </h2>
         <div class="num-row justify-content-center">
-  
+
           <div class="custom-col">
             <div class="card text-center">
               <img src="assets/students1.svg" alt="Icon 1">
               <h3 class="num-heading">Enrolled Students</h3>
-              <div class="plus-num"><p class="numbers count enrolled-students">100 </p><p class="numbers"> +</p></div>
-              
+              <div class="plus-num">
+                <p class="numbers count enrolled-students">100 </p>
+                <p class="numbers"> +</p>
+              </div>
+
             </div>
           </div>
-  
+
           <div class="custom-col">
             <div class="card text-center">
               <img src="assets/universities2.svg" alt="Icon 2">
               <h3 class="num-heading">Affiliated universities</h3>
-              <div class="plus-num"><p class="numbers count affiliated-universities">150</p><p class="numbers"> +</p></div>
+              <div class="plus-num">
+                <p class="numbers count affiliated-universities">150</p>
+                <p class="numbers"> +</p>
+              </div>
             </div>
           </div>
-  
+
           <div class="custom-col">
             <div class="card text-center">
               <img src="assets/3courses.svg" alt="Icon 3">
               <h3 class="num-heading">Courses</h3>
-              <div class="plus-num"><p class="numbers count courses">300</p><p class="numbers"> +</p></div>
+              <div class="plus-num">
+                <p class="numbers count courses">300</p>
+                <p class="numbers"> +</p>
+              </div>
             </div>
           </div>
-  
+
           <div class="custom-col">
             <div class="card text-center">
               <img src="assets/experience4.svg" alt="Icon 4">
               <h3 class="num-heading">Years of experience</h3>
-              <div class="plus-num"><p class="numbers count experience">15</p><p class="numbers"> yrs</p></div>
+              <div class="plus-num">
+                <p class="numbers count experience">15</p>
+                <p class="numbers"> yrs</p>
+              </div>
             </div>
           </div>
-  
+
         </div>
       </div>
     </section>
@@ -640,8 +669,10 @@
               </a>
               <div class="collapse" id="faq-17">
                 <div class="card card-body border-0 p-0">
-                  <p>Yes, we assist in finding scholarships and financial aid options to make studying abroad more
-                    affordable, which can include merit-based awards, grants, and international student loans.</p>
+                  <p>Studying abroad enhances your global perspective, improves language skills, and offers diverse
+                    cultural experiences. It also boosts employability, with studies showing a 20% higher starting
+                    salary for international graduates.
+                  </p>
                 </div>
               </div>
             </div>
@@ -658,8 +689,8 @@
               </a>
               <div class="collapse" id="faq-18">
                 <div class="card card-body border-0 p-0">
-                  <p>Yes, we assist in finding scholarships and financial aid options to make studying abroad more
-                    affordable, which can include merit-based awards, grants, and international student loans.</p>
+                  <p>Yes, we assist in finding scholarships and financial aid options to make studying abroad more affordable, which can include merit-based awards, grants, and international student loans.
+                  </p>
                 </div>
               </div>
             </div>
@@ -676,8 +707,8 @@
               </a>
               <div class="collapse" id="faq-19">
                 <div class="card card-body border-0 p-0">
-                  <p>Yes, we assist in finding scholarships and financial aid options to make studying abroad more
-                    affordable, which can include merit-based awards, grants, and international student loans.</p>
+                  <p>The duration varies by country and university, but generally, it takes 9 to 18 months before the intended start date to complete exams, application submissions, visa processing, and more.
+                  </p>
                 </div>
               </div>
             </div>
@@ -694,8 +725,8 @@
               </a>
               <div class="collapse" id="faq-20">
                 <div class="card card-body border-0 p-0">
-                  <p>Yes, we assist in finding scholarships and financial aid options to make studying abroad more
-                    affordable, which can include merit-based awards, grants, and international student loans.</p>
+                  <p>International students often have good job prospects after graduation. Many countries, like the US and Canada, offer post-graduate work permits. In the UK, about 75% of international students find employment within six months of graduation.
+                  </p>
                 </div>
               </div>
             </div>
@@ -712,8 +743,7 @@
               </a>
               <div class="collapse" id="faq-21">
                 <div class="card card-body border-0 p-0">
-                  <p>Yes, we assist in finding scholarships and financial aid options to make studying abroad more
-                    affordable, which can include merit-based awards, grants, and international student loans.</p>
+                  <p>We provide personalized guidance based on your unique goals, including course selection, visa support, and career advice. Our experienced advisors have a high success rate, and we maintain strong relationships with top universities worldwide, offering exclusive opportunities for our clients.</p>
                 </div>
               </div>
             </div>
@@ -730,8 +760,8 @@
               </a>
               <div class="collapse" id="faq-22">
                 <div class="card card-body border-0 p-0">
-                  <p>Yes, we assist in finding scholarships and financial aid options to make studying abroad more
-                    affordable, which can include merit-based awards, grants, and international student loans.</p>
+                  <p>We provide specialized test preparation services to help you excel in exams like TOEFL and IELTS. Our experienced trainers offer comprehensive study materials, practice tests, and personalized coaching to enhance your language proficiency and ensure your success.
+                  </p>
                 </div>
               </div>
             </div>
@@ -770,12 +800,13 @@
     </section>
     <footer class="footer-bg">
 
-    
+
       <div class="row footer-row">
         <div class="col-md-3 col-sm-6 agency-info">
           <div class="agency-top">
             <a href="home.html"><img src="assets/NT_logo.svg" class="nt-logo"></a>
-            <p class="agency-text">Some footer text about the Agency. Just a little description to help people understand you better.</p>
+            <p class="agency-text">Some footer text about the Agency. Just a little description to help people
+              understand you better.</p>
           </div>
           <div class="agency-down">
             <ul role="list" class="media-layout">
@@ -787,7 +818,7 @@
             <p class="copy-text">Copyright 2023 NEEMTREE, All rights reserved.</p>
           </div>
         </div>
-  
+
         <div class="col-md-3 col-sm-6">
           <nav class="footer-nav">
             <h3 class="link-head">Quick Links</h3>
@@ -802,7 +833,7 @@
             </ul>
           </nav>
         </div>
-  
+
         <div class="col-md-3 col-sm-6">
           <nav class="footer-nav">
             <h3 class="link-head">Study Destinations</h3>
@@ -815,7 +846,7 @@
             </ul>
           </nav>
         </div>
-  
+
         <div class="col-md-3 col-sm-6">
           <nav class="footer-nav">
             <h3 class="link-head">Test Preparation</h3>
@@ -830,9 +861,9 @@
           </nav>
         </div>
       </div>
-  
-    
-  </footer>
+
+
+    </footer>
 
   </main>
   <script src="main.js" defer></script>

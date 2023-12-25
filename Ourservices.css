@@ -1320,12 +1320,20 @@ position: relative;
 
 .SendButton {
  background-color: #181818 !important;
+ border: 1px solid #181818 !important;
  color: #fff !important;
  border-radius: 3rem !important;
  font-size: 2rem !important;
  text-align: center !important;
  padding: 2rem !important;
  
+}
+.send-button-sent{
+  background-color: #4EAF4E !important;
+  color: #fff !important;
+  border: 1px solid #4EAF4E !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 .SendButton p {

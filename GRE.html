@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>GRE</title>
+    <link rel="stylesheet" href="./IELTS.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <header class="primary-header">
+        <a href="index.html"><img src="assets/NT_logo.svg" class="logo"></a>
+        <nav class="primary-navigation">
+            <ul role="list" class="nav-list" data-visible="false">
+                <li>
+                    <a href="./Ourservices.html" class="navbar-link">About Us</a>
+                </li>
+                <li>
+                    <div class="dropdown">
+
+                        <div class="drop"><a href="#" class="destinations">Study Destinations <img
+                                    src="assets/droparrow.svg" alt=""></a></div>
+
+
+                        <div class="dropdown-content">
+                            <a href="./USA.html">USA</a>
+                            <a href="./UK.html">UK</a>
+                            <a href="./CANADA.html">CANADA</a>
+                            <a href="./AUSTRALIA.html">AUSTRALIA</a>
+                            <a href="./Restoftheworld.html">REST of the World</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="dropdown">
+                        <div class="drop"><a href="#" class="destinations">Test Preparation <img
+                                    src="assets/droparrow.svg" alt=""></a></div>
+
+                        <div class="dropdown-content">
+                            <a href="./IELTS.html">IELTS</a>
+                            <a href="./TOEFL.html">TOEFL</a>
+                            <a href="./GRE.html">GRE</a>
+                            <a href="./GMAT.html">GMAT</a>
+                            <a href="./SAT.html">SAT</a>
+                            <a href="./PTE.html">PTE</a>
+                            <a href="./ACT.html">ACT</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="./about.html" class="navbar-link">Services</a>
+                </li>
+
+                <li>
+                    <a href="./Ourservices.html#CONTACTS" class="navbar-link">Contact Us</a>
+                </li>
+                <li> <button class="booking" onclick="openPopup()">Book Free Consultancy</button></li>
+            </ul>
+
+        </nav>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+    </header>
+    <div class="popup-form" id="popupForm">
+        <form id="consultationForm">
+            <div class="form-container" id="formContainer">
+                <div class="content-set first-set">
+                    <h2 class="popup-heading">Book Free Consultation</h2>
+                    <p class="popup-subheading">(*)Refers to mandatory</p>
+                    <label class="form-label name-label">Name *</label>
+                    <input type="text" id="fname" name="fname" class="form-input" required />
+                    <label class="form-label email-label">Email id</label>
+                    <input type="text" id="email" name="email" class="form-input" />
+                    <label class="form-label phone-label">Phone number *</label>
+                    <input type="text" id="phone" name="phone" class="form-input" required />
+                    <label class="form-label city-label">City/Town/Locality</label>
+                    <input type="text" id="city" name="city" class="form-input" />
+                </div>
+                <div class="content-set second-set">
+                    <h2 class="popup-heading">Book Free Consultation</h2>
+                    <p class="popup-subheading">Preferred Countries (Multiple Checks)</p>
+                    <div class="checkdiv"><input type="checkbox" class="usa" /><label
+                            class="form-label usa-label">USA</label>
+                    </div>
+                    <div class="checkdiv"><input type="checkbox" class="usa" /><label
+                            class="form-label usa-label">UK</label>
+                    </div>
+                    <div class="checkdiv"><input type="checkbox" class="usa" /><label
+                            class="form-label usa-label">CANADA</label>
+                    </div>
+
+                    <div class="checkdiv"><input type="checkbox" class="usa" /><label
+                            class="form-label usa-label">AUSTRALIA</label></div>
+
+                    <div class="checkdiv"><input type="checkbox" class="usa" /><label
+                            class="form-label usa-label">Others</label>
+                    </div>
+                    <div class="checkdiv"><input type="checkbox" class="usa" /> <label class="form-label usa-label">No
+                            preference</label></div>
+
+
+                </div>
+                <div class="content-set third-set">
+                    <h2 class="popup-heading">Book Free Consultation</h2>
+                    <p class="popup-subheading">Exam(s) you are planning to take (Multiple checks)</p>
+
+                    <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">IELTS</label>
+                    </div>
+
+                    <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">TOEFL</label>
+                    </div>
+
+                    <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">PTE</label>
+                    </div>
+
+                    <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">GRE</label>
+                    </div>
+
+                    <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">GMAT</label>
+                    </div>
+
+                    <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">SAT</label>
+                    </div>
+
+                    <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">No
+                            preference</label>
+                    </div>
+                    <button type="button" id="book" class="form-button book-button" onclick="submitForm()">BOOK</button>
+                </div>
+            </div>
+            <button type="button" id="next" class="form-button next-button" onclick="toggleContent()">NEXT</button>
+        </form>
+        <button class="close-btn" onclick="resetForm()">X</button>
+        <div class="tick-container" id="tickContainer">
+            <svg width="158" height="162" viewBox="0 0 158 162" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M112.102 62.0997L67.9409 105.598L45.8981 83.8486" stroke="#4EAF4E" stroke-width="12"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M78.9996 155.31C118.887 155.31 151.222 121.925 151.222 80.7425C151.222 39.5599 118.887 6.1748 78.9996 6.1748C39.1123 6.1748 6.77734 39.5599 6.77734 80.7425C6.77734 121.925 39.1123 155.31 78.9996 155.31Z"
+                    stroke="#4EAF4E" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+        </div>
+    </div>
+
+    <main>
+        <div class="container1">
+            <img src="./about.assets/globe.svg" alt="firstphoto" />
+        </div>
+        <div class="container2">
+            <h2>ABOUT GRE</h2>
+            <p>The Graduate Record Exam (GRE) is the go-to admission test for graduate and business schools in the
+                United States and other prominent study destinations worldwide. Educational Testing Service (ETS), a
+                non-profit organization, oversees the administration of the GRE. This comprehensive exam evaluates a
+                test-taker's critical thinking, quantitative reasoning, verbal reasoning, and analytical writing skills.
+                Universities use GRE scores in conjunction with academic achievements to assess candidates' readiness
+                for advanced studies.
+                Aspiring graduate and business school students can sit for the GRE once every 21 days, with a maximum of
+                five attempts within any consecutive 12-month period. This flexibility allows applicants ample
+                opportunities to showcase their academic prowess.
+            </p>
+            <img src="./IELTS.assets/IELTScover.png" alt="2ndphoto" class="discuss" />
+        </div>
+
+        <section>
+            <div class="container3">
+                <h2 class="title2">
+                    GRE by Neemtree
+                </h2>
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="test-card">
+                            <p>Provide personalized GRE coaching for targeted skill enhancement and readiness.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="test-card">
+                            <p>Customized study plans based on strengths and weaknesses for efficiency.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="test-card">
+                            <p>Recommend reputable GRE test prep resources, including books, online courses.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <div class="col-md-4">
+                        <div class="test-card">
+                            <p>Access to GRE practice mock tests.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="test-card">
+                            <p>Strategies for achieving top scores, with comprehensive Verbal and Quant test series.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="test-card">
+                            <p>Assistance with applications and visa processes for graduate school admissions
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="container8">
+            <div class="faq-content">
+                <div class="odd align-heading">
+                    <div>
+                        <p class="banner-green">FAQ's</p>
+                        <h2 class="title">
+                            Student Questions
+                        </h2>
+                    </div>
+                </div>
+
+
+                <section class="container my-5" id="maincontent">
+                    <section id="accordion">
+                        <div class="faq-item">
+                            <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                                aria-controls="faq-17" aria-expanded="false" data-toggle="collapse" href="#faq-17"
+                                role="button">
+                                <div class="faq-item-content">
+                                    <h2 class="h4 m-0 pr-3">
+                                        What is the GRE, and why is it important for my study abroad journey?
+
+                                    </h2>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                            </a>
+                            <div class="collapse" id="faq-17">
+                                <div class="card card-body border-0 p-0">
+                                    <p>The GRE (Graduate Record Examination) is a standardized test that assesses your readiness for graduate-level studies. Many universities require GRE scores as part of the admission process, making it crucial for your application.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                                aria-controls="faq-18" aria-expanded="false" data-toggle="collapse" href="#faq-18"
+                                role="button">
+                                <div class="faq-item-content">
+                                    <h2 class="h4 m-0 pr-3">
+                                        When should I start preparing for the GRE?
+
+                                    </h2>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                            </a>
+                            <div class="collapse" id="faq-18">
+                                <div class="card card-body border-0 p-0">
+                                    <p>It's advisable to begin your GRE preparation at least 2-3 months before your desired test date to allow for comprehensive review and practice.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                                aria-controls="faq-19" aria-expanded="false" data-toggle="collapse" href="#faq-19"
+                                role="button">
+                                <div class="faq-item-content">
+                                    <h2 class="h4 m-0 pr-3">
+                                        How do I register for the GRE, and what is the cost?
+                                    </h2>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                            </a>
+                            <div class="collapse" id="faq-19">
+                                <div class="card card-body border-0 p-0">
+                                    <p>You can register for the GRE online through the ETS website. The cost varies by location, but as of my last update, it was approximately $205.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                                aria-controls="faq-20" aria-expanded="false" data-toggle="collapse" href="#faq-20"
+                                role="button">
+                                <div class="faq-item-content">
+                                    <h2 class="h4 m-0 pr-3">
+                                        How can your consultancy assist with GRE preparation?
+
+                                    </h2>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                            </a>
+                            <div class="collapse" id="faq-20">
+                                <div class="card card-body border-0 p-0">
+                                    <p>We offer personalized GRE coaching, study plans, practice materials, and expert guidance to ensure you perform at your best on the test.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                                aria-controls="faq-21" aria-expanded="false" data-toggle="collapse" href="#faq-21"
+                                role="button">
+                                <div class="faq-item-content">
+                                    <h2 class="h4 m-0 pr-3">
+                                        What's a competitive GRE score for my chosen universities?
+
+
+                                    </h2>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                            </a>
+                            <div class="collapse" id="faq-21">
+                                <div class="card card-body border-0 p-0">
+                                    <p>The required score varies by institution and program. We'll help you identify the score range you should aim for based on your university choices.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                                aria-controls="faq-22" aria-expanded="false" data-toggle="collapse" href="#faq-22"
+                                role="button">
+                                <div class="faq-item-content">
+                                    <h2 class="h4 m-0 pr-3">
+                                        Can you provide guidance on how to send my GRE scores to universities?
+
+
+                                    </h2>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                            </a>
+                            <div class="collapse" id="faq-22">
+                                <div class="card card-body border-0 p-0">
+                                    <p>Yes, we can assist you in sending your GRE scores to the universities of your choice. We'll explain the process and help you with the necessary steps.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                                aria-controls="faq-23" aria-expanded="false" data-toggle="collapse" href="#faq-23"
+                                role="button">
+                                <div class="faq-item-content">
+                                    <h2 class="h4 m-0 pr-3">
+                                        How many times can I take the GRE, and how do retakes affect my application?
+
+                                    </h2>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                            </a>
+                            <div class="collapse" id="faq-23">
+                                <div class="card card-body border-0 p-0">
+                                    <p>You can take the GRE up to five times within any continuous 12-month period, with a 21-day gap between attempts. Most universities consider your highest score, so retaking the test can improve your application.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                                aria-controls="faq-24" aria-expanded="false" data-toggle="collapse" href="#faq-24"
+                                role="button">
+                                <div class="faq-item-content">
+                                    <h2 class="h4 m-0 pr-3">
+                                        Do I need to take the GRE for all graduate programs?
+
+
+                                    </h2>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                            </a>
+                            <div class="collapse" id="faq-24">
+                                <div class="card card-body border-0 p-0">
+                                    <p>Not necessarily. Some programs and universities may waive the GRE requirement, particularly for certain master's programs. We can help you identify which programs do not require the GRE.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                                aria-controls="faq-25" aria-expanded="false" data-toggle="collapse" href="#faq-25"
+                                role="button">
+                                <div class="faq-item-content">
+                                    <h2 class="h4 m-0 pr-3">
+                                        How do I obtain a GRE fee waiver?
+
+                                    </h2>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                            </a>
+                            <div class="collapse" id="faq-25">
+                                <div class="card card-body border-0 p-0">
+                                    <p>Fee waivers are available for eligible individuals. We can guide you on the eligibility criteria and the application process for obtaining a GRE fee waiver.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                                aria-controls="faq-26" aria-expanded="false" data-toggle="collapse" href="#faq-26"
+                                role="button">
+                                <div class="faq-item-content">
+                                    <h2 class="h4 m-0 pr-3">
+                                        Can you help with visa and application processes for studying abroad?
+
+                                    </h2>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                            </a>
+                            <div class="collapse" id="faq-26">
+                                <div class="card card-body border-0 p-0">
+                                    <p>Yes, we offer comprehensive assistance with visa applications and the entire university application process, ensuring a smooth transition to your chosen institution.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                       
+
+
+
+                    </section>
+                </section>
+            </div>
+        </section>
+
+
+
+        <div class="container11">
+            <div class="odd align-head">
+                <p class="banner-yel1 green">TESTIMONIALS</p>
+            </div>
+            <p class="Tcontent" id="testimonial-content">"This will change with JavaScript"</p>
+            <div class="control-row">
+                <button class="P" id="prev-btn"> <img src="./IELTS.assets/Prev.svg" class="prevarrow" />
+                    <p>Prev</p>
+                </button>
+                <div class="person" id="person-info">
+                    <h4 id="person-name">Person Name</h4>
+                    <h5 class="role" id="person-role">Person Role</h5>
+                </div>
+                <button class="P" id="next-btn">
+                    <p>Next</p><img src="./IELTS.assets/Next.svg" class="nextarrow" />
+                </button>
+            </div>
+        </div>
+        <section class="help-section">
+            <div class="containerform">
+                <div class="right-columns">
+                    <h2>Book Free Consultation</h2>
+                    <p>Build stronger Customer Relationship with <strong>Consultalk</strong></p>
+                </div>
+                <div class="left-columns"> <button type="submit" class="btn btn-primary btn-block"
+                        onclick="openPopup()">Book
+                        now</button></div>
+
+            </div>
+        </section>
+        <footer class="footer-bg">
+
+
+            <div class="row footer-row">
+                <div class="col-md-3 col-sm-6 agency-info">
+                    <div class="agency-top">
+                        <a href="home.html"><img src="assets/NT_logo.svg" class="nt-logo"></a>
+                        <p class="agency-text">Some footer text about the Agency. Just a little description to help
+                            people
+                            understand you better.</p>
+                    </div>
+                    <div class="agency-down">
+                        <ul role="list" class="media-layout">
+                            <li><a aria-label="Facebook" href="#" class="media-icons"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a aria-label="Twitter" href="#" class="media-icons"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a aria-label="LinkedIn" href="#" class="media-icons"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a aria-label="Instagram" href="#" class="media-icons"><i
+                                        class="fa fa-instagram"></i></a></li>
+                        </ul>
+                        <p class="copy-text">Copyright 2023 NEEMTREE, All rights reserved.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <nav class="footer-nav">
+                        <h3 class="link-head">Quick Links</h3>
+                        <ul aria-label="Footer" role="list" class="link-list">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Study Destinations</a></li>
+                            <li><a href="#">Test Preparation</a></li>
+                            <li><a href="#">What we provide</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Book free consultation</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <nav class="footer-nav">
+                        <h3 class="link-head">Study Destinations</h3>
+                        <ul aria-label="Footer" role="list" class="link-list">
+                            <li><a href="#">USA</a></li>
+                            <li><a href="#">UK</a></li>
+                            <li><a href="#">Canada</a></li>
+                            <li><a href="#">Australia</a></li>
+                            <li><a href="#">Rest of the world</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <nav class="footer-nav">
+                        <h3 class="link-head">Test Preparation</h3>
+                        <ul aria-label="Footer" role="list" class="link-list">
+                            <li><a href="#">IELTS</a></li>
+                            <li><a href="#">TOEFL</a></li>
+                            <li><a href="#">PTE</a></li>
+                            <li><a href="#">GRE</a></li>
+                            <li><a href="#">GMAT</a></li>
+                            <li><a href="#">SAT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </footer>
+    </main>
+    <script src="main.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons."></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/js"></script>
+</body>
+
+</html>

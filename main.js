@@ -353,8 +353,90 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 const USAimage =  document.getElementById('USA');
 
-
-
 //for sent button
+const form = document.getElementById('contactForm');
+  const sendButton = document.getElementById('SENDD');
+  
+  if (form) {
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      
+      // Add the 'send-button-sent' class
+      sendButton.classList.add('send-button-sent');
+      
+      // Add the tick SVG and the text "Sent!" inside the button
+      sendButton.innerHTML = `Sent! <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15.355 9.03906L9.33628 14.781L6.33203 11.91" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M10.8433 21.3433C16.2795 21.3433 20.6865 16.9363 20.6865 11.5C20.6865 6.06372 16.2795 1.65674 10.8433 1.65674C5.40698 1.65674 1 6.06372 1 11.5C1 16.9363 5.40698 21.3433 10.8433 21.3433Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>`;
+      
+      // Handle form data...
+
+      form.reset();
+
+      setTimeout(function () {
+        // Remove the 'send-button-sent' class
+        sendButton.classList.remove('send-button-sent');
+
+        // Revert back to the original button text without SVG
+        sendButton.innerHTML = '<p>Send Message</p>';
+      }, 3000);
+    });
+  } else {
+    console.error('Form element not found!');
+  }
+
+
+
+//testimonial carousel
+const testimonials = [
+  {
+      content: "I owe a big thanks to Neem Tree for their incredible IELTS supportI owe a big thanks to Neem Tree for their incredible IELTS supportI owe a big thanks to Neem Tree for their incredible IELTS supportI owe a big thanks to Neem Tree for their incredible IELTS support",
+      name: "Kathleen Smith",
+      role: "Web Designer"
+  },
+  {
+      content: "The study resources provided were top-notch and tailored to my weak areas...",
+      name: "John Doe",
+      role: "Software Engineer"
+  },
+  {
+      content: "Neem Tree's approach to IELTS preparation was exactly what I needed...",
+      name: "Emily Johnson",
+      role: "Graduate Student"
+  },
+  // ... add additional testimonials as necessary
+];
+
+let currentIndex = 0;
+
+// Function to update the testimonial content and person info
+function updateTestimonial(index) {
+  document.getElementById('testimonial-content').textContent = testimonials[index].content;
+  document.getElementById('person-name').textContent = testimonials[index].name;
+  document.getElementById('person-role').textContent = testimonials[index].role;
+}
+
+// Event listeners for the buttons
+document.getElementById('prev-btn').addEventListener('click', function() {
+  if (currentIndex > 0) {
+      currentIndex--;
+  } else {
+      currentIndex = testimonials.length - 1;
+  }
+  updateTestimonial(currentIndex);
+});
+
+document.getElementById('next-btn').addEventListener('click', function() {
+  if (currentIndex < testimonials.length - 1) {
+      currentIndex++;
+  } else {
+      currentIndex = 0;
+  }
+  updateTestimonial(currentIndex);
+});
+
+// Initialize with the first testimonial
+updateTestimonial(currentIndex);
 
 
