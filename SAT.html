@@ -22,141 +22,131 @@
     <header class="primary-header">
         <a href="index.html"><img src="assets/NT_logo.svg" class="logo"></a>
         <nav class="primary-navigation">
-            <ul role="list" class="nav-list" data-visible="false">
-                <li>
-                    <a href="./Ourservices.html" class="navbar-link">About Us</a>
-                </li>
-                <li>
-                    <div class="dropdown">
-
-                        <div class="drop"><a href="#" class="destinations">Study Destinations <img
-                                    src="assets/droparrow.svg" alt=""></a></div>
-
-
-                        <div class="dropdown-content">
-                            <a href="./USA.html">USA</a>
-                            <a href="./UK.html">UK</a>
-                            <a href="./CANADA.html">CANADA</a>
-                            <a href="./AUSTRALIA.html">AUSTRALIA</a>
-                            <a href="./Restoftheworld.html">REST of the World</a>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="dropdown">
-                        <div class="drop"><a href="#" class="destinations">Test Preparation <img
-                                    src="assets/droparrow.svg" alt=""></a></div>
-
-                        <div class="dropdown-content">
-                            <a href="./IELTS.html">IELTS</a>
-                            <a href="./TOEFL.html">TOEFL</a>
-                            <a href="./GRE.html">GRE</a>
-                            <a href="./GMAT.html">GMAT</a>
-                            <a href="./SAT.html">SAT</a>
-                            <a href="./PTE.html">PTE</a>
-                            <a href="./ACT.html">ACT</a>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <a href="./about.html" class="navbar-link">Services</a>
-                </li>
-
-                <li>
-                    <a href="./Ourservices.html#CONTACTS" class="navbar-link">Contact Us</a>
-                </li>
-                <li> <button class="booking" onclick="openPopup()">Book Free Consultancy</button></li>
-            </ul>
-
+          <ul role="list" class="nav-list" data-visible="false">
+            <li>
+              <a href="./Ourservices.html" class="navbar-link">About Us</a>
+            </li>
+            <li>
+              <div class="dropdown">
+    
+                <div class="drop"><a href="#" class="destinations">Study Destinations <img src="assets/droparrow.svg"
+                      alt=""></a></div>
+    
+    
+                <div class="dropdown-content">
+                  <a href="./USA.html">USA</a>
+                  <a href="./UK.html">UK</a>
+                  <a href="./CANADA.html">CANADA</a>
+                  <a href="./AUSTRALIA.html">AUSTRALIA</a>
+                  <a href="./Restoftheworld.html">REST of the World</a>
+                </div>
+              </div>
+            </li>
+    
+            <li>
+              <div class="dropdown">
+                <div class="drop"><a href="#" class="destinations">Test Preparation <img src="assets/droparrow.svg"
+                      alt=""></a></div>
+    
+                <div class="dropdown-content">
+                  <a href="./IELTS.html">IELTS</a>
+                  <a href="./TOEFL.html">TOEFL</a>
+                  <a href="./GRE.html">GRE</a>
+                  <a href="./GMAT.html">GMAT</a>
+                  <a href="./SAT.html">SAT</a>
+                  <a href="./PTE.html">PTE</a>
+                  <a href="./ACT.html">ACT</a>
+                </div>
+              </div>
+            </li>
+    
+            <li>
+              <a href="./about.html" class="navbar-link">Services</a>
+            </li>
+    
+            <li>
+              <a href="./Ourservices.html#CONTACTS" class="navbar-link">Contact Us</a>
+            </li>
+            <li> <button class="booking" onclick="openPopup()">Book Free Consultancy</button></li>
+          </ul>
+    
         </nav>
         <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-            <span class="sr-only">Menu</span>
-            <i class="fa fa-bars" aria-hidden="true"></i>
+          <span class="sr-only">Menu</span>
+          <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
-    </header>
-    <div class="popup-form" id="popupForm">
+      </header>
+      <div class="popup-form" id="popupForm">
         <form id="consultationForm">
-            <div class="form-container" id="formContainer">
-                <div class="content-set first-set">
-                    <h2 class="popup-heading">Book Free Consultation</h2>
-                    <p class="popup-subheading">(*)Refers to mandatory</p>
-                    <label class="form-label name-label">Name *</label>
-                    <input type="text" id="fname" name="fname" class="form-input" required />
-                    <label class="form-label email-label">Email id</label>
-                    <input type="text" id="email" name="email" class="form-input" />
-                    <label class="form-label phone-label">Phone number *</label>
-                    <input type="text" id="phone" name="phone" class="form-input" required />
-                    <label class="form-label city-label">City/Town/Locality</label>
-                    <input type="text" id="city" name="city" class="form-input" />
-                </div>
-                <div class="content-set second-set">
-                    <h2 class="popup-heading">Book Free Consultation</h2>
-                    <p class="popup-subheading">Preferred Countries (Multiple Checks)</p>
-                    <div class="checkdiv"><input type="checkbox" class="usa" /><label
-                            class="form-label usa-label">USA</label>
-                    </div>
-                    <div class="checkdiv"><input type="checkbox" class="usa" /><label
-                            class="form-label usa-label">UK</label>
-                    </div>
-                    <div class="checkdiv"><input type="checkbox" class="usa" /><label
-                            class="form-label usa-label">CANADA</label>
-                    </div>
-
-                    <div class="checkdiv"><input type="checkbox" class="usa" /><label
-                            class="form-label usa-label">AUSTRALIA</label></div>
-
-                    <div class="checkdiv"><input type="checkbox" class="usa" /><label
-                            class="form-label usa-label">Others</label>
-                    </div>
-                    <div class="checkdiv"><input type="checkbox" class="usa" /> <label class="form-label usa-label">No
-                            preference</label></div>
-
-
-                </div>
-                <div class="content-set third-set">
-                    <h2 class="popup-heading">Book Free Consultation</h2>
-                    <p class="popup-subheading">Exam(s) you are planning to take (Multiple checks)</p>
-
-                    <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">IELTS</label>
-                    </div>
-
-                    <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">TOEFL</label>
-                    </div>
-
-                    <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">PTE</label>
-                    </div>
-
-                    <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">GRE</label>
-                    </div>
-
-                    <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">GMAT</label>
-                    </div>
-
-                    <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">SAT</label>
-                    </div>
-
-                    <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">No
-                            preference</label>
-                    </div>
-                    <button type="button" id="book" class="form-button book-button" onclick="submitForm()">BOOK</button>
-                </div>
+          <div class="form-container" id="formContainer">
+            <div class="content-set first-set">
+              <h2 class="popup-heading">Book Free Consultation</h2>
+              <p class="popup-subheading">(*)Refers to mandatory</p>
+              <label class="form-label name-label">Name *</label>
+              <input type="text" id="fname" name="fname" class="form-input" required />
+              <label class="form-label email-label">Email id</label>
+              <input type="text" id="email" name="email" class="form-input" />
+              <label class="form-label phone-label">Phone number *</label>
+              <input type="text" id="phone" name="phone" class="form-input" required />
+              <label class="form-label city-label">City/Town/Locality</label>
+              <input type="text" id="city" name="city" class="form-input" />
             </div>
-            <button type="button" id="next" class="form-button next-button" onclick="toggleContent()">NEXT</button>
+            <div class="content-set second-set">
+              <h2 class="popup-heading">Book Free Consultation</h2>
+              <p class="popup-subheading">Preferred Countries (Multiple Checks)</p>
+              <div class="checkdiv"><input type="checkbox" class="usa" /><label class="form-label usa-label">USA</label>
+              </div>
+              <div class="checkdiv"><input type="checkbox" class="usa" /><label class="form-label usa-label">UK</label>
+              </div>
+              <div class="checkdiv"><input type="checkbox" class="usa" /><label class="form-label usa-label">CANADA</label>
+              </div>
+    
+              <div class="checkdiv"><input type="checkbox" class="usa" /><label
+                  class="form-label usa-label">AUSTRALIA</label></div>
+    
+              <div class="checkdiv"><input type="checkbox" class="usa" /><label class="form-label usa-label">Others</label>
+              </div>
+              <div class="checkdiv"><input type="checkbox" class="usa" /> <label class="form-label usa-label">No
+                  preference</label></div>
+    
+    
+            </div>
+            <div class="content-set third-set">
+              <h2 class="popup-heading">Book Free Consultation</h2>
+              <p class="popup-subheading">Exam(s) you are planning to take (Multiple checks)</p>
+    
+              <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">IELTS</label></div>
+    
+              <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">TOEFL</label></div>
+    
+              <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">PTE</label></div>
+    
+              <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">GRE</label></div>
+    
+              <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">GMAT</label></div>
+    
+              <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">SAT</label></div>
+              <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">ACT</label></div>
+    
+              <div class="checkdiv"><input type="checkbox" class="ielts" /><label class="form-label">No preference</label>
+              </div>
+              <button type="button" id="book" class="form-button book-button" onclick="submitForm()">BOOK</button>
+            </div>
+          </div>
+          <button type="button" id="next" class="form-button next-button" onclick="toggleContent()">NEXT</button>
         </form>
         <button class="close-btn" onclick="resetForm()">X</button>
         <div class="tick-container" id="tickContainer">
-            <svg width="158" height="162" viewBox="0 0 158 162" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M112.102 62.0997L67.9409 105.598L45.8981 83.8486" stroke="#4EAF4E" stroke-width="12"
-                    stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                    d="M78.9996 155.31C118.887 155.31 151.222 121.925 151.222 80.7425C151.222 39.5599 118.887 6.1748 78.9996 6.1748C39.1123 6.1748 6.77734 39.5599 6.77734 80.7425C6.77734 121.925 39.1123 155.31 78.9996 155.31Z"
-                    stroke="#4EAF4E" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-
+          <svg width="158" height="162" viewBox="0 0 158 162" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M112.102 62.0997L67.9409 105.598L45.8981 83.8486" stroke="#4EAF4E" stroke-width="12"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M78.9996 155.31C118.887 155.31 151.222 121.925 151.222 80.7425C151.222 39.5599 118.887 6.1748 78.9996 6.1748C39.1123 6.1748 6.77734 39.5599 6.77734 80.7425C6.77734 121.925 39.1123 155.31 78.9996 155.31Z"
+              stroke="#4EAF4E" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+    
         </div>
-    </div>
+      </div>
 
     <main>
         <div class="container1">
@@ -479,73 +469,69 @@
 
 
             <div class="row footer-row">
-                <div class="col-md-3 col-sm-6 agency-info">
-                    <div class="agency-top">
-                        <a href="home.html"><img src="assets/NT_logo.svg" class="nt-logo"></a>
-                        <p class="agency-text">Some footer text about the Agency. Just a little description to help
-                            people
-                            understand you better.</p>
-                    </div>
-                    <div class="agency-down">
-                        <ul role="list" class="media-layout">
-                            <li><a aria-label="Facebook" href="#" class="media-icons"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a aria-label="Twitter" href="#" class="media-icons"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a aria-label="LinkedIn" href="#" class="media-icons"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                            <li><a aria-label="Instagram" href="#" class="media-icons"><i
-                                        class="fa fa-instagram"></i></a></li>
-                        </ul>
-                        <p class="copy-text">Copyright 2023 NEEMTREE, All rights reserved.</p>
-                    </div>
+              <div class="col-md-3 col-sm-6 agency-info">
+                <div class="agency-top">
+                  <a href="home.html"><img src="assets/NT_logo.svg" class="nt-logo"></a>
+                  <p class="agency-text">Some footer text about the Agency. Just a little description to help people
+                    understand you better.</p>
                 </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <nav class="footer-nav">
-                        <h3 class="link-head">Quick Links</h3>
-                        <ul aria-label="Footer" role="list" class="link-list">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Study Destinations</a></li>
-                            <li><a href="#">Test Preparation</a></li>
-                            <li><a href="#">What we provide</a></li>
-                            <li><a href="#">Our Services</a></li>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">Book free consultation</a></li>
-                        </ul>
-                    </nav>
+                <div class="agency-down">
+                  <ul role="list" class="media-layout">
+                    <li><a aria-label="Facebook" href="#" class="media-icons"><i class="fa fa-facebook"></i></a></li>
+                    <li><a aria-label="Twitter" href="#" class="media-icons"><i class="fa fa-twitter"></i></a></li>
+                    <li><a aria-label="LinkedIn" href="#" class="media-icons"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a aria-label="Instagram" href="#" class="media-icons"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+                  <p class="copy-text">Copyright 2023 NEEMTREE, All rights reserved.</p>
                 </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <nav class="footer-nav">
-                        <h3 class="link-head">Study Destinations</h3>
-                        <ul aria-label="Footer" role="list" class="link-list">
-                            <li><a href="#">USA</a></li>
-                            <li><a href="#">UK</a></li>
-                            <li><a href="#">Canada</a></li>
-                            <li><a href="#">Australia</a></li>
-                            <li><a href="#">Rest of the world</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <nav class="footer-nav">
-                        <h3 class="link-head">Test Preparation</h3>
-                        <ul aria-label="Footer" role="list" class="link-list">
-                            <li><a href="#">IELTS</a></li>
-                            <li><a href="#">TOEFL</a></li>
-                            <li><a href="#">PTE</a></li>
-                            <li><a href="#">GRE</a></li>
-                            <li><a href="#">GMAT</a></li>
-                            <li><a href="#">SAT</a></li>
-                        </ul>
-                    </nav>
-                </div>
+              </div>
+      
+              <div class="col-md-3 col-sm-6">
+                <nav class="footer-nav">
+                  <h3 class="link-head">Quick Links</h3>
+                  <ul aria-label="Footer" role="list" class="link-list">
+                    <li><a href="./Ourservices.html">About Us</a></li>
+                    <li><a href="#">Study Destinations</a></li>
+                    <li><a href="#">Test Preparation</a></li>
+                    <li><a href="./about.html">What we provide</a></li>
+                    <li><a href="./about.html">Our Services</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#" onclick="openPopup()">Book free consultation</a></li>
+                  </ul>
+                </nav>
+              </div>
+      
+              <div class="col-md-3 col-sm-6">
+                <nav class="footer-nav">
+                  <h3 class="link-head">Study Destinations</h3>
+                  <ul aria-label="Footer" role="list" class="link-list">
+                    <li><a href="./USA.html">USA</a></li>
+                    <li><a href="./UK.html">UK</a></li>
+                    <li><a href="./CANADA.html">Canada</a></li>
+                    <li><a href="./AUSTRALIA.html">Australia</a></li>
+                    <li><a href="./Restoftheworld.html">Rest of the world</a></li>
+                  </ul>
+                </nav>
+              </div>
+      
+              <div class="col-md-3 col-sm-6">
+                <nav class="footer-nav">
+                  <h3 class="link-head">Test Preparation</h3>
+                  <ul aria-label="Footer" role="list" class="link-list">
+                    <li><a href="./IELTS.html">IELTS</a></li>
+                    <li><a href="./TOEFL.html">TOEFL</a></li>
+                    <li><a href="./PTE.html">PTE</a></li>
+                    <li><a href="./GRE.html">GRE</a></li>
+                    <li><a href="./GMAT.html">GMAT</a></li>
+                    <li><a href="./SAT.html">SAT</a></li>
+                    <li><a href="./ACT.html">ACT</a></li>
+                  </ul>
+                </nav>
+              </div>
             </div>
-
-
-        </footer>
+      
+      
+          </footer>
     </main>
     <script src="main.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons."></script>

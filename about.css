@@ -180,7 +180,7 @@ input[type="checkbox"] {
     height: 4.5rem;
     font-size:1.6rem;
     font-weight: 600;
-    margin-top:1rem
+    
 }
 
 .close-btn {
@@ -230,8 +230,6 @@ input[type="checkbox"] {
  animation: tick-animation 0.5s ease-in-out forwards;
 }
 
-
-
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
@@ -246,6 +244,7 @@ input[type="checkbox"] {
     scroll-behavior: auto !important;
   }
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -831,7 +830,6 @@ color: white;}
   padding:6rem;
 }
 
-
 .link-head {
   color: #fff;
   font-weight: 600;
@@ -971,7 +969,6 @@ color: white;}
   .media-icons {
     padding: 8px;
   }
-  
 }
 @media (min-width:1076px) and (max-width:1338px){
   .primary-header .primary-navigation li a {

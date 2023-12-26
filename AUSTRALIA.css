@@ -19,7 +19,6 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-
 html, body {
   height: 100%;
   font-family: 'Poppins', sans-serif;
@@ -231,9 +230,6 @@ input[type="checkbox"] {
  animation: tick-animation 0.5s ease-in-out forwards;
 }
 
-
-
-
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
@@ -248,6 +244,7 @@ input[type="checkbox"] {
     scroll-behavior: auto !important;
   }
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -937,13 +934,11 @@ color: white;}
   }
   
   
-  
-  .footer-bg{
-    background-color: #000;
-    padding:6rem;
-  }
-  
-  
+.footer-bg{
+  background-color: #000;
+  padding:6rem;
+}
+
 .link-head {
   color: #fff;
   font-weight: 600;
@@ -973,119 +968,118 @@ color: white;}
    font-family: 'Lato', sans-serif;
    font-weight: 400;
  }
-  .copy-text{
-    color:#fff;
-    font-size: 1.5rem;
-    margin-top: 10px;
-  }
-  
-  .agency-info{
-    display: flex;
-    justify-content: space-between;
+.copy-text{
+  color:#fff;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.agency-info{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  gap:25%;
+
+}
+
+.agency-top{
+  width: 80%;
+  height:auto;
+  margin-bottom: 20%;
+}
+
+.agency-down{
+  display: flex;
+  align-items:left;
+  justify-content: space-between;
+  flex-direction: column;
+
+}
+
+.nt-logo{
+  width: 100%;
+  height:auto;
+}
+
+.media-layout{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:50%;
+}
+
+.media-icons{
+  padding:10px;
+  background-color: #333333;
+  color: #fff;
+  border-radius: 50px;
+}
+.footer-row{
+
+  padding: 1vh 2vw;
+  display: flex;
+    align-items: left;
+    
+}
+
+@media (min-width: 770px) and (max-width: 1200px){
+  .footer-row {
     flex-direction: column;
-    height: 100%;
-    gap:25%;
-  
+    align-items: flex-start; 
   }
-  
-  .agency-top{
-    width: 80%;
-    height:auto;
+}
+
+@media (max-width:768px) {
+  .footer-row {
+    flex-direction: column; 
+  }
+
+  .agency-top {
+    width: 50% !important; 
+    height: auto;
     margin-bottom: 20%;
   }
-  
-  .agency-down{
-    display: flex;
-    align-items:left;
-    justify-content: space-between;
-    flex-direction: column;
-  
+  .agency-down {
+    width: 50% !important; 
+    height: auto;
   }
-  
-  .nt-logo{
+
+  .footer-bg {
+    padding: 2rem;
+  }
+
+  .link-head {
+    font-size: 1.5rem;
+  }
+
+  .link-list li {
+    font-size: 1.2rem;
+  }
+
+  .agency-text,
+  .copy-text {
+    font-size: 1rem;
+  }
+
+  .agency-info {
+    gap: 10px;
+  }
+
+  .agency-top {
     width: 100%;
-    height:auto;
+    margin-bottom: 10%;
+  }
+
+  .media-layout {
+    width: 100%;
+  }
+
+  .media-icons {
+    padding: 8px;
   }
   
-  .media-layout{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width:50%;
-  }
-  
-  .media-icons{
-    padding:10px;
-    background-color: #333333;
-    color: #fff;
-    border-radius: 50px;
-  }
-  .footer-row{
-  
-    padding: 1vh 2vw;
-    display: flex;
-      align-items: left;
-      
-  }
-  
-  @media (min-width: 770px) and (max-width: 1200px){
-    .footer-row {
-      flex-direction: column;
-      align-items: flex-start; 
-    }
-  }
-  
-  @media (max-width:768px) {
-    .footer-row {
-      flex-direction: column; 
-    }
-  
-    .agency-top {
-      width: 50% !important; 
-      height: auto;
-      margin-bottom: 20%;
-    }
-    .agency-down {
-      width: 50% !important; 
-      height: auto;
-    }
-  
-    .footer-bg {
-      padding: 2rem;
-    }
-  
-    .link-head {
-      font-size: 1.5rem;
-    }
-  
-    .link-list li {
-      font-size: 1.2rem;
-    }
-  
-    .agency-text,
-    .copy-text {
-      font-size: 1rem;
-    }
-  
-    .agency-info {
-      gap: 10px;
-    }
-  
-    .agency-top {
-      width: 100%;
-      margin-bottom: 10%;
-    }
-  
-    .media-layout {
-      width: 100%;
-    }
-  
-    .media-icons {
-      padding: 8px;
-    }
-    
-  }
-  
+}
   @media (min-width:1076px) and (max-width:1338px){
     .primary-header .primary-navigation li a {
       color: #000;
