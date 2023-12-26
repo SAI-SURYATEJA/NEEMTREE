@@ -442,16 +442,16 @@
       <div class="odd align-head">
         <p class="banner-yel1 green">TESTIMONIALS</p>
       </div>
-      <p class="Tcontent" id="testimonial-content">"This will change with JavaScript"</p>
+      <p class="Tcontent" id="TOEFLtestimonial-content">"This will change with JavaScript"</p>
       <div class="control-row">
-        <button class="P" id="prev-btn"> <img src="./IELTS.assets/Prev.svg" class="prevarrow" />
+        <button class="P" id="TOEFLprev-btn"> <img src="./IELTS.assets/Prev.svg" class="prevarrow" />
           <p>Prev</p>
         </button>
-        <div class="person" id="person-info">
-          <h4 id="person-name">Person Name</h4>
-          <h5 class="role" id="person-role">Person Role</h5>
+        <div class="person" id="TOEFLperson-info">
+          <h4 id="TOEFLperson-name">Person Name</h4>
+          <h5 class="role" id="TOEFLperson-role">Person Role</h5>
         </div>
-        <button class="P" id="next-btn">
+        <button class="P" id="TOEFLnext-btn">
           <p>Next</p><img src="./IELTS.assets/Next.svg" class="nextarrow" />
         </button>
       </div>
@@ -535,7 +535,149 @@
 
     </footer>
   </main>
-  <script src="main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () { 
+      var sets = document.querySelectorAll('.content-set');
+      var nextButton = document.getElementById('next');
+      var bookButton = document.getElementById('book');
+      var closeButton = document.querySelector('.close-btn');
+      var tickContainer = document.getElementById('tickContainer');
+      var currentSet = 0;
+    
+      // Functions
+      function openPopup() {
+        document.getElementById('popupForm').style.display = 'block';
+        resetForm();
+      }
+    
+      function closePopup() {
+        document.getElementById('popupForm').style.display = 'none';
+      }
+    
+      function toggleContent() {
+        sets[currentSet].style.display = 'none';
+        currentSet++;
+        sets[currentSet].style.display = 'block';
+    
+        if (currentSet === sets.length - 1) {
+          nextButton.style.display = 'none';
+          bookButton.style.display = 'block';
+        }
+      }
+    
+      function submitForm() {
+        document.getElementById('formContainer').style.display = 'none';
+        tickContainer.style.display = 'flex';
+    
+        setTimeout(function () {
+          tickContainer.style.display = 'none';
+          closePopup();
+          resetForm();
+        }, 2000);
+      }
+    
+      function resetForm() {
+        document.getElementById('consultationForm').reset();
+        sets.forEach(function (set, index) {
+          set.style.display = index === 0 ? 'block' : 'none';
+        });
+        currentSet = 0;
+        nextButton.style.display = 'block';
+        bookButton.style.display = 'none';
+        document.getElementById('formContainer').style.display = 'block';
+      }
+    
+      // Event listeners
+      closeButton.addEventListener('click', function () {
+        closePopup();
+      });
+    
+      // Make global functions accessible
+      window.openPopup = openPopup;
+      window.toggleContent = toggleContent;
+      window.submitForm = submitForm;
+      window.resetForm = resetForm;
+    
+    });
+    const TOEFLtestimonials = [
+  {
+    content: "Thanks to Neemtree, I aced my TOEFL exam and secured admission to my dream university abroad. Their expert guidance and comprehensive TOEFL preparation resources were invaluable in my journey to studying overseas.",
+    name: "Person Name 1",
+    role: "Role 1"
+  },
+  {
+    content: "Neemtree provided me with personalized TOEFL preparation that greatly improved my English skills. Their experienced counselors and top-notch study materials made all the difference in my study abroad application process.",
+    name: "Person Name 2",
+    role: "Role 2"
+  },
+  {
+    content: "Neemtree's TOEFL guidance was instrumental in my success. Their supportive team and well-structured study plans helped me achieve my desired TOEFL score, enabling me to pursue higher education abroad.",
+    name: "Person Name 3",
+    role: "Role 3"
+  },
+  {
+    content: "I can't thank Neemtree enough for their TOEFL assistance. Their TOEFL coaching not only boosted my English proficiency but also boosted my confidence to perform well on the test. I am now well on my way to realizing my academic aspirations abroad.",
+    name: "Person Name 4",
+    role: "Role 4"
+  },
+  {
+    content: "Choosing Neemtree for TOEFL preparation was one of the best decisions I made. Their TOEFL resources, practice tests, and expert guidance ensured that I surpassed the required score for my university application. I highly recommend Neemtree to anyone aspiring to study abroad.",
+    name: "Person Name 5",
+    role: "Role 5"
+  },
+  {
+    content: "Thanks to Neemtree, my TOEFL journey was smooth and successful. Their expert guidance and tailored TOEFL preparation materials significantly boosted my confidence. The personalized attention I received made all the difference. I scored exceptionally well, opening the doors to my dream university. Neemtree truly knows the recipe for TOEFL success!",
+    name: "John Thompson",
+    role: "Role 5"
+  },
+  {
+    content: "Neemtree Consultancy played a pivotal role in my TOEFL preparation. Their experienced tutors guided me through every aspect of the test, ensuring I was well-prepared and confident on exam day. The study materials provided were comprehensive, and the mock tests were incredibly helpful. I highly recommend Neemtree to anyone aiming for a top TOEFL score.",
+    name: "Sarah Patel",
+    role: "Role 5"
+  },
+  {
+    content: "I cannot thank Neemtree enough for their outstanding TOEFL coaching. Their team's dedication and expertise are unmatched. The strategies they taught me were invaluable, helping me tackle even the trickiest TOEFL questions with ease. Neemtree transformed what seemed like a daunting task into a manageable and successful experience. I am now on my way to my dream university, all thanks to them!",
+    name: "Rajesh Kumar",
+    role: "Role 5"
+  },
+  {
+    content: "Choosing Neemtree for my TOEFL preparation was the best decision I made. Their tutors are not only knowledgeable but also incredibly supportive. They understood my strengths and weaknesses, providing targeted guidance that ultimately led to my excellent TOEFL score. Neemtree's genuine commitment to student success sets them apart. I am grateful for their unwavering support throughout my TOEFL journey.",
+    name: "Emily Rodriguez",
+    role: "Role 5"
+  },
+  {
+    content: "Neemtree Study Abroad Consultancy turned my TOEFL preparation into a smooth journey. The personalized attention, practice tests, and expert advice were invaluable. I can't thank them enough for helping me fulfill my dream of studying abroad.",
+    name: "Emily Rodriguez",
+    role: "Role 5"
+  },
+];
+
+    
+    let currIndex = 0;
+    
+    function updateTOEFLTestimonial(index) {
+      const testimonialContent = document.getElementById('TOEFLtestimonial-content');
+      const testimonialName = document.getElementById('TOEFLperson-name');
+      const testimonialRole = document.getElementById('TOEFLperson-role');
+    
+      testimonialContent.textContent = TOEFLtestimonials[index].content;
+      testimonialName.textContent = TOEFLtestimonials[index].name;
+      testimonialRole.textContent = TOEFLtestimonials[index].role;
+    }
+    
+    document.getElementById('TOEFLprev-btn').addEventListener('click', function() {
+      currIndex = currIndex > 0 ? currIndex - 1 : TOEFLtestimonials.length - 1;
+      updateTOEFLTestimonial(currIndex);
+    });
+    
+    document.getElementById('TOEFLnext-btn').addEventListener('click', function() {
+      currIndex = currIndex < TOEFLtestimonials.length - 1 ? currIndex + 1 : 0;
+      updateTOEFLTestimonial(currIndex);
+    });
+    
+    // Ensures that the first testimonial is displayed when the page loads.
+    updateTOEFLTestimonial(currIndex);
+      </script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons."></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/js"></script>
 </body>

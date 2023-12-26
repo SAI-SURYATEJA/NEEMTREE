@@ -886,6 +886,7 @@ justify-content: center;
     font-weight: 600;
     line-height: 116%;
     position: relative;
+    text-align: center;
   }
   
   .container11 .role {
@@ -896,6 +897,7 @@ justify-content: center;
     font-weight: 600;
     line-height: 147.5%;
     position: relative;
+    text-align: center;
   }
   
   .control-row {

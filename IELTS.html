@@ -478,22 +478,24 @@
 
     <div class="container11">
       <div class="odd align-head">
-        <p class="banner-yel1 green">TESTIMONIALS</p>
+          <p class="banner-yel1 green">TESTIMONIALS</p>
       </div>
-      <p class="Tcontent" id="testimonial-content">"This will change with JavaScript"</p>
+      <p class="Tcontent" id="IELTStestimonial-content">"This will change with JavaScript"</p>
       <div class="control-row">
-        <button class="P" id="prev-btn"> <img src="./IELTS.assets/Prev.svg" class="prevarrow" />
-          <p>Prev</p>
-        </button>
-        <div class="person" id="person-info">
-          <h4 id="person-name">Person Name</h4>
-          <h5 class="role" id="person-role">Person Role</h5>
-        </div>
-        <button class="P" id="next-btn">
-          <p>Next</p><img src="./IELTS.assets/Next.svg" class="nextarrow" />
-        </button>
+          <button class="P" id="IELTSprev-btn">
+              <img src="./IELTS.assets/Prev.svg" class="prevarrow" />
+              <p>Prev</p>
+          </button>
+          <div class="person" id="IELTSperson-info"> <!-- Corrected ID here. -->
+              <h4 id="IELTSperson-name">Person Name</h4>
+              <h5 class="role" id="IELTSperson-role">Person Role</h5>
+          </div>
+          <button class="P" id="IELTSnext-btn">
+              <p>Next</p>
+              <img src="./IELTS.assets/Next.svg" class="nextarrow" />
+          </button>
       </div>
-    </div>
+  </div>
     <section class="help-section">
       <div class="containerform">
         <div class="right-columns">
@@ -573,7 +575,148 @@
 
     </footer>
   </main>
-  <script src="main.js" defer></script>
+  <script>
+document.addEventListener('DOMContentLoaded', function () { 
+  var sets = document.querySelectorAll('.content-set');
+  var nextButton = document.getElementById('next');
+  var bookButton = document.getElementById('book');
+  var closeButton = document.querySelector('.close-btn');
+  var tickContainer = document.getElementById('tickContainer');
+  var currentSet = 0;
+
+  // Functions
+  function openPopup() {
+    document.getElementById('popupForm').style.display = 'block';
+    resetForm();
+  }
+
+  function closePopup() {
+    document.getElementById('popupForm').style.display = 'none';
+  }
+
+  function toggleContent() {
+    sets[currentSet].style.display = 'none';
+    currentSet++;
+    sets[currentSet].style.display = 'block';
+
+    if (currentSet === sets.length - 1) {
+      nextButton.style.display = 'none';
+      bookButton.style.display = 'block';
+    }
+  }
+
+  function submitForm() {
+    document.getElementById('formContainer').style.display = 'none';
+    tickContainer.style.display = 'flex';
+
+    setTimeout(function () {
+      tickContainer.style.display = 'none';
+      closePopup();
+      resetForm();
+    }, 2000);
+  }
+
+  function resetForm() {
+    document.getElementById('consultationForm').reset();
+    sets.forEach(function (set, index) {
+      set.style.display = index === 0 ? 'block' : 'none';
+    });
+    currentSet = 0;
+    nextButton.style.display = 'block';
+    bookButton.style.display = 'none';
+    document.getElementById('formContainer').style.display = 'block';
+  }
+
+  // Event listeners
+  closeButton.addEventListener('click', function () {
+    closePopup();
+  });
+
+  // Make global functions accessible
+  window.openPopup = openPopup;
+  window.toggleContent = toggleContent;
+  window.submitForm = submitForm;
+  window.resetForm = resetForm;
+
+});
+const IELTStestimonials = [
+  {
+    content: "I owe a big thanks to Neemtree for their incredible IELTS support. Their expert guidance, personalized study plans, and access to high-quality study materials made all the difference. I achieved the IELTS score I needed for my dream university, and Neemtree played a vital role in that achievement. They truly care about their students' success, and I highly recommend their services.",
+    name: "Person Name 1",
+    role: "Role 1"
+  },
+  {
+    content: "Neemtree made my IELTS preparation a smooth and effective experience. Their experienced tutors and comprehensive practice tests helped me build confidence in my English language skills. I couldn't have asked for better support in my journey to study abroad. Thanks to Neemtree, I'm now on my way to pursuing my education overseas.",
+    name: "Person Name 2",
+    role: "Role 2"
+  },
+  {
+    content: "Neemtree's guidance and resources were instrumental in my IELTS success. Their personalized study plans, expert tutors, and realistic mock tests prepared me thoroughly for the actual exam. Neemtree's commitment to my success gave me the confidence I needed to excel. I can't thank them enough for their support.",
+    name: "Person Name 3",
+    role: "Role 3"
+  },
+  {
+    content: "I am thrilled with the results I achieved in the IELTS, thanks to Neemtree. Their structured study plans, experienced tutors, and constant support were invaluable. Neemtree's personalized approach and commitment to their students set them apart. I wholeheartedly recommend their services to anyone aiming to study abroad.",
+    name: "Person Name 4",
+    role: "Role 4"
+  },
+  {
+    content: "Neemtree made my IELTS preparation a breeze. Their well-organized study materials and expert guidance helped me attain the scores necessary for my study abroad goals. Neemtree's dedication to student success shines through, and I couldn't be happier with the support they provided.",
+    name: "Person Name 5",
+    role: "Role 5"
+  },
+  {
+    content: "I owe a big thanks to Neemtree for their incredible IELTS support. Their expert guidance, personalized study plans, and access to high-quality study materials made all the difference. I achieved the IELTS score I needed for my dream university, and Neemtree played a vital role in that achievement. They truly care about their students' success, and I highly recommend their services.",
+    name: "Person Name 6",
+    role: "Role 6"
+  },
+  {
+    content: "Neemtree made my IELTS preparation a smooth and effective experience. Their experienced tutors and comprehensive practice tests helped me build confidence in my English language skills. I couldn't have asked for better support in my journey to study abroad. Thanks to Neemtree, I'm now on my way to pursuing my education overseas.",
+    name: "Person Name 7",
+    role: "Role 7"
+  },
+  {
+    content: "Neemtree's guidance and resources were instrumental in my IELTS success. Their personalized study plans, expert tutors, and realistic mock tests prepared me thoroughly for the actual exam. Neemtree's commitment to my success gave me the confidence I needed to excel. I can't thank them enough for their support.",
+    name: "Person Name 8",
+    role: "Role 8"
+  },
+  {
+    content: "I am thrilled with the results I achieved in the IELTS, thanks to Neemtree. Their structured study plans, experienced tutors, and constant support were invaluable. Neemtree's personalized approach and commitment to their students set them apart. I wholeheartedly recommend their services to anyone aiming to study abroad.",
+    name: "Person Name 9",
+    role: "Role 9"
+  },
+  {
+    content: "Neemtree made my IELTS preparation a breeze. Their well-organized study materials and expert guidance helped me attain the scores necessary for my study abroad goals. Neemtree's dedication to student success shines through, and I couldn't be happier with the support they provided.",
+    name: "Person Name 10",
+    role: "Role 10"
+  },
+];
+
+let currIndex = 0;
+
+function updateIELTSTestimonial(index) {
+  const testimonialContent = document.getElementById('IELTStestimonial-content');
+  const testimonialName = document.getElementById('IELTSperson-name');
+  const testimonialRole = document.getElementById('IELTSperson-role');
+
+  testimonialContent.textContent = IELTStestimonials[index].content;
+  testimonialName.textContent = IELTStestimonials[index].name;
+  testimonialRole.textContent = IELTStestimonials[index].role;
+}
+
+document.getElementById('IELTSprev-btn').addEventListener('click', function() {
+  currIndex = currIndex > 0 ? currIndex - 1 : IELTStestimonials.length - 1;
+  updateIELTSTestimonial(currIndex);
+});
+
+document.getElementById('IELTSnext-btn').addEventListener('click', function() {
+  currIndex = currIndex < IELTStestimonials.length - 1 ? currIndex + 1 : 0;
+  updateIELTSTestimonial(currIndex);
+});
+
+// Ensures that the first testimonial is displayed when the page loads.
+updateIELTSTestimonial(currIndex);
+  </script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons."></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/js"></script>
 </body>

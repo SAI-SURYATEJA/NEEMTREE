@@ -441,16 +441,16 @@
       <div class="odd align-head">
         <p class="banner-yel1 green">TESTIMONIALS</p>
       </div>
-      <p class="Tcontent" id="testimonial-content">"This will change with JavaScript"</p>
+      <p class="Tcontent" id="PTEtestimonial-content">"This will change with JavaScript"</p>
       <div class="control-row">
-        <button class="P" id="prev-btn"> <img src="./IELTS.assets/Prev.svg" class="prevarrow" />
+        <button class="P" id="PTEprev-btn"> <img src="./IELTS.assets/Prev.svg" class="prevarrow" />
           <p>Prev</p>
         </button>
-        <div class="person" id="person-info">
-          <h4 id="person-name">Person Name</h4>
-          <h5 class="role" id="person-role">Person Role</h5>
+        <div class="person" id="PTETperson-info">
+          <h4 id="PTEperson-name">Person Name</h4>
+          <h5 class="role" id="PTEperson-role">Person Role</h5>
         </div>
-        <button class="P" id="next-btn">
+        <button class="P" id="PTEnext-btn">
           <p>Next</p><img src="./IELTS.assets/Next.svg" class="nextarrow" />
         </button>
       </div>
@@ -534,7 +534,149 @@
 
     </footer>
   </main>
-  <script src="main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () { 
+      var sets = document.querySelectorAll('.content-set');
+      var nextButton = document.getElementById('next');
+      var bookButton = document.getElementById('book');
+      var closeButton = document.querySelector('.close-btn');
+      var tickContainer = document.getElementById('tickContainer');
+      var currentSet = 0;
+    
+      // Functions
+      function openPopup() {
+        document.getElementById('popupForm').style.display = 'block';
+        resetForm();
+      }
+    
+      function closePopup() {
+        document.getElementById('popupForm').style.display = 'none';
+      }
+    
+      function toggleContent() {
+        sets[currentSet].style.display = 'none';
+        currentSet++;
+        sets[currentSet].style.display = 'block';
+    
+        if (currentSet === sets.length - 1) {
+          nextButton.style.display = 'none';
+          bookButton.style.display = 'block';
+        }
+      }
+    
+      function submitForm() {
+        document.getElementById('formContainer').style.display = 'none';
+        tickContainer.style.display = 'flex';
+    
+        setTimeout(function () {
+          tickContainer.style.display = 'none';
+          closePopup();
+          resetForm();
+        }, 2000);
+      }
+    
+      function resetForm() {
+        document.getElementById('consultationForm').reset();
+        sets.forEach(function (set, index) {
+          set.style.display = index === 0 ? 'block' : 'none';
+        });
+        currentSet = 0;
+        nextButton.style.display = 'block';
+        bookButton.style.display = 'none';
+        document.getElementById('formContainer').style.display = 'block';
+      }
+    
+      // Event listeners
+      closeButton.addEventListener('click', function () {
+        closePopup();
+      });
+    
+      // Make global functions accessible
+      window.openPopup = openPopup;
+      window.toggleContent = toggleContent;
+      window.submitForm = submitForm;
+      window.resetForm = resetForm;
+    
+    });
+    const PTEtestimonials = [
+  {
+    content: "Neemtree has been an incredible support on my journey to studying abroad. Their guidance and expert preparation resources for the PTE exam were exceptional. Thanks to their help, I achieved my target score, and I am now ready to pursue my dreams of studying overseas. I can't thank them enough!",
+    name: "Person Name 1",
+    role: "Role 1"
+  },
+  {
+    content: "I am immensely grateful to Neemtree for their dedicated assistance with the PTE. Their personalized coaching and practice materials were instrumental in my success. Neemtree's commitment to helping students achieve their language proficiency goals is commendable.",
+    name: "Person Name 2",
+    role: "Role 2"
+  },
+  {
+    content: "Neemtree Study Abroad Consultancy exceeded my expectations. Their PTE preparation program was tailored to my needs, and their experienced instructors made the learning process enjoyable and effective. I couldn't have asked for a better partner in achieving my study abroad ambitions.",
+    name: "Person Name 3",
+    role: "Role 3"
+  },
+  {
+    content: "I wholeheartedly recommend Neemtree for PTE preparation. Their comprehensive approach, attention to detail, and unwavering support ensured I was well-prepared for the PTE exam. With their guidance, I secured the score I needed for my academic journey abroad.",
+    name: "Person Name 4",
+    role: "Role 4"
+  },
+  {
+    content: "Neemtree made my PTE exam preparation seamless and stress-free. Their individualized study plans, regular practice tests, and expert guidance were invaluable. Thanks to them, I am now one step closer to realizing my dream of studying overseas.",
+    name: "Person Name 5",
+    role: "Role 5"
+  },
+  {
+    content: "Neemtree Study Abroad Consultancy provided exceptional guidance and support for my PTE exam preparation. Their experienced tutors and tailored study materials were instrumental in helping me achieve my desired score. I am grateful for their expertise and encouragement throughout my journey to study abroad.",
+    name: "John Thompson",
+    role: "Role 5"
+  },
+  {
+    content: "I can't thank Neemtree enough for their outstanding PTE coaching. Their structured approach, focused practice sessions, and realistic mock tests made all the difference. The individual attention I received ensured I was well-prepared, leading to my success in the exam. Neemtree truly stands out in guiding students toward their international education goals.",
+    name: "Sarah Patel",
+    role: "Role 5"
+  },
+  {
+    content: "Neemtree's PTE preparation program is top-notch. The instructors are not only knowledgeable but also incredibly supportive. Their insightful feedback and personalized strategies honed my skills, enabling me to excel in the exam. I highly recommend Neemtree to anyone aspiring to study abroad; their commitment to students' success is unparalleled.",
+    name: "Rajesh Kumar",
+    role: "Role 5"
+  },
+  {
+    content: "Choosing Neemtree for my PTE preparation was a game-changer. The comprehensive study materials, combined with the expertise of their tutors, created a conducive learning environment. Thanks to their guidance, I confidently approached the PTE exam and achieved the scores I needed for my overseas education. Neemtree's dedication to student progress is truly commendable.",
+    name: "Emily Rodriguez",
+    role: "Role 5"
+  },
+  {
+    content: "Neemtree Study Abroad Consultancy exceeded my expectations in PTE coaching. Their team's proficiency, encouragement, and structured approach significantly boosted my confidence. The personalized attention I received addressed my specific areas of improvement, ensuring my success in the exam. Neemtree's unwavering support made my dream of studying abroad a reality.",
+    name: "Emily Rodriguez",
+    role: "Role 5"
+  },
+];
+
+let currIndex = 0;
+
+function updatePTETestimonial(index) {
+  const testimonialContent = document.getElementById('PTEtestimonial-content');
+  const testimonialName = document.getElementById('PTEperson-name');
+  const testimonialRole = document.getElementById('PTEperson-role');
+
+  testimonialContent.textContent = PTEtestimonials[index].content;
+  testimonialName.textContent = PTEtestimonials[index].name;
+  testimonialRole.textContent = PTEtestimonials[index].role;
+}
+
+document.getElementById('PTEprev-btn').addEventListener('click', function() {
+  currIndex = currIndex > 0 ? currIndex - 1 : PTEtestimonials.length - 1;
+  updatePTETestimonial(currIndex);
+});
+
+document.getElementById('PTEnext-btn').addEventListener('click', function() {
+  currIndex = currIndex < PTEtestimonials.length - 1 ? currIndex + 1 : 0;
+  updatePTETestimonial(currIndex);
+});
+
+// Ensures that the first testimonial is displayed when the page loads.
+updatePTETestimonial(currIndex);
+
+      </script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons."></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/js"></script>
 </body>
