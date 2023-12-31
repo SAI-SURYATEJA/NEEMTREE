@@ -775,6 +775,12 @@ display: flex;
   width:10%;
   height: auto; 
 }
+.test-card:hover h3,
+.test-card:hover p ,
+.test-card:hover img
+{
+  color: white; 
+}
 .col-md-4 a:hover{
   text-decoration: none;
 }
