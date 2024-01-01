@@ -685,12 +685,12 @@ border:none;
   border-radius: 40px;
 }
 
-/*.card1 img {
+.card1 img {
   width: 100%;
   object-fit: cover;
-  height: 100%;
+  height: inherit;
   border-radius: 40px;
-}*/
+}
 
 .places {
   position: absolute;
@@ -2334,7 +2334,7 @@ color: white;}
     display: flex;
     flex-direction: column;
     justify-content: center; 
-  }
+  }*/
   
   .card-row {
     display: flex;
@@ -2351,7 +2351,7 @@ color: white;}
     gap:4rem;
   }
   
-  .card1 {
+  /*.card1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -2388,7 +2388,7 @@ color: white;}
     margin-bottom: 0;
   }*/
   .usa-svg{
-    bottom: -1rem;
+    top: 35rem;
   }
 
   .aus-svg{
@@ -2396,11 +2396,12 @@ color: white;}
   }
 
   .uk-svg{
-    top: 12rem;
+    top: 17rem;
   }
 
   .world-svg{
-    right: -10rem;
+    right: -11rem;
+    top:18rem;
   }
   .card1 img {
     margin-top: 2rem;
