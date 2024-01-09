@@ -22,6 +22,7 @@ html:focus-within {
 html, body {
   height: 100%;
   font-family: 'Poppins', sans-serif;
+  overflow:auto;
 }
 
 body {
@@ -98,6 +99,10 @@ a:not([class]) {
 .book-button {
   width: 100%;
   box-sizing: border-box;
+}
+.form-button .book-button:hover{
+  background-color: #4EAF4E;
+  color: white;
 }
 
 .first-set .form-label {
@@ -284,6 +289,8 @@ input[type="checkbox"] {
   color: #000;
   background-color: white;
   padding: 0.625rem 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
 .primary-header .primary-navigation a:hover {
@@ -2062,6 +2069,8 @@ font-weight: 500;
     padding: 0.625rem 1.5rem;
     font-size:1.3rem;
     margin-top:0.5rem;
+    font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   }
   .destinations:hover{
      background-color: #4EAF4E;
