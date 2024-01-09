@@ -288,6 +288,8 @@ input[type="checkbox"] {
   color: #000;
   background-color: white;
   padding: 0.625rem 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
 .primary-header .primary-navigation a:hover {
