@@ -22,6 +22,7 @@ html:focus-within {
 html, body {
   height: 100%;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 body {
