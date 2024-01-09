@@ -523,20 +523,20 @@ margin-bottom:9rem;
   margin-top: -95px;
   background-color:white;
 }*/
-.universities{
-position: relative;
-display: flex;
-overflow: hidden;
-white-space: nowrap;
-padding: 0.5rem;
-margin-top: 0.6rem;
-background-color: white;
-height:15.5rem;
-bottom:9rem;
+.universities {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 1em 0;
+  margin-top: 0.6rem;
+  background-color: white;
+  height: 10.5rem;
+  top: -8rem;
 }
 .universities img {
-  height:5em;
-  margin: 2.5em;
+  height: 3em;
+  margin: 1.5em;
 }
 .universities img:last-child {
   margin-right: 0; 
@@ -582,6 +582,8 @@ font-weight: 500;
   align-items: center;
   font-family: "Poppins", sans-serif;
   padding: 1vh 5vw;
+  margin-top:5rem;
+  margin-bottom: 3rem;
 
 }
 .ABOUT{
@@ -599,11 +601,11 @@ font-weight: 500;
   line-height: 7rem;
 }
 .matter2{
-  font-size:2.25rem;
+  font-size:2rem;
   color:#595566;
   font-weight: 400;
   font-family:'Lato',sans-serif;
-  line-height:3rem;
+  line-height:3.35rem;
   text-transform:none;
   width:90%;
   height:auto;
@@ -616,8 +618,8 @@ font-weight: 500;
   padding: 1rem;
   display: inline-block;
   max-width:30%;
-font-size: 20px;
-font-family:'Poppins,sans-serif' ;
+font-size: 16px;
+font-family:'Poppins',sans-serif ;
 font-weight: 500;
 justify-content:center;
 align-items: center;
@@ -830,11 +832,14 @@ display: flex;
   width:10%;
   height: auto; 
 }
+.test-card img:hover{
+  color: white !important;
+}
 .test-card:hover h3,
 .test-card:hover p ,
 .test-card:hover img
 {
-  color: white; 
+  color: white !important; 
 }
 .col-md-4 a:hover{
   text-decoration: none;
@@ -1592,10 +1597,11 @@ font-weight: 500;
 
 
   .matter2 {
-    font-size: 2.25rem; 
+    font-size: 2rem; 
     padding: 0 1em; 
     text-align: center;
     font-family: 'Lato', sans-serif;
+    line-height:3.35rem;
 }
 
   
@@ -1614,7 +1620,7 @@ font-weight: 500;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    font-family:'Poppins,sans-serif' ;
+    font-family:'Poppins',sans-serif ;
     font-weight: 500;
 }
 .btn2 a{
@@ -2595,10 +2601,10 @@ margin-bottom: 2rem;
     text-align: left;
   }
   .matter2{
-    font-size:2.25rem;
+    font-size:2rem;
     color:#595566;
     font-weight: 400;
-    line-height:3rem;
+    line-height:3.35rem;
     text-transform:none;
     font-family:'Lato',sans-serif;
     width:90%;
@@ -2615,10 +2621,10 @@ margin-bottom: 2rem;
     border-radius: 15px;
     padding: 1rem;
     display: inline-block;
-    font-family:'Poppins,sans-serif' ;
+    font-family:'Poppins',sans-serif ;
     font-weight: 500;
     max-width:30%;
-  font-size: 20px;
+  font-size: 16px;
   justify-content:center;
   align-items: center;
   border:none;
@@ -3112,7 +3118,7 @@ margin-bottom: 2rem;
     display: inline-block;
     max-width:30%;
   font-size: 20px;
-  font-family:'Poppins,sans-serif' ;
+  font-family:'Poppins',sans-serif ;
   font-weight: 500;
   justify-content:center;
   align-items: center;
@@ -3120,7 +3126,7 @@ margin-bottom: 2rem;
   }
   .btn2 a{
     text-decoration: none;
-    font-size:1.2rem;
+    font-size:1.1rem;
     color: white;
   }
   .btn2 a:hover{
