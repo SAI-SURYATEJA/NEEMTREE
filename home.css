@@ -100,9 +100,9 @@ a:not([class]) {
   width: 100%;
   box-sizing: border-box;
 }
-.form-button .book-button:hover{
-  background-color: #4EAF4E;
-  color: white;
+.book-button:hover{
+  background-color: #4EAF4E !important;
+  color: white !important;
 }
 
 .first-set .form-label {
