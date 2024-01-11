@@ -913,6 +913,9 @@ color: white;}
   color: #fff;
   border-radius: 50px;
 }
+.media-icons:hover{
+  color:#4EAF4E;
+}
 .footer-row{
 
   padding: 1vh 2vw;

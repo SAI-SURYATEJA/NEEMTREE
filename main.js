@@ -84,16 +84,16 @@ document.addEventListener('DOMContentLoaded', function () {
       if (entry.isIntersecting) {
         // Trigger animations if the section is intersecting
         const enrolledStudentsElement = entry.target.querySelector('.enrolled-students');
-        animateValue(enrolledStudentsElement, 100, 2500, 2000);
+        animateValue(enrolledStudentsElement, 100, 2500, 2500);
 
         const affiliatedUniversitiesElement = entry.target.querySelector('.affiliated-universities');
         animateValue(affiliatedUniversitiesElement, 20, 200, 2500);
 
         const coursesElement = entry.target.querySelector('.courses');
-        animateValue(coursesElement, 100, 700, 3000);
+        animateValue(coursesElement, 100, 700, 2500);
 
         const experienceElement = entry.target.querySelector('.experience');
-        animateValue(experienceElement, 2, 15, 2000);
+        animateValue(experienceElement, 2, 15, 2500);
 
         // Stop observing the section after animation starts
         observer.unobserve(entry.target);
@@ -238,6 +238,13 @@ if (form) {
   console.error('Form element not found!');
 }
 
-
+//animation scroll
+function stopAnimation() {
+  var animatedElement = document.querySelector('.timeline ol');
+  animatedElement.style.animation = 'none'; // Set the 'animation' property to 'none' to stop the animation
+  setTimeout(function () {
+    animatedElement.style.animation = ''; // Reset to the default value to restart the animation
+  }, 5000);
+}
 
 

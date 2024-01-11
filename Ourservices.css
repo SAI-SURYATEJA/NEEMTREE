@@ -1063,6 +1063,7 @@ position: relative;
     height: 245px;
     position: relative;
     bottom: 48px;
+    border-radius: 14px;
  }
  .no1{
     position: relative;
@@ -1125,6 +1126,7 @@ position: relative;
     height: 245px;
     position: relative;
     bottom: 73px;
+    border-radius: 14px;
  }
  .no2{
     position: relative;
@@ -1187,6 +1189,7 @@ position: relative;
     height: 245px;
     position: relative;
     bottom: 48px;
+    border-radius: 14px;
  }
     .no3{
         position: relative;
@@ -1285,7 +1288,7 @@ position: relative;
   font-weight: 400;
  }
  .contact-me-info strong{
-  font-family: 'Cablin',sans-serif;
+  font-family: 'Cabin',sans-serif;
   font-weight: 600;
   
  }
@@ -1463,6 +1466,9 @@ position: relative;
   background-color: #333333;
   color: #fff;
   border-radius: 50px;
+}
+.media-icons:hover{
+  color:#4EAF4E;
 }
 .footer-row{
 

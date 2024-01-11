@@ -771,7 +771,7 @@ color: white;}
     display: inline-flex;
     font-size: 2rem;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     flex-direction: row;
   }
   
@@ -1026,6 +1026,9 @@ color: white;}
     background-color: #333333;
     color: #fff;
     border-radius: 50px;
+  }
+  .media-icons:hover{
+    color:#4EAF4E;
   }
   .footer-row{
   

@@ -653,6 +653,7 @@ border:none;
   flex-direction: column;
   justify-content: center;
   gap:1rem;
+  padding-bottom: 16vh;
 }
 .card1 a {
   display: block; /* Explicitly set links to be block-level elements */
@@ -724,7 +725,7 @@ border:none;
 
   .card-row{
     display: flex;
-    gap:1rem;
+    gap:3rem;
   }
   .booking
   {background-color: #4EAF4E;
@@ -786,7 +787,7 @@ border:none;
     width: 100vw;
     height: auto;
     font-family: "Poppins", sans-serif;
-    padding-top: 20vh;
+    padding-top: 11vh;
     padding-left: 6vw;
     padding-right: 7vw;
     display: flex;
@@ -823,7 +824,7 @@ display: flex;
 }
 .test-card p{
   color: #595959;
-  font-size: 1.12rem;
+  font-size: 1.22rem;
   font-weight: 400;
   font-family: 'Lato', sans-serif;
 }
@@ -833,13 +834,14 @@ display: flex;
   height: auto; 
 }
 .test-card img:hover{
-  color: white !important;
+  fill: white !important;
 }
 .test-card:hover h3,
 .test-card:hover p ,
 .test-card:hover img
 {
   color: white !important; 
+  fill: white !important;
 }
 .col-md-4 a:hover{
   text-decoration: none;
@@ -1117,7 +1119,7 @@ font-weight:600;
 
 
 .timeline ol {
-  animation: scrollTimeline 15s linear infinite; 
+  animation: scrollTimeline 30s linear infinite; 
 }
 
 @keyframes scrollTimeline {
@@ -1396,6 +1398,9 @@ padding-left: 2.5rem;
   align-items: center;
   justify-content: space-between;
 }
+.faq-item-content:hover{
+  text-decoration: none;
+}
 
 .faq-item h2 {
   color: #181818;
@@ -1404,6 +1409,9 @@ padding-left: 2.5rem;
   font-style: normal;
   font-weight: 600;
   line-height: 116%; 
+}
+.h4 m-0 pr-3:hover{
+  text-decoration: none;
 }
 
 .faq-item p {
@@ -1647,7 +1655,8 @@ font-weight: 500;
   }
 
   .col-md-4 {
-    max-width: 100%; /* Set the maximum width to 100% for single-column layout */
+    max-width: 100%;
+    gap: 3rem; /* Set the maximum width to 100% for single-column layout */
   }
 .col-md-4 a:hover{
   text-decoration: none;
@@ -1758,7 +1767,7 @@ font-weight: 500;
   }
 
   .num-heading {
-    font-size: 1.2rem; /* Reduce font size for smaller screens */
+    font-size: 1.3rem; /* Reduce font size for smaller screens */
     font-weight: 500;
     color: #000;
     width: 100%;
@@ -1967,6 +1976,9 @@ font-weight: 500;
   background-color: #333333;
   color: #fff;
   border-radius: 50px;
+}
+.media-icons:hover{
+  color:#4EAF4E;
 }
 .footer-row{
 
@@ -2426,7 +2438,7 @@ color: white;}
     width: 100vw;
     height: auto;
     font-family: "Poppins", sans-serif;
-    padding-top: 20vh;
+    padding-top: 11vh;
     padding-left: 8vw;
     padding-right: 8vw;
     display: flex;
@@ -2714,7 +2726,7 @@ margin-bottom: 2rem;
     width: 100vw;
     height: auto;
     font-family: "Poppins", sans-serif;
-    padding-top: 20vh;
+    padding-top: 11vh;
     padding-left: 8vw;
     padding-right: 8vw;
     display: flex;
@@ -2982,6 +2994,7 @@ margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center; 
+    padding-bottom: 16vh;
   }
   
   .card-row {

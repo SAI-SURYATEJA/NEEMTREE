@@ -704,7 +704,9 @@ justify-content: center;
     color: white !;
     transition: all 0.5s ease-in-out;
   }
-  
+.test-card:hover p {
+  color: white; 
+}
   .test-card p:hover {
     background-color: transparent;
     color: white; 
@@ -772,7 +774,9 @@ justify-content: center;
     transition: -webkit-transform 0.25s ease-in-out;
     transition: transform 0.25s ease-in-out;
     transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+    color:#4EAF4E;
   }
+
   
   #accordion a[aria-expanded=true] .fa-plus {
     -webkit-transform: rotate(45deg);
@@ -960,7 +964,7 @@ justify-content: center;
 
   
   .right-columns {
-    text-align: left;
+    text-align: center;
     color: #fff;
     flex: 0 0 60%;
     max-width: 60%;
@@ -975,6 +979,8 @@ justify-content: center;
   .right-columns p {
     font-size: 1.75rem;
     font-family: 'Lato',sans-serif;
+    right: 2.7rem;
+    position: relative;
   }
   
   .left-columns{
@@ -1154,6 +1160,9 @@ justify-content: center;
   background-color: #333333;
   color: #fff;
   border-radius: 50px;
+}
+.media-icons:hover{
+  color:#4EAF4E;
 }
 .footer-row{
 
