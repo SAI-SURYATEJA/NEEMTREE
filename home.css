@@ -1765,7 +1765,7 @@ font-weight: 500;
   }
 
   .num-heading {
-    font-size: 1.3rem; /* Reduce font size for smaller screens */
+    font-size: 1.6rem; /* Reduce font size for smaller screens */
     font-weight: 500;
     color: #000;
     width: 100%;
