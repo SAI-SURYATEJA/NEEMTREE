@@ -786,14 +786,23 @@ justify-content: center;
   .faq-item {
     border-bottom: 1px solid  #DADADA;
     margin-bottom: 1.5rem;
+    text-decoration: none !important;
   }
   .faq-item-content {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    text-decoration: none !important;
   }
-  
+  #accordion .faq-item a, 
+#accordion .faq-item a:link, 
+#accordion .faq-item a:visited, 
+#accordion .faq-item a:hover, 
+#accordion .faq-item a:focus, 
+#accordion .faq-item a:active {
+  text-decoration: none !important;
+}
   .faq-item h2 {
     color: #181818;
     font-family: "Poppins", sans-serif;

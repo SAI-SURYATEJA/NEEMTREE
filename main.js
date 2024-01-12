@@ -150,6 +150,21 @@ document.addEventListener('DOMContentLoaded', function () {
   var currentSet = 0;
 
   // Functions
+
+  // Helper function to validate required inputs in the current set
+function validateCurrentSet() {
+  const inputs = sets[currentSet].querySelectorAll('.form-input[required]');
+  let isValid = true;
+
+  inputs.forEach(input => {
+    if (!input.value.trim()) {
+      // You can add your warning sign logic here, like turning the input's border red or displaying a warning message.
+      isValid = false;
+    } 
+  });
+
+  return isValid;
+}
   function openPopup() {
     document.getElementById('popupForm').style.display = 'block';
     resetForm();
@@ -160,6 +175,11 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function toggleContent() {
+    if (!validateCurrentSet()) {
+      // Here you can handle the warning signs or alerts to indicate the required fields are not filled.
+      alert('Please fill in all required fields before continuing');
+      return; // Stop the execution if the current set is not valid
+    }
     sets[currentSet].style.display = 'none';
     currentSet++;
     sets[currentSet].style.display = 'block';
