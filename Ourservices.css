@@ -790,7 +790,7 @@ color: white;}
 }
 
 .numbers {
-  font-size: 3.5rem;
+  font-size: 5rem !important;
   color: #4EAF4E;
   font-weight: 600;
   margin-top: 2rem;
